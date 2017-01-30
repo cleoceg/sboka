@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var angviews = require('./routes/angviews');
+//var angviews = require('./routes/angviews');
 var routesApi = require('./api/routes/index');
 var principles = require('./routes/principles');
 
