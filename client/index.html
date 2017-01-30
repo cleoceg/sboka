@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='SBOKA'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SBOK Guide</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link href="/stylesheets/navbar.css" rel="stylesheet">
+    <link href="/stylesheets/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/stylesheets/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body>
+	<navigation></navigation>
+	<div class="container">
+		<div ng-view></div>
+		<footer-generic></footer-generic>
+	</div>
+  </body>
+  <script src="/javascripts/angular.min.js"></script>
+  <script src="/javascripts/angular-route.min.js"></script>
+  <script src="/javascripts/angular-sanitize.min.js"></script>
+  <script src="/app.js"></script>
+  <script src="/sbokPrin.js"></script>
+  <script src="/sbokOrg.js"></script>
+  <script src="/javascripts/sbok.js"></script>
+  <script src="/javascripts/jquery-3.1.1.min.js"></script>
+  <script src="/javascripts/tether.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+</html>

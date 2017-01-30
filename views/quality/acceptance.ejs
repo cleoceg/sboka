@@ -1,0 +1,75 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%=overview.title%>"><%=overview.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=writing.stitle%>"><%=writing.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=minimum.stitle%>"><%=minimum.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=done.stitle%>"><%=done.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=acceptance.stitle%>"><%=acceptance.title%></a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="<%=overview.title%>" role="tabpanel">
+        <% data = overview; %>
+		<%-include ../_paraUneImage.ejs %>
+    </div>
+	
+    <div class="tab-pane" id="<%=writing.stitle%>" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    
+						<% data = writing; %>
+						<%-include ../_paragraphe.ejs %>
+                    
+                        <% data = writing.example; %>
+						<%-include ../_example.ejs %>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   
+    <div class="tab-pane" id="<%=minimum.stitle%>" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <div class="card card-block">
+                        <% data = minimum; %>
+						<%-include ../_paragraphe.ejs %>
+						
+						<% data = minimum.cascading; %>
+						<%-include ../_table.ejs %>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="<%=done.stitle%>" role="tabpanel">
+        <% data = done; %>
+		<%-include ../_paragraphe.ejs %>
+    </div>
+	
+	<div class="tab-pane" id="<%=acceptance.stitle%>" role="tabpanel">
+        <% data = acceptance; %>
+		<%-include ../_paragraphe.ejs %>
+    </div>
+</div>
+
+<%- include ../_footer %>
+

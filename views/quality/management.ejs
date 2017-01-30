@@ -1,0 +1,54 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%=overview.title%>"><%=overview.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=planning.stitle%>"><%=planning.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=control.stitle%>"><%=control.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=pdca.stitle%>"><%=pdca.title%></a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="<%=overview.title%>" role="tabpanel">
+        <% var data = overview %>
+		<%-include ../_paragraphe.ejs %>
+    </div>
+	
+    <div class="tab-pane" id="<%=planning.stitle%>" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% var data = planning.planning %>
+					<%-include ../_paragraphe.ejs %>
+					<% var data = planning.integration %>
+					<%-include ../_paragraphe.ejs %>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   
+    <div class="tab-pane" id="<%=control.stitle%>" role="tabpanel">
+        <% var data = control %>
+		<%-include ../_paragraphe.ejs %>
+    </div>
+	
+	<div class="tab-pane" id="<%=pdca.stitle%>" role="tabpanel">
+        <% var data = pdca %>
+		<%-include ../_paraUneImage.ejs %>
+    </div>
+	
+</div>
+
+<%- include ../_footer %>
+

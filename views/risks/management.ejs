@@ -1,0 +1,138 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#overview">Overview</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#Identification">Identification</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#Assessment">Assessment</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#Prioritization">Prioritization</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#Mitigation">Mitigation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#Communication">Communication</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="overview" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% for (var i=0; i<gen.length; i++) { %>
+                        <p class="card-text"><%-gen[i]%></p>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="Identification" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% for (var i=0; i<identification.introduction.length; i++) { %>
+                        </p><%=identification.introduction[i]%>
+                    <% } %>
+                </div>
+                <div class="card card-block">
+                    <% for (var i=0; i<identification.techniques.length; i++) { %>
+                        </p><b><%=identification.techniques[i].title%></b>
+                        </p><%=identification.techniques[i].comment%>
+                    <% } %>
+                </div>
+                <div class="card card-block">
+                    <%- identification.spike%>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="Assessment" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <div class="card card-block">
+                    <% for (var i=0; i<assessment.gen.length; i++) { %>
+                        </p><%=assessment.gen[i]%>
+                    <% } %>
+                </div>
+                <div class="card card-block">
+                    <% for (var i=0; i<assessment.techniques.length; i++) { %>
+                        </p><b><%-assessment.techniques[i].title%></b>
+                        <% for (var j=0; j<assessment.techniques[i].comment.length; j++) { %>
+                            </p><%-assessment.techniques[i].comment[j]%>
+                        <% } %>
+                    <% } %>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="Prioritization" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% for (var i=0; i<prioritization.gen.length; i++) { %>
+                        </p><%-prioritization.gen[i]%>
+                    <% } %>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="card card-block">
+                            <img class="w-100" src="/<%-prioritization.image%>" alt="Risk prioritization">
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="Mitigation" role="tabpanel">
+       <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% for (var i=0; i<mitigation.gen.length; i++) { %>
+                        </p><%-mitigation.gen[i]%>
+                    <% } %>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="tab-pane" id="Communication" role="tabpanel">
+       <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% for (var i=0; i<communication.gen.length; i++) { %>
+                        </p><%-communication.gen[i]%>
+                    <% } %>
+                </div>
+                <div class="card card-block">
+                    <% for (var i=0; i<communication.burndown.length; i++) { %>
+                        </p><%-communication.burndown[i]%>
+                    <% } %>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="card card-block">
+                            <img class="w-100" src="/<%-communication.image%>" alt="Risk Burndown Chat">
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<%- include ../_footer %>

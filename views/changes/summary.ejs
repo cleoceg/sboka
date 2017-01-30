@@ -1,0 +1,32 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th col width="20%">Role</th>
+            <th>Responsibilities</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%
+            for (var i=0; i<table.length; i++) {
+                var item = table[i]; %>
+                <tr>
+                    <th scope="row"><%=item.owner%></th>
+                    <td>
+                    <%
+                        var comment = item.comments;
+                        for (var j=0; j<comment.length; j++) { %>
+                        <li><%=comment[j]%>
+                    <% } %>
+                    </td>
+                </tr>
+        <% } %>
+    </tbody>
+</table>
+
+<%- include ../_footer %>
+
+

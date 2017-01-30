@@ -1,0 +1,96 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-overview.title%>"><%-overview.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-estimation.stitle%>"><%-estimation.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-planning.stitle%>"><%-planning.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-ranking.stitle%>"><%-ranking.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-story.stitle%>"><%-story.title%></a>
+  </li>
+ </ul>
+
+ <div class="tab-content">
+
+    <div class="tab-pane active" id="<%-overview.title%>" role="tabpanel">
+        <% var data = overview; %>
+        <%- include ../_paragraphe.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-estimation.stitle%>" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% var data = estimation.overview; %>
+                    <%- include ../_paragraphe.ejs %>
+                    <div class="card card-block">
+                        <% var data = estimation.roi.roi; %>
+                        <%- include ../_paragraphe.ejs %>
+                        
+                        <% var data = estimation.roi.example; %>
+                        <%- include ../_example.ejs %>
+                    </div>
+                    
+                    <div class="card card-block">
+                        <% var data = estimation.npv.npv; %>
+                        <%- include ../_paragraphe.ejs %>
+                        
+                        <% var data = estimation.npv.example; %>
+                        <%- include ../_example.ejs %>
+                    </div>
+                    
+                    <div class="card card-block">
+                        <% var data = estimation.irr.irr; %>
+                        <%- include ../_paragraphe.ejs %>
+                        
+                        <% var data = estimation.irr.example; %>
+                        <%- include ../_example.ejs %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="tab-pane" id="<%-planning.stitle%>" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% var data = planning.overview; %>
+                    <%- include ../_paragraphe.ejs %>
+                    
+                    <% var data = planning.value; %>
+                    <%- include ../_paragraphe.ejs %>
+                    
+                    <% var data = planning.customer; %>
+                    <%- include ../_paraUneImage.ejs %>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="tab-pane" id="<%-ranking.stitle%>" role="tabpanel">
+        <% var data = ranking; %>
+        <%- include ../_paragraphe.ejs %>
+    </div>
+     
+    <div class="tab-pane" id="<%-story.stitle%>" role="tabpanel">
+        <% var data = story; %>
+        <%- include ../_paragraphe.ejs %>
+    </div>
+     
+ </div>
+
+<%- include ../_footer %>
+
+
+

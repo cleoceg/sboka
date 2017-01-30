@@ -1,0 +1,22 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+
+<div class="card card-block">
+    <h5 class="card-title"><%-intro%></h5>
+    
+
+<div class="col-sm-12">
+    <% for (var i=0; i<items.length; i++) { %>
+    <div class="card card-block">
+            <h4 class="card-title"><%-items[i].title%></h4>
+            <p class="card-text"><%-items[i].comment%></p>
+    </div>
+    <% } %>
+</div>
+        
+</div>
+
+<%- include ../_footer %>
+

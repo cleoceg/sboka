@@ -1,0 +1,21 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<div class="row">
+  
+<% for (var i=0; i<roles.length; i++) { %>
+    <div class="col-sm-4">
+<div class="card card-block">
+  <h4 class="card-title"><%=roles[i].title%></h4>
+  <p class="card-text"><%=roles[i].role%></p>
+  <%
+    for (var j=0; j<roles[i].links.length; j++) { %>
+        <a href="<%=roles[i].links[j][0]%>" class="card-link"><%=roles[i].links[j][1]%></a>
+  <% } %> 
+</div>
+    </div>
+<% } %>
+</div>
+
+<%- include ../_footer %>

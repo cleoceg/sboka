@@ -1,0 +1,61 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-tuckman.stitle%>"><%-tuckman.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-conflict.stitle%>"><%-conflict.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-techniques.stitle%>"><%-techniques.stitle%></a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-leadership.stitle%>"><%-leadership.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-maslow.stitle%>"><%-maslow.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-xy.stitle%>"><%-xy.stitle%></a>
+  </li>
+</ul>
+
+<div class="tab-content">
+
+    <div class="tab-pane active" id="<%-tuckman.stitle%>" role="tabpanel">
+        <% var data = tuckman; %>
+		<%- include ../_paraUneImage.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-conflict.stitle%>" role="tabpanel">
+        <% var data = conflict; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-techniques.stitle%>" role="tabpanel">
+        <% var data = techniques; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-leadership.stitle%>" role="tabpanel">
+        <% var data = leadership; %>
+		<%- include ../_someParaUneImage.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-maslow.stitle%>" role="tabpanel">
+        <% var data = maslow; %>
+		<%- include ../_paraUneImage.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-xy.stitle%>" role="tabpanel">
+        <% var data = xy; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+    
+</div>
+
+<%- include ../_footer %>

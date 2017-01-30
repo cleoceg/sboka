@@ -1,0 +1,46 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%-title%></h1>
+
+<ul class="nav nav-tabs">
+	<li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-overview.title%>"><%-overview.title%></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" role="tab" href="#<%-table.title%>"><%-table.title%></a>
+    </li>
+	<li class="nav-item">
+        <a class="nav-link" data-toggle="tab" role="tab" href="#<%-perso.stitle%>"><%-perso.title%></a>
+    </li>
+	<li class="nav-item">
+        <a class="nav-link" data-toggle="tab" role="tab" href="#<%-size.stitle%>"><%-size.title%></a>
+    </li>
+</ul>
+
+<div class="tab-content">
+		
+		<div class="tab-pane active" id="<%-overview.title%>" role="tabpanel">
+            <% var data = overview; %>
+			<%- include ../_paragraphe.ejs %>
+		</div>
+		
+        <div class="tab-pane" id="<%-table.title%>" role="tabpanel">
+            <% var data = table; %>
+			<%- include ../_table.ejs %>
+		</div>
+		
+		<div class="tab-pane" id="<%-perso.stitle%>" role="tabpanel">
+            <% var data = perso; %>
+			<%- include ../_paraUneImage.ejs %>
+		</div>
+		
+		<div class="tab-pane" id="<%-size.stitle%>" role="tabpanel">
+            <% var data = size; %>
+			<%- include ../_paragraphe.ejs %>
+		</div>
+		
+</div>
+	
+
+<%- include ../_footer %>
+

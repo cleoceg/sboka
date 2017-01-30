@@ -1,0 +1,79 @@
+<%- include ../_header %>
+
+<div ng-app='sbokPrin'>
+	<div ng-controller='ctrPrinSelforg'>
+	<h1 class="display-4">{{data.title}}</h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#{{data.overview.title}}">{{data.overview.title}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.benefits.title}}">{{data.benefits.title}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.goals.title}}">{{data.goals.title}}</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="{{data.overview.title}}" role="tabpanel">
+        <!-- Start Overview -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.overview.title}}</h4>					
+					<div ng-repeat="item in data.overview.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End Overview -->
+    </div>
+    <div class="tab-pane" id="{{data.benefits.title}}" role="tabpanel">
+        <!-- Start benefits -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.benefits.title}}</h4>					
+					<div ng-repeat="item in data.benefits.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End benefits -->
+    </div>
+   
+    <div class="tab-pane" id="{{data.goals.title}}" role="tabpanel">
+        <!-- Start goals -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.goals.title}}</h4>					
+					<div ng-repeat="item in data.goals.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End goals -->
+		<!-- image of the para -->
+		<div class="card card-block">
+			<div class="col-sm-12">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<img class="w-100" src="/{{data.goals.image}}" alt="self-organization">
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		<!-- end of image of the para -->
+    </div>
+</div>
+
+</div></div>    
+
+<%- include ../_footer %>

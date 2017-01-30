@@ -1,0 +1,35 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-overview.title%>"><%-overview.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-benefits.title%>"><%-benefits.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-goals.title%>"><%-goals.title%></a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="<%-overview.title%>" role="tabpanel">
+        <% var data = overview; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+    <div class="tab-pane" id="<%-benefits.title%>" role="tabpanel">
+        <% var data = benefits; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+   
+    <div class="tab-pane" id="<%-goals.title%>" role="tabpanel">
+        <% var data = goals; %>
+		<%- include ../_paraUneImage.ejs %>
+        </div>
+    </div>
+    
+
+<%- include ../_footer %>

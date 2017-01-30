@@ -1,0 +1,50 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-definition.stitle%>"><%-definition.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-project.stitle%>"><%-project.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-portfolio.stitle%>"><%-portfolio.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-involvement.stitle%>"><%-involvement.title%></a>
+  </li>
+</ul>
+
+<div class="tab-content">
+
+    <div class="tab-pane active" id="<%-definition.stitle%>" role="tabpanel">
+		<% var data = definition; %>
+		<%- include ../_paragraphe.ejs %>
+		<% for (var i=0; i<definition.examples.length; i++) { %>
+			<% var data = definition.examples[i]; %>
+			<%- include ../_example.ejs %>
+		<% } %>
+    </div>
+    
+    <div class="tab-pane" id="<%-project.stitle%>" role="tabpanel">
+		<% var data = project; %>
+		<%- include ../_paraUneImage.ejs %>
+		<% var data = project.sos; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-portfolio.stitle%>" role="tabpanel">
+		<% var data = portfolio; %>
+		<%- include ../_someParaUneImage.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-involvement.stitle%>" role="tabpanel">
+        <% var data = involvement; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+    
+</div>
+
+<%- include ../_footer %>

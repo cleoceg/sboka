@@ -1,0 +1,54 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-stitle%>"><%-stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-sprint.stitle%>"><%-sprint.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-standup.stitle%>"><%-standup.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-planning.stitle%>"><%-planning.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-review.stitle%>"><%-review.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-retrospect.stitle %>"><%-retrospect.title %></a>
+  </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="<%-stitle%>" role="tabpanel">
+		<% var data = overview; %>
+		<%- include ../_paraUneImage.ejs %>
+    </div>
+	<div class="tab-pane" id="<%-sprint.stitle%>" role="tabpanel">
+		<% var data = sprint; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+	<div class="tab-pane" id="<%-standup.stitle%>" role="tabpanel">
+		<% var data = standup; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+	<div class="tab-pane" id="<%-planning.stitle%>" role="tabpanel">
+        <% var data = planning; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+	<div class="tab-pane" id="<%-review.stitle%>" role="tabpanel">
+        <% var data = review; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+	<div class="tab-pane" id="<%-retrospect.stitle %>" role="tabpanel">
+        <% var data = retrospect; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+</div>
+
+<%- include ../_footer %>
+

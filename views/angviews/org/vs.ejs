@@ -1,0 +1,13 @@
+<%- include ../_header %>
+<div ng-app='sbokOrg'>
+	<div ng-controller='ctrOrgVs'>
+		<h1 class="display-4">{{data.title}}</h1>
+		<div class="card card-block">
+			<div ng-repeat="item in data.comment">
+				<p><span class="card-text" ng-bind-html="item"></span><p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include ../_footer %>

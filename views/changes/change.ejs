@@ -1,0 +1,265 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#balancing"><%-balancing.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#achieving"><%-achieving.title%></a>
+  </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="balancing" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<div class="card card-block">
+						<% for (var i=0; i<balancing.comment.length; i++) { %>
+							<p class="card-text"><%-balancing.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="achieving" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <div class="card card-block">
+					
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" role="tab" href="#overview"><%-achieving.title%></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_iterative"><%-achieving.flex_iterative.title%></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_time"><%-achieving.flex_time.title%></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_cross"><%-achieving.flex_cross.title%></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_customer"><%-achieving.flex_customer.title%></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_integration"><%-achieving.flex_integration.title%></a>
+						</li>
+					</ul>
+					
+					<div class="tab-content">
+						<div class="tab-pane active" id="overview" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="card card-block">
+										<div class="card card-block">
+											<% for (var i=0; i<achieving.comment.length; i++) { %>
+												<p class="card-text"><%-achieving.comment[i]%></p>
+											<% } %>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-block">
+							<div class="col-sm-12">
+								<div class="col-sm-2"></div>
+								<div class="col-sm-8">
+									<div class="card card-block">
+										<img class="w-100" src="/<%-achieving.image%>" alt="Achieving flexibility">
+									</div>
+								</div>
+								<div class="col-sm-2"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tab-pane" id="flex_iterative" role="tabpanel">
+                                                    <div class="row">
+							<div class="col-sm-12">
+                                                            <div class="card card-block">
+								<h4 class="card-title"><%-achieving.flex_iterative.title%></h4>
+								<div class="card card-block">
+                                                                    <% for (var i=0; i<achieving.flex_iterative.comment.length; i++) { %>
+									<p class="card-text"><%-achieving.flex_iterative.comment[i]%></p>
+                                                                    <% } %>
+								</div>	
+                                                            </div>
+							</div>
+                                                    </div>
+                                                    
+                                                    <ul class="nav nav-tabs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-toggle="tab" role="tab" href="#stakeholder"><%-achieving.flex_iterative.stakeholder.title%></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-toggle="tab" role="tab" href="#core_team"><%-achieving.flex_iterative.core_team.title%></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-toggle="tab" role="tab" href="#senior"><%-achieving.flex_iterative.senior.title%></a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-toggle="tab" role="tab" href="#body"><%-achieving.flex_iterative.body.title%></a>
+                                                        </li>
+                                                    </ul>
+                                                    
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane active" id="stakeholder" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="card card-block">
+                                                                        <h4 class="card-title"><%-achieving.flex_iterative.stakeholder.title%></h4>
+                                                                        <div class="card card-block">
+                                                                            <% for (var i=0; i<achieving.flex_iterative.stakeholder.comment.length; i++) { %>
+                                                                                <p class="card-text"><%-achieving.flex_iterative.stakeholder.comment[i]%></p>
+                                                                            <% } %>
+                                                                        </div>	
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card card-block">
+                                                                <div class="col-sm-12">
+                                                                    <div class="col-sm-2"></div>
+                                                                    <div class="col-sm-8">
+									<div class="card card-block">
+										<img class="w-100" src="/<%-achieving.flex_iterative.stakeholder.image%>" alt="Achieving flexibility stakeholder">
+									</div>
+                                                                    </div>
+                                                                    <div class="col-sm-2"></div>
+								</div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="tab-pane" id="core_team" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="card card-block">
+                                                                        <h4 class="card-title"><%-achieving.flex_iterative.core_team.title%></h4>
+                                                                        <div class="card card-block">
+                                                                            <% for (var i=0; i<achieving.flex_iterative.core_team.comment.length; i++) { %>
+                                                                                <p class="card-text"><%-achieving.flex_iterative.core_team.comment[i]%></p>
+                                                                            <% } %>
+                                                                        </div>	
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card card-block">
+                                                                <div class="col-sm-12">
+                                                                    <div class="col-sm-2"></div>
+                                                                    <div class="col-sm-8">
+									<div class="card card-block">
+										<img class="w-100" src="/<%-achieving.flex_iterative.core_team.image%>" alt="Achieving flexibility core team">
+									</div>
+                                                                    </div>
+                                                                    <div class="col-sm-2"></div>
+								</div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="tab-pane" id="senior" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="card card-block">
+                                                                        <h4 class="card-title"><%-achieving.flex_iterative.senior.title%></h4>
+                                                                        <div class="card card-block">
+                                                                            <% for (var i=0; i<achieving.flex_iterative.senior.comment.length; i++) { %>
+                                                                                <p class="card-text"><%-achieving.flex_iterative.senior.comment[i]%></p>
+                                                                            <% } %>
+                                                                        </div>	
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="tab-pane" id="body" role="tabpanel">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="card card-block">
+                                                                        <h4 class="card-title"><%-achieving.flex_iterative.body.title%></h4>
+                                                                        <div class="card card-block">
+                                                                            <% for (var i=0; i<achieving.flex_iterative.body.comment.length; i++) { %>
+                                                                                <p class="card-text"><%-achieving.flex_iterative.body.comment[i]%></p>
+                                                                            <% } %>
+                                                                        </div>	
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+						
+						<div class="tab-pane" id="flex_time" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="card card-block">
+										<h4 class="card-title"><%-achieving.flex_time.title%></h4>
+										<div class="card card-block">
+											<% for (var i=0; i<achieving.flex_time.comment.length; i++) { %>
+												<p class="card-text"><%-achieving.flex_time.comment[i]%></p>
+											<% } %>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tab-pane" id="flex_cross" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="card card-block">
+										<h4 class="card-title"><%-achieving.flex_cross.title%></h4>
+										<div class="card card-block">
+											<% for (var i=0; i<achieving.flex_cross.comment.length; i++) { %>
+												<p class="card-text"><%-achieving.flex_cross.comment[i]%></p>
+											<% } %>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tab-pane" id="flex_customer" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="card card-block">
+										<h4 class="card-title"><%-achieving.flex_customer.title%></h4>
+										<div class="card card-block">
+											<% for (var i=0; i<achieving.flex_customer.comment.length; i++) { %>
+												<p class="card-text"><%-achieving.flex_customer.comment[i]%></p>
+											<% } %>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tab-pane" id="flex_integration" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="card card-block">
+										<h4 class="card-title"><%-achieving.flex_integration.title%></h4>
+										<div class="card card-block">
+											<% for (var i=0; i<achieving.flex_integration.comment.length; i++) { %>
+												<p class="card-text"><%-achieving.flex_integration.comment[i]%></p>
+											<% } %>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ../_footer %>

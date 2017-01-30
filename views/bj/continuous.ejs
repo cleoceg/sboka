@@ -1,0 +1,45 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<div class="col-sm-12">    
+    <% var data = overview; %>
+    <%- include ../_paragraphe.ejs %>
+    
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-eva.stitle%>"><%-eva.title%></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab" href="#<%-cfd.stitle%>"><%-cfd.title%></a>
+        </li>
+    </ul>
+    
+    <div class="tab-content">
+
+        <div class="tab-pane active" id="<%-eva.stitle%>" role="tabpanel">
+            <div class="row">
+                <div class="col-sm-12">
+                    <% var data = eva.eva; %>
+                    <%- include ../_paragraphe.ejs %>
+                    
+                    <% var data = eva.table; %>
+                    <%- include ../_table.ejs %>
+                    
+                    <% var data = eva.example; %>
+                    <%- include ../_example.ejs %>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-pane" id="<%-cfd.stitle%>" role="tabpanel">
+            <% var data = cfd; %>
+            <%- include ../_paraUneImage.ejs %>
+        </div>
+        
+    </div>
+    
+</div>
+
+<%- include ../_footer %>

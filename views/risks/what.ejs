@@ -1,0 +1,104 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<%/* What is risk? */%>
+<nav class="navbar navbar-light bg-faded">
+    <div class="row">
+        <div class="col-sm-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#whatis" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">    </button>
+        </div>
+        <div class="col-sm-10">
+            <h2><%=gen_title%></h2>
+        </div>
+    </div>
+ 
+    <div class="collapse" id="whatis">
+        <div class="text-muted p-1">
+          <h4><%=gen_title%></h4>
+          <%
+            for (var i=0; i<gen.length; i++) { %>
+                <p><span class="text-muted"><%=gen[i]%></span>
+          <% } %>
+          
+        </div>
+    </div>
+</nav>
+
+<%/* Difference between risks and issues */%>
+<nav class="navbar navbar-light bg-faded">
+    <div class="row">
+        <div class="col-sm-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#issue" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">    </button>
+        </div>
+        <div class="col-sm-10">
+            <h2><%=issue_title%></h2>
+        </div>
+    </div>
+ 
+    <div class="collapse" id="issue">
+        <div class="text-muted p-1">
+          <h4><%=issue_title%></h4>
+          <div class="row">
+            <div class="col-sm-6">
+                <div class="card card-block">
+                    <% for (var i=0; i<risks.length; i++) {%>
+                        <p><span class="text-muted"><%=risks[i]%></span>
+                    <% } %>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card card-block">
+                    <% for (var i=0; i<issues.length; i++) {%>
+                        <p><span class="text-muted"><%=issues[i]%></span>
+                    <% } %>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block bg-warning">
+                    <span class="text-muted"><%=risk_conclusion%></span>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</nav>
+
+<%/* Risk Attitude */%>
+<nav class="navbar navbar-light bg-faded">
+    <div class="row">
+        <div class="col-sm-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#attitude" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">    </button>
+        </div>
+        <div class="col-sm-10">
+            <h2><%=attitude_title%></h2>
+        </div>
+    </div>
+ 
+    <div class="collapse" id="attitude">
+        <div class="text-muted p-1">
+          <h4><%=attitude_title%></h4>
+            <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% for (var i=0; i<attitude.length; i++) {%>
+                        <p><span class="text-muted"><%=attitude[i]%></span>
+                    <% } %>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <% for (var i=0; i<utility.length; i++) {%>
+                        <p><span class="text-muted"><%-utility[i]%></span>
+                    <% } %>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</nav>
+
+
+<%- include ../_footer %>

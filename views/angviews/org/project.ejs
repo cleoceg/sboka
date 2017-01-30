@@ -1,0 +1,94 @@
+<%- include ../_header %>
+
+<div ng-app='sbokOrg'>
+	<div ng-controller='ctrOrgProject'>
+<h1 class="display-4">{{data.title}}</h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#{{data.overview.title}}">{{data.overview.title}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.core.stitle}}">{{data.core.title}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.noncore.stitle}}">{{data.noncore.title}}</a>
+  </li>
+ </ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="{{data.overview.title}}" role="tabpanel">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.overview.title}}</h4>					
+						<div ng-repeat="item in data.overview.comment">
+							<p><span class="card-text" ng-bind-html="item"></span><p>
+						</div>
+				</div>        
+			</div>
+		</div>
+    </div>
+    
+    <div class="tab-pane" id="{{data.core.stitle}}" role="tabpanel">
+        <div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.core.title}}</h4>					
+						<div ng-repeat="item in data.core.comment">
+							<p><span class="card-text" ng-bind-html="item"></span><p>		
+						</div>
+						
+						<div ng-repeat="para in data.core.roles">
+							<div class="card card-block">
+								<h4 class="card-title">{{para.title}}</h4>					
+									<div ng-repeat="item in para.comment">
+										<p><span class="card-text" ng-bind-html="item"></span><p>
+									</div>
+							</div>
+						</div>
+					
+						<div class="card card-block">
+							<div class="col-sm-12">
+								<div class="col-sm-2"></div>
+								<div class="col-sm-8">
+									<img class="w-100" src="/{{data.core.image}}" alt="self-organization">
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+						</div>
+				</div>        
+			</div>
+		</div>
+    </div>
+    
+    <div class="tab-pane" id="{{data.noncore.stitle}}" role="tabpanel">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.noncore.title}}</h4>					
+						<div ng-repeat="item in data.noncore.comment">
+							<p><span class="card-text" ng-bind-html="item"></span><p>
+						</div>
+					
+					<div ng-repeat="para in data.noncore.roles">
+						<div class="card card-block">
+							<h4 class="card-title">{{para.title}}</h4>					
+								<div ng-repeat="item in para.comment">
+									<p><span class="card-text" ng-bind-html="item"></span><p>
+								</div>
+						</div>
+					</div>
+				</div>        
+			</div>
+		</div>
+    </div>  
+</div>
+
+</div>
+</div>
+
+<%- include ../_footer %>
+
+
+

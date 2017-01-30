@@ -1,0 +1,34 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%=overview.title%>"><%=overview.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=scope.stitle%>"><%=scope.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%=value.stitle%>"><%=value.title%></a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="<%=overview.title%>" role="tabpanel">
+		<% var data = overview; %>
+		<%-include ../_paragraphe.ejs %>
+    </div>
+    <div class="tab-pane" id="<%=scope.stitle%>" role="tabpanel">
+        <% var data = scope; %>
+		<%-include ../_paragraphe.ejs %>
+    </div>
+   
+    <div class="tab-pane" id="<%=value.stitle%>" role="tabpanel">
+        <% var data = value; %>
+		<%-include ../_paragraphe.ejs %>
+    </div>
+</div>
+
+<%- include ../_footer %>

@@ -1,0 +1,69 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card card-block">
+			<div class="card card-block">
+				<% for (var i=0; i<comment.length; i++) { %>
+					<p class="card-text"><%-comment[i]%></p>
+				<% } %>
+			</div>
+        </div>
+    </div>
+</div>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#inportfolio"><%-inportfolio.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#inprogram"><%-inprogram.title%></a>
+  </li>
+ </ul>
+ 
+ <div class="tab-content">
+
+    <div class="tab-pane active" id="inportfolio" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<div class="card card-block">
+						<% for (var i=0; i<inportfolio.comment.length; i++) { %>
+							<p class="card-text"><%-inportfolio.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="inprogram" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<div class="card card-block">
+						<% for (var i=0; i<inprogram.comment.length; i++) { %>
+							<p class="card-text"><%-inprogram.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+				<div class="card card-block">
+					<div class="col-sm-12">
+						<div class="col-sm-2"></div>
+							<div class="col-sm-8">
+								<div class="card card-block">
+									<img class="w-100" src="/<%-inprogram.image%>" alt="Change Portfolio">
+								</div>
+							</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	
+</div>
+
+<%- include ../_footer %>

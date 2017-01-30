@@ -1,0 +1,118 @@
+<%- include ../_header %>
+<h2>Processus &DoubleRightArrow; <%=processus.phase%> &DoubleRightArrow; <%=processus.title%></h2>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h3 class="card-title">Introduction</h3>
+      <p class="card-text"><%=processus.introduction%></p>
+    </div>
+  </div>
+</div>
+<div class="row">
+    
+    <div class="col-sm-6">
+        <div class="card card-block">
+            
+            <div class="card card-block">
+                <h4 class="card-title">Inputs</h4>
+                <% for(var j=0; j<processus.input.length; j++) {%>
+                    <%
+                        var lst = processus.input[j].texte;
+                        var txt = ""
+                        for (var k=0; k<lst.length; k++)
+                            txt+='<p>'+lst[k];
+                    %>
+                        <li><button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".<%=processus.input[j].id%>">
+                        <%=processus.input[j].title%>
+                    </button>
+                    <div class="modal fade <%=processus.input[j].id%>" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        <h4 class="modal-title" id="myModalLabel"><%=processus.input[j].title%></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <%- txt%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>    
+            </div>
+            <div class="card card-block">
+                <h4 class="card-title">Tools</h4>
+                <% for(var j=0; j<processus.tools.length; j++) {%>
+                    <%
+                        var lst = processus.tools[j].texte;
+                        var txt = ""
+                        for (var k=0; k<lst.length; k++)
+                            txt+='<p>'+lst[k];
+                    %>
+                        <li><button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".<%=processus.tools[j].id%>">
+                        <%=processus.tools[j].title%>
+                    </button>
+                    <div class="modal fade <%=processus.tools[j].id%>" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        <h4 class="modal-title" id="myModalLabel"><%=processus.tools[j].title%></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <%- txt%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>    
+            </div>
+            <div class="card card-block">
+                <h4 class="card-title">Outputs</h4>
+                <% for(var j=0; j<processus.output.length; j++) {%>
+                    <%
+                        var lst = processus.output[j].texte;
+                        var txt = ""
+                        for (var k=0; k<lst.length; k++)
+                            txt+='<p>'+lst[k];
+                    %>
+                        <li><button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target=".<%=processus.output[j].id%>">
+                        <%=processus.output[j].title%>
+                    </button>
+                    <div class="modal fade <%=processus.output[j].id%>" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        <h4 class="modal-title" id="myModalLabel"><%=processus.output[j].title%></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <%- txt%>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>    
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card card-block">
+            <div class="card card-block">
+                <a class="btn btn-primary" href="/<%=processus.phase%>" role="button">Back to <%=processus.phase%></a>  
+            </div>
+            <img class="w-100" src="/images/<%=processus.id%>.png" alt="<%=processus.title%>" class="rounded-top">
+        </div>
+    </div>
+ 
+ 
+</div>
+
+<%- include ../_footer %>

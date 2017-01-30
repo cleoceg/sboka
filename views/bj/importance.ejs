@@ -1,0 +1,32 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=overview.title%></h1>
+
+<% var data = overview; %>
+<%- include ../_paragraphe.ejs %>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-factors.stitle%>"><%-factors.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-lifecycle.stitle%>"><%-lifecycle.title%></a>
+  </li>
+</ul>
+
+<div class="tab-content">
+
+    <div class="tab-pane active" id="<%-factors.stitle%>" role="tabpanel">
+        <% var data = factors; %>
+        <%- include ../_paragraphe.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-lifecycle.stitle%>" role="tabpanel">
+        <% var data = lifecycle; %>
+        <%- include ../_paraUneImage.ejs %>
+    </div>
+    
+</div>
+
+<%- include ../_footer %>
+

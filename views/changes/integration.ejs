@@ -1,0 +1,141 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#overview">Overview</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#sprint"><%-sprint.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#impact"><%-impact.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#ppbg"><%-ppbg.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#pbrm"><%-pbrm.stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#managing"><%-managing.stitle%></a>
+  </li>
+</ul>
+
+<div class="tab-content">
+
+    <div class="tab-pane active" id="overview" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<div class="card card-block">
+						<% for (var i=0; i<comment.length; i++) { %>
+							<p class="card-text"><%-comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="sprint" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<h4 class="card-title"><%-sprint.title%></h4>
+					<div class="card card-block">
+						<% for (var i=0; i<sprint.comment.length; i++) { %>
+							<p class="card-text"><%-sprint.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+				<div class="card card-block">
+					<div class="col-sm-12">
+						<div class="col-sm-2"></div>
+							<div class="col-sm-8">
+								<div class="card card-block">
+									<img class="w-100" src="/<%-sprint.image%>" alt="Achieving flexibility">
+								</div>
+							</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="impact" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<h4 class="card-title"><%-impact.title%></h4>
+					<div class="card card-block">
+						<% for (var i=0; i<impact.comment.length; i++) { %>
+							<p class="card-text"><%-impact.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+				<div class="card card-block">
+					<div class="col-sm-12">
+						<div class="col-sm-2"></div>
+							<div class="col-sm-8">
+								<div class="card card-block">
+									<img class="w-100" src="/<%-impact.image%>" alt="Achieving flexibility">
+								</div>
+							</div>
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="ppbg" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<h4 class="card-title"><%-ppbg.title%></h4>
+					<div class="card card-block">
+						<% for (var i=0; i<ppbg.comment.length; i++) { %>
+							<p class="card-text"><%-ppbg.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="pbrm" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<h4 class="card-title"><%-pbrm.title%></h4>
+					<div class="card card-block">
+						<% for (var i=0; i<pbrm.comment.length; i++) { %>
+							<p class="card-text"><%-pbrm.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="tab-pane" id="managing" role="tabpanel">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-block">
+					<h4 class="card-title"><%-managing.title%></h4>
+					<div class="card card-block">
+						<% for (var i=0; i<managing.comment.length; i++) { %>
+							<p class="card-text"><%-managing.comment[i]%></p>
+						<% } %>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+</div
+
+<%- include ../_footer %>

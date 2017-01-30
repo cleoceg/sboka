@@ -1,0 +1,38 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-overview.stitle%>"><%-overview.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-resp_owner.stitle%>"><%-resp_owner.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-resp_other.stitle%>"><%-resp_other.title%></a>
+  </li>
+ </ul>
+
+ <div class="tab-content">
+
+    <div class="tab-pane active" id="<%-overview.stitle%>" role="tabpanel">
+        <% var data = overview; %>
+        <%- include ../_paraUneImage.ejs %>
+    </div>
+    
+    <div class="tab-pane" id="<%-resp_owner.stitle%>" role="tabpanel">
+        <% var data = resp_owner; %>
+    <%- include ../_paraUneImage.ejs %>
+    </div>
+     
+    <div class="tab-pane" id="<%-resp_other.stitle%>" role="tabpanel">
+        <% var data = resp_owner; %>
+	<%- include ../_paragraphe.ejs %>
+    </div>
+     
+ </div>
+
+<%- include ../_footer %>
+
+

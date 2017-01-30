@@ -1,0 +1,44 @@
+<%- include ../_header %>
+
+<h1 class="display-4"><%=title%></h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#<%-stitle%>"><%-stitle%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-Transparency.title%>"><%-Transparency.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-Inspection.title%>"><%-Inspection.title%></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#<%-Adaptation.title%>"><%-Adaptation.title%></a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="<%-stitle%>" role="tabpanel">
+        <% var data = overview; %>
+		<%- include ../_paragraphe.ejs %>
+    </div>
+    <div class="tab-pane" id="<%-Transparency.title%>" role="tabpanel">
+		<% var data = Transparency; %>
+		<%- include ../_paraUneImage.ejs %>
+    </div>
+    <div class="tab-pane" id="<%-Inspection.title%>" role="tabpanel">
+		<% var data = Inspection; %>
+		<%- include ../_paraUneImage.ejs %>
+    </div>
+    <div class="tab-pane" id="<%-Adaptation.title%>" role="tabpanel">
+        <% var data = Adaptation.part1; %>
+		<%- include ../_paraUneImage.ejs %>
+		<% var data = Adaptation.part2; %>
+		<%- include ../_paraUneImage.ejs %>
+    </div>
+    
+</div>
+
+<%- include ../_footer %>
+
