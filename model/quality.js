@@ -46,17 +46,20 @@ var qual_value = {
 	]
 };
 
-var txtDefined = {
-	id: 'qual_05',
-    title: 'Quality Defined',
-	overview : {
+var qual_21 = {
+		id: 'qual_21',
 		title: 'Overview',
 		comment: [
 		'There are numerous ways to define quality.',
 		'In Scrum, quality is defined as the ability of the completed product or deliverables to meet the Acceptance Criteria and achieve the business value expected by the customer.',
 		'To ensure that a project meets quality requirements, Scrum adopts an approach of continuous improvement whereby the team learns from experience and stakeholder engagement to constantly keep the Prioritized Product Backlog updated with any changes in requirements. The Prioritized Product Backlog is simply never complete until the closure or termination of the project. Any changes to the requirements reflect changes in the internal and external business environment and allow the team to continually work and adapt to achieve those requirements. Since Scrum requires work to be completed in increments during Sprints, this means that errors or defects get noticed earlier through repetitive quality testing, rather than when the final product or service is near completion. Moreover, important quality-related tasks (e.g., development, testing, and documentation) are completed as part of the same Sprint by the same team—this ensures that quality is inherent in any Done deliverable created as part of a Sprint. Thus, continuous improvement with repetitive testing optimizes the probability of achieving the expected quality levels in a Scrum project. Constant discussions between the Scrum Core Team and stakeholders (including customers and users) with actual increments of the product being delivered at the end of every Sprint, ensures that the gap between customer expectations from the project and actual deliverables produced is constantly reduced.'
 	]
-	},
+	}
+
+var txtDefined = {
+	id: 'qual_05',
+    title: 'Quality Defined',
+	overview : qual_21,
 	scope: qual_scope,
 	value: qual_value
 };
@@ -90,9 +93,9 @@ var qual_minTable = {
 	nbcol: 2,
 	head: ['Roles','Responsibilities'],
 	body: [
-		[['Portfolio Product Owner'],['<li>Sets the minimum Acceptance Criteria for the entire portfolio','<li>Reviews portfolio deliverables']],
-		[['Program Product Owner'],['<li>Sets the minimum Acceptance Criteria for the entire program, which includes the Acceptance Criteria from the portfolio','<li>Reviews program deliverables']],
-		[['Product Owner'],['<li>Sets the minimum Acceptance Criteria for the project, which includes the Acceptance Criteria from the program','<li>Reviews project deliverablese']]
+		[['Portfolio Product Owner'],['Sets the minimum Acceptance Criteria for the entire portfolio','Reviews portfolio deliverables']],
+		[['Program Product Owner'],['Sets the minimum Acceptance Criteria for the entire program, which includes the Acceptance Criteria from the portfolio','Reviews program deliverables']],
+		[['Product Owner'],['Sets the minimum Acceptance Criteria for the project, which includes the Acceptance Criteria from the program','Reviews project deliverablese']]
 	]
 };
 
@@ -131,18 +134,21 @@ var qual_acceptance = {
 	]
 };
 
-var txtAcceptance = {
-	id: 'qual_12',
-    title: 'Acceptance Criteria and the Prioritized Product Backlog',
-	overview: {
+var qual_22 = {
+	id: 'qual_22',
 		title: 'Overview',
 		comment: [
 			'The Prioritized Product Backlog is a single requirements document that defines the project scope by providing a prioritized list of features of the product or service to be delivered by the project. The required features are described in the form of User Stories. User Stories are specific requirements outlined by various stakeholders as they pertain to the proposed product or service. Each User Story will have associated User Story Acceptance Criteria (also referred to as “Acceptance Criteria”), which are the objective components by which a User Story’s functionality is judged. Acceptance Criteria are developed by the Product Owner according to his or her expert understanding of the customer’s requirements. The Product Owner then communicates the User Stories in the Prioritized Product Backlog to the Scrum Team members and their agreement is sought. Acceptance Criteria should explicitly outline the conditions that User Stories must satisfy. Clearly defined Acceptance Criteria are crucial for timely and effective delivery of the functionality defined in the User Stories, which ultimately determines the success of the project.',
 			'At the end of each Sprint, the Product Owner uses these criteria to verify the completed deliverables; and can either accept or reject individual deliverables and their associated User Stories. If deliverables are accepted by the Product Owner, then the User Story is considered Done. A clear definition of Done is critical because it helps clarify requirements and allows the team to adhere to quality norms. It also helps the team think from the user’s perspective when working with User Stories.',
 			'User Stories corresponding to rejected deliverables are added back to the Updated Prioritized Product Backlog during the Groom Prioritized Product Backlog process, to be completed in future Sprints. The rejection of a few individual deliverables and their corresponding User Stories is not a rejection of the final product or product increment. The product or product increment could be potentially shippable even if a few User Stories are rejected.'
 		],
-		image: '../images/quality1.png',
-	},
+		image: '../images/quality1.png'
+	}
+
+var txtAcceptance = {
+	id: 'qual_12',
+    title: 'Acceptance Criteria and the Prioritized Product Backlog',
+	overview: qual_22,
 	writing: qual_writing,
 	minimum: qual_minimum,
 	done: qual_done,
@@ -281,3 +287,4 @@ exports.qual_integration = qual_integration // qual_14
 exports.qual_control = qual_control // qual_15
 exports.qual_pdca = qual_pdca // qual_16
 exports.qual_sumTable = qual_sumTable // qual_18
+// 22

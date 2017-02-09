@@ -1,0 +1,28 @@
+<h1 class="display-4">{{data.title}}</h1>
+
+
+<!-- Start  Overview -->
+<div class="row">
+	<div class="col-sm-12">
+		<div class="card card-block">
+			<h4 class="card-title">{{data.title}}</h4>					
+			
+				<p><span class="card-text" ng-bind-html="data.intro"></span><p>
+			
+		</div>        
+	</div>
+</div>
+<!-- Start  Overview -->
+<!-- Start items -->
+<div class="row">
+	<div class="col-sm-12">
+		<div ng-repeat="item in data.items">
+			<div class="card card-block">			
+				<h4 class="card-title">{{item.title}}</h4>					
+				<p><span class="card-text" ng-bind-html="item.comment"></span><p>
+			</div>        
+		</div>
+	</div>
+</div>
+<!-- End items -->     
+        

@@ -1,0 +1,160 @@
+{
+ id: 'org_14',
+ title: 'Responsibilities',
+ nbcol: 2,
+ head: ['Process','Product Owner Responsibilities'],
+ body: [
+  [['<a href="/processus/p08_1">8.1 Create Project Vision</a>'], ['Defines the Project Vision','Helps create the Project Charter and Project Budget']],
+  [['<a href="/processus/p08_2">8.2 Identify Scrum Master and Stakeholder(s)</a>'],['Helps finalize Scrum Master for the project','Identifies Stakeholder(s)']],
+  [['<a href="/processus/p08_3">8.3 Form Scrum Team</a>'],['Helps determine Scrum Team members','Helps develop a Collaboration Plan','Helps develop the Team Building Plan with Scrum Master(s)']],
+  [['<a href="/processus/p08_4">8.4 Develop Epic(s)</a>'],['Creates Epic(s) and Personas']],
+  [['<a href="/processus/p08_5">8.5 Create Prioritized Product Backlog</a>'],['Prioritizes Prioritized Product Backlog Items','Defines Done Criteria']],
+  [['<a href="/processus/p08_6">8.6 Conduct Release Planning</a>'],['Creates Release Planning Scheduleacklog','Helps determine Length of Sprint']],
+  [['<a href="/processus/p09_1">9.1 Create User Stories</a>'],['Helps create User Stories Sprint','Defines Acceptance Criteria for every User Story']],
+  [['<a href="/processus/p09_2">9.2 Approve, Estimate and Commit User Stories</a>'],['Approves User Storieses','Facilitates Scrum Team and commit User Stories']],
+  [['<a href="/processus/p09_3">9.3 Create Tasks</a>'],['Explains User Stories to the Scrum Team while creating the Task List']],
+  [['<a href="/processus/p09_4">9.4 Estimate Tasks</a>'],['Provides guidance and clarification to the Scrum Team in estimating effort for tasks']],
+  [['<a href="/processus/p09_5">9.5 Create Sprint Backlog Sprint</a>'],['Clarifies requirements to the Scrum Team while creating the Sprint Backlog']],
+  [['<a href="/processus/p10_1">10.1 Create Deliverables</a>'],['Clarifies business requirements to the Scrum Team']],
+  [['<a href="/processus/p10_3">10.3 Groom Prioritized Product Backlog</a>'],['Grooms the Prioritized Product Backlog']],
+  [['<a href="/processus/p11_2">11.2 Demonstrate and Validate Sprints</a>'],['Accepts/Rejects Deliverables','Provides necessary feedback to Scrum Master and Scrum Teams','Updates Release Plan and Prioritized Product Backlog']],
+  [['<a href="/processus/p12_1">12.1 Ship Deliverables</a>'],['Helps deploy Product Releases and coordinates this with the customer']],
+  [['<a href="/processus/p12_2">12.2 Retrospect Project</a>'],['Participates in Retrospective Sprint Meetings']]
+ ],
+ bodyb: ''
+}
+{
+ id: 'org_17',
+ title: 'Responsibilities',
+ nbcol: 2,
+ head: ['Process','Product Owner Responsibilities'],
+ body: [
+  [['<a href="/processus/p08_2">8.2 Identify Scrum Master and Stakeholder(s)</a>'],['Helps identify Stakeholder(s) for the project']],
+  [['<a href="/processus/p08_3">8.3 Form Scrum Team</a>'],['Facilitates selection of the Scrum TeamFacilitates selection of the Scrum Team','Facilitates creation of the Collaboration Plan and the Team Building Plan','Ensures back-up resources are available for smooth project functioning']],
+  [['<a href="/processus/p08_4">8.4 Develop Epic(s)</a>'],['Facilitates creation of Epic(s) and Personas']],
+  [['<a href="/processus/p08_5">8.5 Create Prioritized Product Backlog</a>'],['Helps Product Owner in creation of the Prioritized Product Backlog and in definition of the Done Criteria']],
+  [['<a href="/processus/p08_6">8.6 Conduct Release Planning</a>'],['Coordinates creation of Release Planning Schedule','Determines Length of Sprint']],
+  [['<a href="/processus/p09_1">9.1 Create User Stories</a>'],['Assists the Scrum Team in creating User Stories and their Acceptance Criteria']],
+  [['<a href="/processus/p09_2">9.2 Approve, Estimate and Commit User Stories</a>'],['Facilitates meetings of the Scrum Team to estimate and Create User Stories']],
+  [['<a href="/processus/p09_3">9.3 Create Tasks</a>'],['Facilitates the Scrum Team in creating the Task List for the next Sprint']],
+  [['<a href="/processus/p09_4">9.4 Estimate Tasks</a>'],['Assists the Scrum Team in estimating the effort required to complete the tasks agreed to for the Sprint']],
+  [['<a href="/processus/p09_5">9.5 Create Sprint Backlog</a>'],['Assists the Scrum Team in developing the Sprint Backlog and the Sprint Burndown Chart']],
+  [['<a href="/processus/p10_1">10.1 Create Deliverables</a>'],['Supports the Scrum Team in creating the Deliverables agreed to for the Sprint','Helps update the Scrumboard and the Impediment Log']],
+  [['<a href="/processus/p10_2">10.2 Conduct Daily Standup</a>'],['Ensures that the Scrumboard and the Impediment Log remain updated']],
+  [['<a href="/processus/p10_3">10.3 Groom Prioritized Product Backlog</a>'],['Facilitates Prioritized Product Backlog Review Meetings']],
+  [['<a href="/processus/p11_1">11.1 Convene Scrum of Scrums</a>'],['Ensures that issues affecting the Scrum Team are discussed and resolved']],
+  [['<a href="/processus/p11_2">11.2 Demonstrate and Validate Sprints</a>'],['Facilitates presentation of completed Deliverables by the Scrum Team for the Product Owner’s approval']],
+  [['<a href="/processus/p11_3">11.3 Retrospect Sprint</a>'],['Ensures that ideal project environment exists for the Scrum Team in the succeeding Sprints']],
+  [['<a href="/processus/p12_2">12.2 Retrospect Project</a>'],['Represents the Scrum Core Team to provide lessons from the current project, if necessary']]
+ ]
+}
+{
+ id: 'org_21',
+ title: 'Responsibilities',
+ nbcol: 2,
+ head: ['Process','Product Owner Responsibilities'],
+ body: [
+  [['<a href="/processus/p08_3">8.3 Form Scrum Team</a>'],['Provides inputs for creation of the Collaboration Plan and the Team Building Plan']],
+  [['<a href="/processus/p08_4">8.4 Develop Epic(s)</a>'],['Ensures a clear understanding of Epic(s) and Personas']],
+  [['<a href="/processus/p08_5">8.5 Prioritized Product Backlog</a>'],['Understands the User Stories in the Prioritized Product Backlog']],
+  [['<a href="/processus/p08_6">8.6 Conduct Release Planning</a>'],['Agrees with other Scrum Core Team members on the Length of Sprint','Seeks clarification on new products or changes in the existing products, if any, in the refined Prioritized Product Backlog']],
+  [['<a href="/processus/p09_1">9.1 Create User Stories</a>'],['Provides inputs to the Product Owner on creation of User Stories']],
+  [['<a href="/processus/p09_2">9.2 Approve, Estimate and Commit User Stories</a>'],['Estimates User Stories approved by the Product Owner','Commits User Stories to be done in a Sprint']],
+  [['<a href="/processus/p09_3">9.3 Create Tasks</a>'],['Develops Task List based on agreed User Stories and dependencies']],
+  [['<a href="/processus/p09_4">9.4 Estimate Tasks</a>'],['Estimates effort for tasks identified and if necessary, updates the Task List']],
+  [['<a href="/processus/p09_5">9.5 Create Sprint Backlog</a>'],['Develops the Sprint Backlog and the Sprint Burndown Chart']],
+  [['<a href="/processus/p10_1">10.1 Create Deliverables</a>'],['Creates Deliverables','Identifies risks and implements risk mitigation actions, if any','Updates Impediment Log and dependencies']],
+  [['<a href="/processus/p10_2">10.2 Conduct Daily Standup</a>'],['Updates Burndown Chart, Scrumboard, and Impediment Log','Discusses issues faced by individual members and seeks solutions to motivate the team','Identifies risks, if any','Submits Change Requests, if required']],
+  [['<a href="/processus/p10_3">10.3 Groom Prioritized Product Backlog</a>'],['Participates in Prioritized Product Backlog Review Meetings']],
+  [['<a href="/processus/p11_1">11.1 Convene Scrum of Scrums</a>'],['Provides inputs to Scrum Master for Scrum of Scrums (SoS) Meetings']],
+  [['<a href="/processus/p11_2">11.2 Demonstrate and Validate Sprints</a>'],['Demonstrates completed deliverables to the Product Owner for approval']],
+  [['<a href="/processus/p11_3">11.3 Retrospect Sprint</a>'],['Identifies improvement opportunities, if any, from the current Sprint and agrees on any actionable improvements for the next Sprint']],
+  [['<a href="/processus/p12_2">12.2 Retrospect Project</a>'],['Participates in the Retrospect Project Meeting']]
+ ]
+}
+{
+ id: 'org_36',
+ title: 'Summary of Responsibilities',
+ stitle: 'summary',
+ nbcol: 2,
+ head: ['Roles','Responsibilities'],
+ body: [
+  [['Scrum Guidance Body'],['Establishes overall guidelines and metrics for developing role descriptions for Scrum Team members','Acts as a consultant to projects across organization at different levels','Understands and defines appropriate levels of grouping, roles, and meetings for Scrum projects']],
+  [['Portfolio Product Owner'],['Defines the strategic objectives and priorities for portfolios']],
+  [['Portfolio Scrum Master'],['Solves problems and coordinates meetings for portfolios']],
+  [['Program Product Owner'],['Defines the strategic objectives and priorities for programs']],
+  [['Program Scrum Master'],['Solves problems and coordinates meetings for pro']],
+  [['Stakeholder(s)'],['Is a collective term that includes customers, users, and sponsors','Frequently interfaces with the Product Owner, Scrum Master, and Scrum Team to provide them inputs and facilitates creation of the Deliverables of the project.']],
+  [['Product Owner'],['Creates the project’s initial overall requirements and gets the project rolling','Appoints appropriate people to the Scrum Master and Scrum Team roles','Provides the initial and ongoing financial resources for the project','Determines Product Vision','Assesses the viability and ensures delivery of the product or service','Ensures transparency and clarity of Prioritized Product Backlog Items','Decides minimum marketable release content','Provides Acceptance Criteria for the User Stories to be developed in a Sprint','Inspects deliverables','Decides Sprint duration']],
+  [['Scrum Master'],['Ensures that Scrum processes are correctly followed by all team members including the Product Owner','Ensures that development of the product or service is progressing smoothly and the Scrum Team members have all the necessary tools to get the work done','Oversees Release Planning Meeting and schedules other meetings']],
+  [['Scrum Team'],['Takes collective responsibility and ensures that the project deliverables are created per requirements','Assures Product Owner and Scrum Master that the allocated work is being performed according to plan']]
+ ]
+}
+{
+    id: 'bj_22',
+    title: 'table',
+    nbcol: 3,
+    head: ['Term Definition','Acronym', 'Formula'],
+    body: [
+        [['Planned Value'],['PV'],['']],
+        [['Earned Value'],['EV'],['']],
+        [['Actual Cost'],['AC'],['']],
+        [['Budget at Completion'],['BAC'],['']],
+        [['Schedule Variance'],['SV'],['EV - PV']],
+        [['Cost Variance'],['CV'],['EV - AC']],
+        [['Schedule Performance Index'],['SPI'],['EV / PV']],
+        [['Cost Performance Index'],['CPI'],['EV / AC']],
+        [['Percent Complete'],['% Complete'],['(EV / BAC) x 100']],
+        [['Estimate at Completion'],['EAC'],['']],
+        [['1. Estimating assumptions not valid'],[''],['AC + ETC']],
+        [['2. Current Variances are atypical'],[''],['AC + BAC - EV']],
+        [['3. Current Variances are typical'],[''],['BAC / CP']],
+        [['Estimate to Complete'],['ETC'],['EAC - AC']],
+        [['Variance at Completion'],['VAC'],['BAC - EAC']]
+    ]
+}
+{
+    id: 'bj_28',
+	title: 'Responsibilities',
+	nbcol: 2,
+	head: ['Role','Responsibilities'],
+	body: [
+            [['Scrum Guidance Body'],['Establishes overall guidelines and metrics for evaluating value','Acts in a consulting capacity and provides guidance for projects, programs, and portfolios as required']],
+            [['Portfolio Product Owner'],['Ensures value delivery for portfolios','Creates the business justification for portfolios','Provides value guidance for programs within portfolios','Approves the business justification of programs within a portfolio']],
+            [['Portfolio Scrum Master'],['Ensures the desired outcomes of the portfolio are achieved','Performs Continuous Value Justification for portfolios']],
+            [['Program Product Owner'],['Ensures value delivery for programs','Creates the business justification for programs','Provides value guidance for projects within a program','Approves the business justification of projects within a program']],
+            [['Program Scrum Master'],[ 'Ensures the desired outcomes of the program are communicated and understood','Performs Continuous Value Justification for programs']],
+            [['Stakeholder(s)'],['Helps prioritize User Stories and requirements in the Prioritized Product Backlog','Communicates with Scrum Team and confirms realization of value at the end of every Sprint, Release, and the project']],
+            [['Product Owner'],['Ensures value delivery for projects','Maintains the business justification for projects','Confirms and communicates project benefits to stakeholders']],
+            [['Scrum Master'],['Ensures the desired outcomes of the project are communicated to and understood by the Scrum Team','Performs Continuous Value Justification for projects']],
+            [['Scrum Team'],['Ensures that project deliverables are completed in accordance with agreed Acceptance Criteria','Performs Continuous Value Justification for projects']]
+        ]
+}
+{
+	id: 'qual_18',
+	title: 'Summary',
+	nbcol: 2,
+	head: ['Roles','Responsibilities'],
+	body: [
+		[['Scrum Guidance Body'],['Provides definition of Done','Provides framework and guidance for developing Acceptance Criteria','Defines the range of tools that can be used by the Scrum Team to develop and verify the product']],
+		[['Portfolio Product Owner'],['Sets minimum Acceptance Criteria for the entire portfolio','Reviews portfolio Deliverables']],
+		[['Portfolio Scrum Master'],['Ensures that a sustainable pace is maintained in which the focus is on quality of features rather than strictly on velocity']],
+		[['Program Product Owner'],['Sets the minimum Acceptance Criteria for the entire program','Reviews program Deliverables']],
+		[['Program Scrum Master'],['Ensures that a sustainable pace is maintained in which the focus is on quality of features rather than strictly on velocity']],
+		[['Stakeholder(s)'],['Reviews and accepts the Deliverables and final product']],
+		[['Product Owner'],['States the business requirements for the product and defines requirements clearly in the Prioritized Product Backlog','Assesses viability and ensures that Deliverables meet the quality requirements','Sets the minimum Acceptance Criteria for the entire project, including the Acceptance Criteria of the respective program','Facilitates creation of Acceptance Criteria for User Stories','Reviews and validates the Deliverables during Demonstrate and Validate Sprint']],
+		[['Scrum Master'],['Facilitates a ‘team first’ mentality when it comes to quality','Eliminates environmental obstructions that may affect the quality of deliverables and processes','Ensures that a sustainable pace is maintained in which the focus is on quality of features rather than strictly on velocity','Ensures that Scrum processes are correctly followed by all team members, including the Product Owner']],
+		[['Scrum Team'],['Develops and maintains all Deliverables during Sprints until they are handed over to the end users','Practices and encourages good communication so that the requirements are clarified and fully understood','Shares knowledge to ensure that team members familiarize themselves with the whole feature set and therefore benefit from the experience of others','Makes appropriate changes to Deliverables swiftly']]
+	]
+}
+{
+	id: 'qual_08',
+	title: 'Responsibilities',
+	nbcol: 2,
+	head: ['Roles','Responsibilities'],
+	body: [
+		[['Portfolio Product Owner'],['Sets the minimum Acceptance Criteria for the entire portfolio','Reviews portfolio deliverables']],
+		[['Program Product Owner'],['Sets the minimum Acceptance Criteria for the entire program, which includes the Acceptance Criteria from the portfolio','Reviews program deliverables']],
+		[['Product Owner'],['Sets the minimum Acceptance Criteria for the project, which includes the Acceptance Criteria from the program','Reviews project deliverablese']]
+	]
+}

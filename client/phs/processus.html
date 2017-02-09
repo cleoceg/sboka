@@ -1,0 +1,107 @@
+
+<h2>Processus &DoubleRightArrow; {{data.processus.phase}} &DoubleRightArrow; {{data.processus.title}}</h2>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h3 class="card-title">Introduction</h3>
+      <p class="card-text">{{data.processus.introduction}}</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+    
+    <div class="col-sm-6">
+        <div class="card card-block">
+            
+            <div class="card card-block">
+                <h4 class="card-title">Inputs</h4>
+				<div ng-repeat="input in data.input">
+					<li><button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
+					data-target=".{{input.id}}">{{input.title}}
+                    </button>
+				
+                    <div class="modal fade {{input.id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        <h4 class="modal-title" id="myModalLabel">{{input.title}}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div ng-repeat="item in input.comment">
+										<p><span class="card-text" ng-bind-html="item"></span><p>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+            <div class="card card-block">
+                <h4 class="card-title">Tools</h4>
+				<div ng-repeat="tools in data.tools">
+					<li><button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
+					data-target=".{{tools.id}}">{{tools.title}}
+                    </button>
+				
+                    <div class="modal fade {{tools.id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        <h4 class="modal-title" id="myModalLabel">{{tools.title}}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div ng-repeat="item in tools.comment">
+										<p><span class="card-text" ng-bind-html="item"></span><p>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>    
+            </div>
+            <div class="card card-block">
+                <h4 class="card-title">Outputs</h4>
+				<div ng-repeat="output in data.output">
+					<li><button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" 
+					data-target=".{{output.id}}">{{output.title}}
+                    </button>
+				
+                    <div class="modal fade {{output.id}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                        <h4 class="modal-title" id="myModalLabel">{{output.title}}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div ng-repeat="item in output.comment">
+										<p><span class="card-text" ng-bind-html="item"></span><p>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>   
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card card-block">
+            <div class="card card-block">
+                <a class="btn btn-primary" href="/{{data.processus.phase}}" role="button">Back to {{data.processus.phase}}</a>  
+            </div>
+            <img class="w-100" src="/images/{{data.processus.id}}.png" alt="{{data.processus.title}}" class="rounded-top">
+        </div>
+    </div>
+ 
+ 
+</div>

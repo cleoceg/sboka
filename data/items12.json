@@ -1,0 +1,111 @@
+{
+    id: 'it_12118',
+    title: 'Piloting Plan',
+    texte: [
+        'A Piloting Plan is an optional input that can be used to map out a pilot deployment in detail. The scope and objectives of the deployment, the target deployment user base, a deployment schedule, transition plans, required user preparation, evaluation criteria for the deployment, and other key elements related to the deployment are specified in the Pilot Plan and shared with stakeholders.'
+    ]
+}
+
+{
+    id: 'it_12119',
+    title: 'Scrum Guidance Body Recommendations',
+    texte: [
+        'Described in section 8.1.1.12.',
+        'In the Ship Deliverables process, the Scrum Guidance Body can provide recommendations and guidelines regarding the deployment of products. These are best practices that should be taken into account when deploying a product to the customer in order to maximize the value delivered.'
+    ]
+}
+
+{
+    id: 'it_12121',
+    title: 'Organizational Deployment Methods',
+    texte: [
+        'The deployment mechanisms of each organization tend to be different based on their industry, target users, and positioning. Depending on the product being delivered, deployment can take place remotely or may involve the physical shipping or transition of an item. Because deployment tends to involve a high level of risk, organizations normally have well-defined and established deployment mechanisms, with detailed processes in place to ensure compliance with any applicable standards and quality assurance measures.',
+        'These might include sign-offs by specific management representatives, user approval mechanisms, and guidelines regarding minimum functionality for a release.'
+    ]
+}
+
+{
+    id: 'it_12122',
+    title: 'Communication Plan',
+    texte: [
+        'In many projects, a Communication Plan exists. This plan specifies the records that must be created and maintained throughout the project. A variety of methods are used to convey important project information to stakeholders. The Communication Plan defines these methods as well as who is responsible for various communication activities. As Deliverables are tested, the status of the testing activities is communicated as per the Communication Plan as determined by the Product Owner and sponsor. A common communication mechanism is a visual display depicting important information in an easy-to-interpret format, posted in an accessible location, and kept up-to-date with the most current information.'
+    ]
+}
+
+{
+    id: 'it_12131',
+    title: 'Working Deliverables Agreement',
+    texte: [
+        'Deliverables that meet the Acceptance Criteria receive formal business sign-off and approval by the customer or sponsor. To get formal customer acceptance is critical for revenue recognition and the responsibility for obtaining it will be defined by the company policies and is not necessarily the responsibility of the Product Owner.'
+    ]
+}
+
+{
+    id: 'it_12132',
+    title: 'Working Deliverables',
+    texte: [
+        'This output is the final shippable Deliverable for which the project was sanctioned. As new product increments are created, they are continually integrated into prior increments, so there is a potentially shippable product available at all times throughout the project.'
+    ]
+}
+
+{
+    id: 'it_12133',
+    title: 'Product Releases',
+    texte: [
+        'The Product Releases should include the following:',
+        '* Release Content—This consists of essential information about the deliverables that can assist the Customer Support Team.',
+        '* Release Notes—Release Notes should include external or market facing shipping criteria for the product to be delivered.'
+    ]
+}
+
+{
+    id: 'it_12215',
+    title: 'Scrum Guidance Body Recommendations',
+    texte: [
+        'Described in section 8.1.1.12.',
+        'In the Retrospect Project process, Scrum Guidance Body Recommendations can include a repository of internal templates that support the future projects and guidance for conducting the Retrospect Project Meeting. The guidance provided can relate to administrative procedures, audits, evaluations, and project transition criteria. Often, they also include how the organization will maintain the knowledge base of lessons learned and information from all projects.'
+    ]
+}
+
+{
+    id: 'it_12221',
+    title: 'Retrospect Project Meeting',
+    texte: [
+        'The Retrospect Project Meeting is a meeting to determine ways in which team collaboration and effectiveness can be improved in future projects. Positives, negatives, and potential opportunities for improvement are also discussed. This meeting is not Time-boxed and may be conducted in person or in a virtual format. Attendees include the Project Team, Chief Scrum Master, Chief Product Owner, and Stakeholder(s). During the meeting, lessons learned are documented and participants look for opportunities to improve processes and address inefficiencies.'
+    ]
+}
+
+{
+    id: 'it_12222',
+    title: 'Other Tools for Retrospect Project',
+    texte: [
+        'Some of the tools used in the Retrospect Sprint process can also be used in this process. Examples include:',
+        '• Explorer—Shopper—Vacationer—Prisoner (ESVP) exercise',
+        '• Speed Boat',
+        '• Metrics and Measuring Techniques'
+    ]
+}
+
+{
+    id: 'it_12223',
+    title: 'Scrum Guidance Body Expertise',
+    texte: [
+        'Discussed in section 8.4.2.7.'
+    ]
+}
+
+{
+    id: 'it_12233',
+    title: 'Prop. Non-func. Items for Program & Prioritized Product Backlog',
+    texte: [
+        'When the initial Program Product Backlog or Prioritized Product Backlog are developed, they are based on User Stories and required functionalities. Often, non-functional requirements may not be fully defined in the early stages of the project and can surface during the Sprint Review, Retrospect Sprint or Retrospect Project Meetings. These items should be added to the Program Product Backlog (for the program) and Prioritized Product Backlog (for the project) as they are discovered. Some examples of non-functional requirements are response times, capacity limitations, and security related issues.'
+    ]
+}
+
+{
+    id: 'it_12234',
+    title: 'Updated Scrum Guidance Body Recommendations',
+    texte: [
+        'Described in sections 8.1.1.12 and 11.3.3.5'
+    ]
+}

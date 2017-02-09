@@ -1,0 +1,188 @@
+<h1 class="display-4">{{data.title}}</h1>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#{{data.overview.title}}" target="_self">{{data.overview.title}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.identification.stitle}}" target="_self">{{data.identification.stitle}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.assessment.stitle}}" target="_self">{{data.assessment.stitle}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.prioritization.stitle}}" target="_self">{{data.prioritization.stitle}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.mitigation.stitle}}" target="_self">{{data.mitigation.stitle}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.communication.stitle}}" target="_self">{{data.communication.stitle}}</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+
+    <div class="tab-pane active" id="{{data.overview.title}}" role="tabpanel" target="_self">
+        <!-- Start overview -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.overview.title}}</h4>					
+					<div ng-repeat="item in data.overview.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End overview -->
+    </div>
+	
+    <div class="tab-pane" id="{{data.identification.stitle}}" role="tabpanel" target="_self">
+        
+        <!-- Start identification -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.identification.title}}</h4>					
+					<div ng-repeat="item in data.identification.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End identification -->
+        <!-- Start techniques -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<div ng-repeat="item in data.identification.techniques">
+						<h4 class="card-title">{{item.title}}</h4>					
+						<p><span class="card-text" ng-bind-html="item.comment"></span><p>
+					</div>        
+				</div>
+			</div>
+		</div>
+		<!-- End techniques -->
+        <!-- Start identification spike-->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.identification.spike.title}}</h4>					
+					<div ng-repeat="item in data.identification.spike.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End identification spike -->
+           
+    </div>
+    <div class="tab-pane" id="{{data.assessment.stitle}}" role="tabpanel" target="_self">
+        
+        <!-- Start assessment -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.assessment.overview.title}}</h4>					
+					<div ng-repeat="item in data.assessment.overview.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End assessment -->        
+        <!-- Start techniques -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<div ng-repeat="item in data.assessment.techniques">
+						<h4 class="card-title">{{item.title}}</h4>					
+						<p><span class="card-text" ng-bind-html="item.comment"></span><p>
+					</div>        
+				</div>
+			</div>
+		</div>
+		<!-- End techniques -->      
+            
+    </div>
+	
+    <div class="tab-pane" id="{{data.prioritization.stitle}}" role="tabpanel" target="_self">
+        <!-- Start prioritization -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.prioritization.title}}</h4>					
+					<div ng-repeat="item in data.prioritization.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End prioritization --> 
+		<!-- image of the para -->
+		<div class="card card-block">
+			<div class="col-sm-12">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<img class="w-100" src="/{{data.prioritization.image}}" alt="#">
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		<!-- end of image of the para -->
+    </div>
+	
+    <div class="tab-pane" id="{{data.mitigation.stitle}}" role="tabpanel" target="_self">
+       <!-- Start mitigation -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.mitigation.title}}</h4>					
+					<div ng-repeat="item in data.mitigation.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End mitigation --> 
+    </div>
+	
+    <div class="tab-pane" id="{{data.communication.stitle}}" role="tabpanel" target="_self">
+		<!-- Start communication -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.communication.title}}</h4>					
+					<div ng-repeat="item in data.communication.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- Start communication burndown-->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card card-block">
+					<h4 class="card-title">{{data.communication.burndown.title}}</h4>					
+					<div ng-repeat="item in data.communication.burndown.comment">
+						<p><span class="card-text" ng-bind-html="item"></span><p>
+					</div>
+				</div>        
+			</div>
+		</div>
+		<!-- End communication burndown --> 
+		<!-- image of the para -->
+		<div class="card card-block">
+			<div class="col-sm-12">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<img class="w-100" src="/{{data.communication.image}}" alt="#">
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		<!-- end of image of the para -->
+    </div>
+</div>

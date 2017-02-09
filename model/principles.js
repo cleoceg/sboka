@@ -63,19 +63,23 @@ var prin_adaptation = {
 	}
 };
 
+var prin_epc = {
+    id: 'prin_23',
+    stitle: 'EPC',
+    title: 'Empirical Process Control',
+    comment: [
+        'In Scrum, decisions are made based on observation and experimentation rather than on detailed upfront planning. Empirical process control relies on the three main ideas of:',
+        '* <b>Transparency</b>',
+        '* <b>Inspection</b>',
+        '* <b>Adaptation</b>'
+    ]
+};
+
 var txtEpc = {
     id: 'prin_05',
     stitle: 'EPC',
     title: 'Empirical Process Control',
-	overview: {
-		title: 'Empirical Process Control',
-		comment: [
-        'In Scrum, decisions are made based on observation and experimentation rather than on detailed upfront planning. Empirical process control relies on the three main ideas of:',
-		'* <b>Transparency</b>',
-		'* <b>Inspection</b>',
-		'* <b>Adaptation</b>'
-		]
-	},
+    epc: prin_epc,
     Transparency: prin_transparency,
     Inspection: prin_inspection,
     Adaptation: prin_adaptation
@@ -93,7 +97,7 @@ var prin_benefits = {
         'Although prioritization is primarily done by the Product Owner who represents the Voice of Customer, the self-organized Scrum Team is involved in task breakdown and estimation during the Create Tasks and Estimate Tasks processes. During these processes, each team member is responsible for determining what work he or she will be doing. During the execution of a Sprint, if team members need any help with completing their tasks, Scrum addresses this through the regular interaction mandatory with the Daily Standup Meetings. The Scrum Team itself interacts with other teams through the Scrum of Scrums (SoS) Meetings and can look for additional guidance as required from the Scrum Guidance Body.',
         'Finally, the Scrum Team and Scrum Master work closely to demonstrate the product increment created during the Sprint in the Demonstrate and Validate Sprint process where properly completed deliverables are accepted. Since the Deliverables are potentially shippable, (and the Prioritized Product Backlog is prioritized by User Stories in the order of value created by them), the Product Owner and the customer can clearly visualize and articulate the value being created after every Sprint; and Scrum Teams in turn have the satisfaction of seeing their hard work being accepted by the customer and other stakeholders.'
     ]
-};
+}; // prin_06
 
 var prin_goals = {
     id: 'prin_07',
@@ -111,26 +115,31 @@ var prin_goals = {
         '•	Maintain stability of team members throughout the duration of the project by not changing members, unless unavoidable'
     ],
     image: '../images/selforg.png'
-};
+}; // prin_07
 
-var txtSelforg = {
-	id: 'prin_08',
+var prin_selforg = {
+    id: 'prin_24',
     title: 'Self-organization',
-    overview: {
-		title: 'Overview',
-		comment: [
+    stitle: 'Overview',
+    comment: [
         'Scrum believes that employees are self-motivated and seek to accept greater responsibility. So, they deliver much greater value when self-organized.',
         'The preferred leadership style in Scrum is “servant leadership”, which emphasizes achieving results by focusing on the needs of the Scrum Team. See section 3.10.3 for a discussion of various leadership and management styles.'
-		]
-	},
+    ]
+	
+}; // prin_24
+
+var txtSelforg = {
+    id: 'prin_08',
+    title: 'Self-organization',
+    overview: prin_selforg,
     benefits: prin_benefits,
     goals: prin_goals
-};
+}; // prin_08
 
 var prin_colBenefits = {
-	id: 'prin_09',
+    id: 'prin_09',
     title: 'Benefits',
-	comment: [
+    comment: [
         'The Agile Manifesto (Fowler & Highsmith, 2001) stresses “customer collaboration over contract negotiation.” Thus, the Scrum framework adopts an approach in which the Scrum Core Team members (Product Owner, Scrum Master, and Scrum Team), collaborate with each other and the stakeholders to create the deliverables that provide greatest possible value to the customer. This collaboration occurs throughout the project.',
         'Collaboration ensures that the following project benefits are realized:',
         '1.	The need for changes due to poorly clarified requirements is minimized. For example, during the Create Project Vision, Develop Epic(s), and Create Prioritized Product Backlog processes, the Product Owner collaborates with stakeholders to create the Project Vision, Epic(s), and Prioritized Product Backlog, respectively. This will ensure that there is clarity among Scrum Core Team members on the work that is required to complete the project. The Scrum Team collaborates continuously with the Product Owner and stakeholders through a transparent Prioritized Product Backlog to create the project deliverables. The processes Conduct Daily Standup, Groom Prioritized Product Backlog, and Retrospect Sprint provide scope to the Scrum Core Team members to discuss what has been done and collaborate on what needs to be done. Thus the number of Change Requests from the customer and rework is minimized.',
@@ -138,8 +147,8 @@ var prin_colBenefits = {
         '3.	True potential of the team is realized. For example, the Conduct Daily Standup process provides scope for the Scrum Team to collaborate and understand the strengths and weaknesses of its members. If a team member has missed a task deadline, the Scrum Team members align themselves collaboratively to complete the task and meet the targets agreed to for completing the Sprint.',
         '4.	Continuous improvement is ensured through lessons learned. For example, the Scrum Team uses the Retrospect Sprint process to identify what went well and what did not go well in the previous Sprint. This provides an opportunity to the Scrum Master to work with the team to rework and improve the team for the next scheduled Sprint. This will also ensure that collaboration is even more effective in the next Sprint.'
     ],
-	image: '../images/collaboration.png'
-};
+    image: '../images/collaboration.png'
+}; // prin_09
 
 var prin_importance = {
 	id: 'prin_10',
@@ -153,39 +162,43 @@ var prin_importance = {
         '•	Trust is gained and awarded much more quickly.',
         'Collaboration tools that can be used for colocated or distributed teams are as follows:'
     ]
-};
+}; // prin_10
 
 var prin_colocated = {
 	id: 'prin_11',
     title: 'Colocated Teams',
 	comment: '1.	<b>Colocated Teams</b> (i.e., teams working in the same office)—In Scrum, it is preferable to have colocated teams. If colocated, preferred modes of communication include face-to-face interactions, Decision Rooms or War Rooms, Scrumboards, wall displays, shared tables, and so on.'
-};
+}; // prin_11
 
 var prin_distributed = {
 	id: 'prin_12',
     title: 'Distributed Teams',
 	comment : '2.	<b>Distributed Teams</b> (i.e., teams working in different physical locations)—Although colocated teams are preferred, at times the Scrum Team may be distributed due to outsourcing, offshoring, different physical locations, work-from-home options, etc. Some tools that could be used for effective collaboration with distributed teams include video conferencing, instant messaging, chats, social media, shared screens, and software tools which simulate the functionality of Scrumboards, wall displays, and so on.'
-};
+}; // prin_12
 
-var txtCollaboration = {
-	id: 'prin_13',
+var prin_collab = {
+    id: 'prin_25',
     title: 'Collaboration',
-	overview: {
-		title: 'Overview',
-		comment: [
+    stitle: 'Overview',
+    comment: [
         'Collaboration in Scrum refers to the Scrum Core Team working together and interfacing with the stakeholders to create and validate the deliverables of the project to meet the goals outlined in the Project Vision. It is important to note the difference between cooperation and collaboration here. Cooperation occurs when the work product consists of the sum of the work efforts of various people on a team. ',
         'Collaboration occurs when a team works together to play off each other’s inputs to produce something greater.',
         'The core dimensions of collaborative work are as follows:',
         '•	<b>Awareness</b>—Individuals working together need to be aware of each other’s work.',
         '•	<b>Articulation</b>—Collaborating individuals must partition work into units, divide the units among team members, and then after the work is done, reintegrate it.',
         '•	<b>Appropriation</b>—Adapting technology to one’s own situation; the technology may be used in a manner completely different than expected by the designers.'
-		]
-	},
+    ]
+}; // prin_25
+
+var txtCollaboration = {
+    id: 'prin_13',
+    title: 'Collaboration',
+    overview: prin_collab,
     benefits: prin_colBenefits,
     importance: prin_importance,
     colocated: prin_colocated,
     distributed: prin_distributed
-};
+}; // prin_13
 
 var txtValueBased = {
 	id: 'prin_14',
@@ -207,7 +220,7 @@ var txtValueBased = {
 		],
 		image: '../images/value_based.png'
 	}
-};
+}; // prin_14
 
 var prin_sprint = {
 	id: 'prin_15',
@@ -216,7 +229,7 @@ var prin_sprint = {
 	comment: [
 		'A Sprint is a Time-boxed iteration of one to six weeks in duration during which the Scrum Master guides, facilitates, and shields the Scrum Team from both internal and external impediments during the Create Deliverables process. This aids in avoiding vision creep that could affect the Sprint goal. During this time, the team works to convert the requirements in the Prioritized Product Backlog into shippable product functionalities. To get maximum benefits from a Scrum project, it is always recommended to keep the Sprint Time-boxed to 4 weeks, unless there are projects with very stable requirements, where Sprints can extend up to 6 weeks.'
 	]
-};
+}; // prin_15
 
 var prin_standup = {
 	id: 'prin_16',
@@ -229,7 +242,7 @@ var prin_standup = {
 		'3. What impediments or obstacles (if any) am I currently facing?',
 		'This meeting is carried out by the team as part of the Conduct Daily Standup process.'
 	]
-};
+}; // prin_16
 
 var prin_planning = {
 	id: 'prin_17',
@@ -241,7 +254,7 @@ var prin_planning = {
 		'2. Task Estimation—During the second half of the meeting, the Scrum Team decides “how” to complete the selected Prioritized Product Backlog Items to fulfill the Sprint goal.',
 		'At times, the Task Planning Meetings (conducted during the Create Tasks process) and the Task Estimation Meetings (conducted during Estimate Tasks process) are also referred to as Sprint Planning Meetings.'
 	]
-};
+}; // prin_17
 
 var prin_review = {
 	id: 'prin_18',
@@ -250,7 +263,7 @@ var prin_review = {
 	comment: [
 		'The Sprint Review Meeting is Time-boxed to four hours for a one-month Sprint. During the Sprint Review Meeting that is conducted in the Demonstrate and Validate Sprint process, the Scrum Team presents the deliverables of the current Sprint to the Product Owner. The Product Owner reviews the product (or product increment) against the agreed Acceptance Criteria and either accepts or rejects the completed User Stories.'
 	]
-};
+}; // prin_18
 
 var prin_retrospect = {
 	id: 'prin_19',
@@ -259,24 +272,29 @@ var prin_retrospect = {
 	comment: [
 		'The Retrospect Sprint Meeting is Time-boxed to 4 hours for a onemonth Sprint and conducted as part of the Retrospect Sprint process. During this meeting, the Scrum Team gets together to review and reflect on the previous Sprint in terms of the processes followed, tools employed, collaboration and communication mechanisms, and other aspects relevant to the project. The team discusses what went well during the previous Sprint and what did not go well, the goal being to learn and make improvements in the Sprints to follow. Some improvement opportunities or best practices from this meeting could also be updated as part of the Scrum Guidance Body documents.'
 	]
-}
+}; // prin_19
+
+var prin_timeboxing = {
+    id: 'prin_26',
+    title: 'Time-boxing',
+    stitle: 'Overview',
+    comment: [
+	'Scrum treats time as one of the most important constraints in managing a project. To address the constraint of time, Scrum introduces a concept called ‘Time-boxing’ which proposes fixing a certain amount of time for each process and activity in a Scrum project. This ensures that Scrum Team members do not take up too much or too little work for a particular period of time and do not expend their time and energy on work for which they have little clarity.',
+	'Some of the advantages of Time-boxing are as follows:',
+	'* Efficient development process',
+	'* Less overheads',
+	'* High velocity for teams',
+	'Time-boxing can be utilized in many Scrum processes, for example, in the Conduct Daily Standup process, the duration of the Daily Standup Meeting is Time-boxed. At times, Time-boxing may be used to avoid excessive improvement of an item (i.e., gold-plating).',
+	'Time-boxing is a critical practice in Scrum and should be applied with care. Arbitrary Time-boxing can lead to de-motivation of the team and may have the consequence of creating an apprehensive environment, so it should be used appropriately.'
+    ],
+    image: '../images/timeboxing.png'
+}; // prin_26
 
 txtTimeBoxing = {
 	id: 'prin_20',
 	title: 'Time-boxing',
 	stitle: 'Overview',
-	overview: {
-		comment: [
-		'Scrum treats time as one of the most important constraints in managing a project. To address the constraint of time, Scrum introduces a concept called ‘Time-boxing’ which proposes fixing a certain amount of time for each process and activity in a Scrum project. This ensures that Scrum Team members do not take up too much or too little work for a particular period of time and do not expend their time and energy on work for which they have little clarity.',
-		'Some of the advantages of Time-boxing are as follows:',
-		'* Efficient development process',
-		'* Less overheads',
-		'* High velocity for teams',
-		'Time-boxing can be utilized in many Scrum processes, for example, in the Conduct Daily Standup process, the duration of the Daily Standup Meeting is Time-boxed. At times, Time-boxing may be used to avoid excessive improvement of an item (i.e., gold-plating).',
-		'Time-boxing is a critical practice in Scrum and should be applied with care. Arbitrary Time-boxing can lead to de-motivation of the team and may have the consequence of creating an apprehensive environment, so it should be used appropriately.'
-		],
-		image: '../images/timeboxing.png'
-	},
+	overview: prin_timeboxing,
 	sprint: prin_sprint,
 	standup: prin_standup,
 	planning: prin_planning,
@@ -334,3 +352,7 @@ exports.prin_standup = prin_standup;
 exports.prin_planning = prin_planning;
 exports.prin_review = prin_review;
 exports.prin_retrospect = prin_retrospect;
+exports.prin_epc = prin_epc; // prin_23
+exports.prin_selforg = prin_selforg; // prin_24
+exports.prin_collab = prin_collab; // prin_25
+exports.prin_timeboxing = prin_timeboxing // prin_26

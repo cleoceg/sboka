@@ -1,0 +1,360 @@
+{
+    id: 'it_91110',
+    title: 'Scrum Guidance Body Recommendations',
+    comment: [
+       'Described in section 8.1.1.12.',
+       'In Create User Stories process, Scrum Guidance Body Recommendations may include information on rules, regulations, standards, and best practices required to create effective User Stories.'
+    ]
+}
+
+{
+    id: 'it_9121',
+    title: 'User Story Writing Expertise',
+    comment: [
+        'The Product Owner, based on his or her interaction with the stakeholders, business knowledge and expertise, and inputs from the team, develops User Stories that will form the initial Prioritized Product Backlog for the project. The Prioritized Product Backlog represents the total sum of what must be completed for the project. The objective of this exercise is to create elaborated and refined User Stories that can be approved, estimated, and committed to by the Scrum Team. At times, the Product Owner may bring a Business Analyst to assist with writing User Stories.',
+        'Although the Product Owner has the primary responsibility for writing User Stories and often carries out this exercise on his or her own, a User Story Writing Workshop can be held if desired.'
+    ]
+}
+
+{
+    id: 'it_9124',
+    title: 'Focus Group Meetings',
+    comment: [
+        'Focus Group Meetings are a qualitative technique to gauge and understand user needs and expectations about a proposed product. A small group of users are selected to form the focus group. This group may be selected randomly from a large pool of users or can be selected specifically to represent all the major Personas being targeted. Focus Group Meetings normally adhere to a certain format in which the group is asked questions that they then discuss among themselves. Each Focus Group Meeting can have its own rules of discussion as decided by the organizers. These meetings are usually held in the presence of a moderator.'
+    ]
+}
+
+{
+    id: 'it_9127',
+    title: 'User Story Estimation Methods',
+    comment: [
+        'All the tools used for Approve, Estimate, and Commit User Stories process (as described in section 9.2.2) can be used for creating high level estimates for Epic(s) when we create the Prioritized Product Backlog.',
+        'Some important tools are:',
+        '1. User Group Meetings',
+        '2. Planning Poker',
+        '3. Fist of Five',
+        '4. Points for Cost Estimation',
+        '5. Other Estimation Techniques'
+    ]
+}
+
+{
+    id: 'it_9128',
+    title: 'Scrum Guidance Body Expertise',
+    comment: [
+        'Described in section 8.4.2.7.',
+        'While creating User Stories, Scrum Guidance Body Expertise could relate to documented rules and regulations; or standards and best practices for creating User Stories. There may also be a team of subject matter experts who may assist the Product Owner or provide guidance on how to create User Stories. This team could include Business Analysts, Lead Architects, Senior Developers, Scrum Experts, or other experienced persons. This expert group is usually not the same team that will stay on and work on this project, as they tend to move from project to project and provide guidance to Scrum Teams if required.'
+    ]
+}
+
+{
+    id: 'it_9131',
+    title: 'User Stories',
+    comment: [
+        'User Stories adhere to a specific, predefined structure and are a simplistic way of documenting the requirements and desired end-user functionality. A User Story tells you three things about the requirement:',
+        'Who, What, and Why. The requirements expressed in User Stories are short, simple, and easy-to-understand statements. The predefined, standard format results in enhanced communication among the stakeholders and better estimations by the team. Some User Stories may be too large to handle within a single Sprint. These large User Stories are often called Epics. Once Epics come up in the Prioritized Product Backlog to be completed in an upcoming Sprint, they are further decomposed into smaller User Stories.',
+        'The Prioritized Product Backlog is a dynamic list that is continuously updated because of reprioritization and new, updated, refined, and sometimes, deleted User Stories. These updates to the backlog are typically the result of changing business requirements.',
+        'Also refer to section 8.5.3.1 to know more about the Prioritized Product Backlog.'
+    ]
+}
+
+{
+    id: 'it_9132',
+    title: 'User Story Acceptance Criteria',
+    comment: [
+        'Every User Story has an associated Acceptance Criteria. User Stories are subjective, so the Acceptance Criteria provide the objectivity required for the User Story to be considered as Done or not Done during the Sprint Review. Acceptance Criteria provide clarity to the team on what is expected of a User Story, remove ambiguity from requirements, and help in aligning expectations. The Product Owner defines and communicates the Acceptance Criteria to the Scrum Team. In the Sprint Review Meetings, the Acceptance Criteria provide the context for the Product Owner to decide if a User Story has been completed satisfactorily. It is important and the responsibility of the Scrum Master to ensure that the Product Owner does not change the Acceptance Criteria of a committed User Story in the middle of a Sprint.'
+    ]
+}
+
+{
+    id: 'it_9133',
+    title: 'Updated Prioritized Product Backlog',
+    comment: [
+        'The Prioritized Product Backlog created in the Create Prioritized Product Backlog process is updated with information on User Stories, Epic(s), estimates for User Stories, and User Story Acceptance Criteria. ',
+        'Prioritized Product Backlog is described in section 8.5.3.1.'
+    ]
+}
+
+{
+    id: 'it_9134',
+    title: 'Updated or Refined Personas',
+    comment: [
+        'Personas are initially created in the Develop Epic(s) process. While writing User Stories, the Scrum Team may come to a collective decision that some of those initial Personas are inadequate and need refinement. If refining Personas is required, it is normally done near the end of the Create User Stories process.',
+        'Personas are described in section 8.4.3.2.'
+    ]
+}
+
+{
+    id: 'it_9212',
+    title: 'User Stories',
+    comment: [
+       'Described in section 9.1.3.1.',
+       'The User Stories have high-level estimates from the Create Prioritized Product Backlog and Create User Stories processes. These estimates would be used by the Product Owner to create a list of approved User Stories which would be more accurately estimated by the Scrum Team. Such estimated User Stories are then committed to be completed by the Scrum Team in the Sprint.'
+    ]
+}
+
+{
+    id: 'it_9214',
+    title: 'Scrum Guidance Body Recommendations',
+    comment: [
+       'Described in section 8.1.1.12.',
+       'In Approve, Estimate, and Commit User Stories process, Scrum Guidance Body Recommendations may include information on rules, regulations, standards, and best practices required to effectively Approve, Estimate, and Commit User Stories.'
+    ]
+}
+
+{
+    id: 'it_9222',
+    title: 'Planning Poker',
+    comment: [
+        'Planning Poker, also called Estimation Poker, is an estimation technique which uses consensus to estimate relative sizes of User Stories or the effort required to create them.',
+        'In Planning Poker, each team member is assigned a deck of cards. Each card is numbered in a sequence and the numbers represent complexity of the problem, in terms of time or effort, as estimated by the team member. The Product Owner chooses a User Story from the Prioritized Product Backlog and presents it to the team. The Scrum Team members assess the User Story and try to understand it better before providing their estimate for developing it. Then, each member picks a card from the deck that represents their estimate for the User Story. If the majority or all team members select the same card then the estimate indicated by that card will be the estimate for that User Story. If there is no consensus, then the team members discuss reasons for selecting different cards or estimates. After this discussion they pick cards again. This sequence continues until all the assumptions are understood, misunderstandings are resolved, and consensus or agreement is reached.',
+        'Planning Poker advocates greater interaction and enhanced communication among the participants. It facilitates independent thinking by participants, thus avoiding the phenomenon of group think.'
+    ]
+}
+
+{
+    id: 'it_9223',
+    title: 'Fist of Five',
+    comment: [
+        'Fist of Five is a simple and fast mechanism to achieve consensus in a group and drive discussion. After initial discussion on a given proposal or a pending decision, the Scrum Team members are each asked to vote on a scale of 1 to 5 using their fingers. The value in using this technique is not only consensus building but also driving discussion because each team member is asked to explain the reason for their ranking.',
+        'They are also given the opportunity to express any issues or concerns. Once the team has discussed it, a collective decision will be made.',
+        'The number of fingers used to vote indicates the level of agreement and desire for discussion:',
+        "1. One finger: I disagree with the group's conclusion and have major concerns.",
+        "2. Two fingers: I disagree with the group's conclusion and would like to discuss some minor issues.",
+        "3. Three fingers: I am not sure and would like to go with the group's consensus conclusion.",
+        "4. Four fingers: I agree with the group's conclusion and would like to discuss some minor issues.",
+        "5. Five fingers: I wholeheartedly agree with the group's conclusion."
+    ]
+}
+
+{
+    id: 'it_9224',
+    title: 'Points for Cost Estimation',
+    comment: [
+        'Cost estimation can be accomplished through the use of relative units (e.g., effort estimates) rather than absolute units (i.e., actual costs incurred). In order to estimate the cost to implement a User Story, the Scrum Team can use story points. When this is done, the cost estimated for each task will be in the form of story points, rather than monetary units. In order to do this successfully, the Scrum Team should identify a baseline User Story that all team members can relate to. Once this baseline is identified, all cost estimates for User Stories should be done compared to that baseline. These estimates remain fixed throughout a Sprint because teams are not supposed to change during a Sprint.'
+    ]
+}
+
+{
+    id: 'it_9225',
+    title: 'Other Estimation Techniques',
+    comment: [
+        '<b>Wideband Delphi</b>',
+        'Wideband Delphi is a group-based estimation technique for determining how much work is involved and how long it will take to complete. Individuals within a team anonymously provide estimations for each feature and the initial estimates are plotted on a chart. The team then discusses the factors that influenced their estimates and proceed to a second round of estimation. This process is repeated until the estimates of individuals are close to each other and a consensus for the final estimate can be reached.',
+        'Planning poker (as described in section 9.2.2.2) is one example of a Wideband Delphi technique. It is also important to note that it is the individual input collected by a mechanism that avoids the group thinking. Then the individual inputs are used for a group decision.',
+        '<b>Relative Sizing/Story Points</b>',
+        'In addition to being used for estimating cost, story points can also be used for estimating the overall size of a User Story or feature. This approach assigns a story point value based on an overall assessment of the size of a User Story with consideration given to risk, amount of effort required, and level of complexity. This assessment will be conducted by the Scrum Team and a story point value will be assigned. Once an evaluation is done on one User Story in the Prioritized Product Backlog, the Scrum Team can then evaluate other User Stories relative to that first story. For example, a feature with a 2-point story value must be twice as difficult to complete as a feature with a 1-point story; a 3-point story should be three times as difficult to complete as a 1-point story.',
+        '<b>Affinity Estimation</b>',
+        'Affinity Estimation is a technique used to quickly estimate a large number of User Stories. Using sticky notes or index cards and tape, the team places User Stories on a wall or other surface, in order from small to large. For this, each team member begins with a subset of User Stories from the overall Prioritized Product Backlog to place by relative size. This initial placement is done in silence. Once everyone has placed their User Stories on the wall, the team reviews all of the placements and may move User Stories around as appropriate. This second part of the exercise involves discussion. Finally, the Product Owner will indicate some sizing categories on the wall. These categories can be small, medium, or large, or they may be numbered using story point values to indicate relative size. The team will then move User Stories into these categories as the final step in the process. Some key benefits of this approach are that the process is very transparent, visible to everyone, and is easy to conduct.',
+        '<b>Estimate Range</b>',
+        'Estimates for projects should be presented in ranges. Precise figures may give an impression of being highly accurate when in fact they may not be. In fact, estimates by definition are understood not to be precisely accurate. Estimate ranges should be based on the level of confidence the team has in each estimate. The range can be narrow when the team is confident and wide when the team is less confident.'
+    ]
+}
+
+{
+    id: 'it_9226',
+    title: 'Scrum Guidance Body Expertise',
+    comment: [
+        'Described in section 8.4.2.7.',
+        'Conflicts with respect to estimates for completing certain User Stories may arise during this process because team member perspectives may differ and because the team may not yet have enough experiences to estimate Sprints. In these situations, the Guidance Body’s experience and expertise can assist in resolving conflicts.'
+    ]
+}
+
+{
+    id: 'it_9231',
+    title: 'Approved, Estimated, and Committed User Stories',
+    comment: [
+       'The User Stories which are input to this process have high-level estimates from the Create Prioritized Product Backlog and Create User Stories processes. These estimates are used by the Product Owner to approve User Stories for the Sprint.',
+       "It must be noted that it is the Product Owner's responsibility to ensure that approved User Stories deliver value and meet the needs and requirements of the project stakeholders. Once approved, the User Stories are estimated by the team using the various estimation techniques discussed in this section. After estimation, the team commits to a subset of approved and estimated User Stories that they believe they can complete in the next Sprint. These User Stories are Approved, Estimated, and Committed User Stories which will become part of the Sprint Backlog.",
+       'Although the Product Owner approves the initial User Stories for a Sprint, the final decision about which specific User Stories (among those approved by the Product Owner) should be chosen for the Sprint lies with the Scrum Team. The Scrum Team (with consultation from the Product Owner, if required) finalizes which User Stories they will be working on during the Sprint.'
+    ]
+}
+
+{
+    id: 'it_9321',
+    title: 'Task Planning Meetings',
+    comment: [
+        'In Task Planning Meetings, the Scrum Team gets together to plan the work to be done in the Sprint. The team reviews the committed User Stories at the top of the Prioritized Product Backlog. The Product Owner is present during this meeting in case clarification is required related to User Stories in the Prioritized Product Backlog and to help the team make design decisions. To help ensure that the group stays on topic, this meeting should be Time-boxed, with the standard length limited to two hours per week of Sprint duration.',
+        'This assists in preventing the tendency to stray into discussions that should actually occur in other meetings, like the Release Planning or Sprint Review Meetings. By the end of the meeting, the entire Scrum Team will have fully committed to deliver a subset of User Stories from the Prioritized Product Backlog in the Sprint.',
+        'The Task Planning Meeting is normally divided into two sections, with a designated purpose and broad agenda for each (see Figure 9-9)',
+        'The Task Planning Meetings may at times also be referred to as "Sprint Planning Meetings" - such meetings may also be combined with Task Estimation Meetings as described in section 9.4.2.1'
+    ]
+}
+
+{
+    id: 'it_9322',
+    title: 'Index Cards',
+    comment: [
+        'In Scrum, User Stories are written on small Index Cards. Only essential details are documented on the cards, which can be used by the Scrum Team to collaborate and discuss. These Index Cards, often described as Story Cards, increase visibility and transparency, and facilitate early discovery of any problems that may arise.'
+    ]
+}
+
+{
+    id: 'it_9323',
+    title: 'Decomposition',
+    comment: [
+       'Decomposition is a tool whereby high-level tasks are broken down into lower level, more detailed tasks. The User Stories are decomposed into tasks by members of the Scrum Team. Prioritized Product Backlog User Stories should be sufficiently decomposed to a level that provides the Scrum Team adequate information to create deliverables from the tasks mentioned in the Task List.' 
+    ]
+}
+
+{
+    id: 'it_9324',
+    title: 'Dependency Determination',
+    comment: [
+        'Once the Scrum Team has selected User Stories for a given Sprint, they should then consider any dependencies, including those related to the availability of people as well as any technical dependencies.',
+        'Properly documenting dependencies helps the Scrum Teams determine the relative order in which Tasks should be executed to create the Sprint Deliverables. Dependencies also highlight the relationship and interaction between Tasks both within the Scrum Team working on a given Sprint and with other Scrum Teams in the project.',
+        'There are numerous types of dependencies: mandatory and discretionary, internal and external, or some combination of these dependencies. For example, a dependency may be both mandatory and external.',
+        '<b>• Mandatory dependencies</b>—Dependencies that are either inherent in the nature of the work, like a physical limitation, or that may be due to contractual obligations or legal requirements. For example, work on the first floor cannot begin until the foundation of the building is complete. Mandatory dependencies are also commonly described as hard logic.',
+        '<b>• Discretionary dependencies</b>—Dependencies that are placed into the workflow by choice. Typically, discretionary dependencies are determined by the Scrum Team based on past experiences or best practices in a particular field or domain. For example, the team can decide to complete one task before working on another because it is a best practice, but not required. For example, the team may choose to build the door and window frames before the full structure of the wall is in place.',
+        '<b>• External dependencies</b>—External dependencies are those related to tasks, activities, or products that are outside the scope of the work to be executed by the Scrum Team, but are needed to complete a project task or create a project deliverable. External dependencies are usually outside the Scrum Team’s control. For example, if the Scrum Team is not responsible for procuring the materials required for building the walls, then those materials and tasks related to their procurement are considered external dependencies.',
+        '<b>• Internal dependencies</b>—Internal dependencies are those dependencies between tasks, products, or activities that are under the control of the Scrum Team. For example, installing drywall must be completed before painting the wall can begin. This is an example of an internal dependency because both tasks are part of the project. In this case, it is also mandatory because it is based on a physical limitation. It is not possible to paint the wall before it is dry-walled.'
+    ]
+}
+
+{
+    id: 'it_9331',
+    title: 'Task List',
+    comment: [
+        'This is a comprehensive list that contains all the tasks to which the Scrum Team has committed for the current Sprint. It contains descriptions of each task along with estimates derived during the Create Tasks process. The Task List must include any testing and integration efforts so that the Product Increment from the Sprint can be successfully integrated into the deliverables from previous Sprints.',
+        'Even though tasks are often activity based, the level of granularity to which the tasks are decomposed is decided by the Scrum Team.'
+    ]
+}
+
+{
+    id: 'it_9332',
+    title: 'Updated Approved, Estimated, and Committed User Stories',
+    comment: [
+        'The User Stories are updated during this process. Updates can include revisions to the original User Story estimates based on tasks creation and complexity factors discussed during the Sprint Planning Meeting.',
+        'Approved, Estimated, and Committed User Stories are described in section 9.2.3.1.'
+    ]
+}
+
+{
+    id: 'it_9333',
+    title: 'Dependencies',
+    comment: [
+        'Dependencies describe the relationship and interaction between different tasks in a project and can be classified as mandatory or discretionary; or internal or external; as discussed in section 9.3.2.4.',
+        'There are numerous ways to identify, define, and present the tasks and their dependencies. Two common methods involve the use of product flow diagrams and Gantt charts.'
+    ]
+}
+
+{
+    id: 'it_9413',
+    title: 'User Story Acceptance Criteria',
+    comment: [
+        'Described in section 9.1.3.2.',
+        'The Scrum Team must ensure that defined Acceptance Criteria are appropriate for the User Stories and provide clarity regarding the requirements to the Scrum Team. Acceptance testing refers to the assessment of the ability of the completed deliverable to meet its Acceptance Criteria. This provides information to the Product Owner to help make a decision about approving or rejecting the Deliverable.',
+        'When developing User Story Acceptance Criteria, the following should be considered:',
+        '• Acceptance Criteria should not be vague, ambiguous, or too generalized.',
+        '• Defined Acceptance Criteria should ensure that the team is able to verify that the outcomes are in alignment with the sponsor organization’s goals and objectives.'
+    ]
+}
+
+{
+    id: 'it_9416',
+    title: 'Scrum Guidance Body Recommendations',
+    comment: [
+        'Described in section 8.1.1.12.',
+        'In the Estimate Tasks process, Scrum Guidance Body Recommendations may include information on rules, regulations, standards, and best practices required to effectively estimate tasks in the Task List.'
+    ]
+}
+
+{
+    id: 'it_9421',
+    title: 'Task Estimation Meetings',
+    comment: [
+        'Task Estimation Meetings enable the Scrum Team to estimate the effort required to complete a task or set of tasks and to estimate the people effort and other resources required to carry out the tasks within a given Sprint. In Task Estimation Meetings, the Scrum Team members use the Task List to estimate the duration and effort for the User Stories to be completed in the Sprint.',
+        'One of the key benefits of this technique is that it enables the team to have a shared perspective of the User Stories and requirements so that they can reliably estimate the effort required. The information developed in the Task Estimation Meetings is included in the Effort Estimated Task List and it is used to determine the velocity for the Sprint.',
+        'In this workshop, the Scrum Team may use various techniques such as decomposition, expert judgment, analogous estimation, and parametric estimation.',
+        'Task Estimation Meetings are sometimes also referred to as "Sprint Planning Meetings" - such meetings may also be combined with Task Planning Meetings as described in section 9.3.2.1.'
+    ]
+}
+
+{
+    id: 'it_9422',
+    title: 'Estimation Criteria',
+    comment: [
+        'The primary objective of using Estimation Criteria is to maintain relative estimation sizes and minimize the need for re-estimation. Estimation Criteria can be expressed in numerous ways, with two common examples being story points and ideal time. For example, an ideal time normally describes the number of hours a Scrum Team member works exclusively on developing the project’s deliverables, without including any time spent on other activities or work that is outside the project. Estimation Criteria make it easier for the Scrum Team to estimate effort and enable them to evaluate and address inefficiencies when necessary.'
+    ]
+}
+
+{
+    id: 'it_9431',
+    title: 'Effort Estimated Task List',
+    comment: [
+        'The Effort Estimated Task List is a list of tasks associated with the Committed User Stories included in a Sprint. Typically the accuracy of estimates varies with team skills. Estimated effort is expressed in terms of the Estimation Criteria agreed on by the team. The Effort Estimated Task List is used by the Scrum Team during Sprint Planning Meetings to create the Sprint Backlog and Sprint Burndown Chart. It is also used to determine when the team needs to reduce its commitment, or can take on additional User Stories during Sprint Planning.'
+    ]
+}
+
+{
+    id: 'it_9432',
+    title: 'Updated Task List',
+    comment: [
+        'The Task List, developed as part of the Create Tasks process, includes the initial User Story estimations that need to be revised based on the more detailed estimation activities undertaken in the Estimate Tasks process. There may also be re-estimations resulting from a review of early Sprints, or change in the Scrum Team’s collective understanding of User Stories and requirements.'
+    ]
+}
+
+{
+    id: 'it_9514',
+    title: 'Previous Sprint Velocity',
+    comment: [
+       'Sprint Velocity is the rate at which the team can complete the work in a Sprint. It is usually expressed in the same units as those used for estimation, normally story points or ideal time. A record of the Sprint Velocity of the team for each Sprint is maintained and used as a reference in future Sprints. The Previous Sprint Velocity becomes the most important factor in determining the amount of work the team can commit to in a subsequent Sprint. Any changes in the situation or conditions since the last Sprint are accounted for to ensure accurate estimation of Sprint velocity for the upcoming Sprint.' 
+    ]
+}
+
+{
+    id: 'it_9516',
+    title: 'Team Calendar',
+    comment: [
+       'A Team Calendar contains information regarding availability of team members including information related to employee vacation, leaves, important events, and holidays.',
+       'One of the major objectives of using a Team Calendar is to track what each team member is working on throughout the project. It helps the team not only in planning and executing the Sprints efficiently but also in aligning the Sprints with release dates.'
+    ]
+}
+
+{
+    id: 'it_9521',
+    title: 'Sprint Planning Meetings',
+    comment: [
+        'During Sprint Planning Meetings, the User Stories, which are approved, estimated, and committed during the Approve, Estimate, and Commit User Stories process, are taken up for discussion by the Scrum Team.',
+        'Each Scrum Team member also uses Effort Estimated Task List to select the tasks they plan to work on in the Sprint, based on their skills and experience. The Scrum Team also creates the Sprint Backlog and Sprint Burndown Chart using the User Stories and the Effort Estimated Task List during the Sprint Planning Meetings.'
+    ]
+}
+
+{
+    id: 'it_9522',
+    title: 'Sprint Tracking Tools',
+    comment: [
+       'It is important to track the progress of a Sprint and to know where the Scrum Team stands in terms of completing the tasks in the Sprint Backlog. A variety of tools can be used to track the work in a Sprint, but one of the most common is a Scrumboard, also known as a task board or a progress chart. The Scrumboard is divided into sections: To Do (sometimes referred to as Work Not Started), Work In Progress, and Completed Work. Sticky notes representing each task or User Story are placed in the appropriate category to reflect the status of the work. They are moved forward to the next category as the work progresses.' 
+    ]
+}
+
+{
+    id: 'it_9523',
+    title: 'Sprint Tracking Metrics',
+    comment: [
+        'Metrics used in Scrum projects include velocity, business value delivered, and number of stories.',
+        '<b>Velocity</b>—represents the number of User Stories or number of functionalities delivered in a single Sprint. ',
+        '<b>Business value delivered</b>—measures the value of the User Stories delivered from the business perspective. ',
+        '<b>Number of stories</b>—refers to how many User Stories are delivered as part of a single Sprint. It can be expressed in terms of simple count or weighted count.'
+    ]
+}
+
+{
+    id: 'it_9531',
+    title: 'Sprint Backlog',
+    comment: [
+        'The list of the tasks to be executed by the Scrum Team in the upcoming Sprint is called the Sprint Backlog.',
+        'It is common practice that the Sprint Backlog is represented on a Scrumboard or task board, which provides a constantly visible depiction of the status of the User Stories in the backlog. Also included in the Sprint Backlog are any risks associated with the various tasks. Any mitigating activities to address the identified risks would also be included as tasks in the Sprint Backlog.',
+        'Once the Sprint Backlog is finalized and committed to by the Scrum Team, new User Stories should not be added; however, tasks that might have been missed or overlooked from the committed User Stories may need to be added. If new requirements arise during a Sprint, they will be added to the overall Prioritized Product Backlog and included in a future Sprint.'
+    ]
+}
+
+{
+    id: 'it_9532',
+    title: 'Sprint Burndown Chart',
+    comment: [
+        'The Sprint Burndown Chart is a graph that depicts the amount of work remaining in the ongoing Sprint. The initial Sprint Burndown Chart is accompanied by a planned burndown. The Sprint Burndown Chart should be updated at the end of each day as work is completed. This chart shows the progress that has been made by the Scrum Team and also allows for the detection of estimates that may have been incorrect. If the Sprint Burndown Chart shows that the Scrum Team is not on track to finish the tasks in the Sprint on time, the Scrum Master should identify any obstacles or impediments to successful completion and try to remove them.',
+        'A related chart is a Sprint Burnup Chart. Unlike the Sprint Burndown Chart which shows the amount of work remaining, the Sprint Burnup Chart depicts the work completed as part of the Sprint.'
+
+    ]
+}

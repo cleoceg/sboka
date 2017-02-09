@@ -1,6 +1,7 @@
-var step1 = { 
+var step1 = {
+      id: 'step1',
       step: 'Initiate',
-      url: 'initiate',
+      url: 'Initiate',
       introduction: 'This phase includes the processes related to initiation of a project: Create Project Vision, \n\
 Identify Scrum Master and Stakeholder(s), Form Scrum Team, Develop Epic(s), Create Prioritized Product Backlog, and Conduct Release Planning.',
       introbis: [
@@ -16,8 +17,9 @@ Identify Scrum Master and Stakeholder(s), Form Scrum Team, Develop Epic(s), Crea
 };
 
 var step2 = { 
+      id: 'step2',
       step: 'Plan and Estimate',
-      url: 'plan',
+      url: 'Plan',
       introduction: 'The Plan and Estimate phase consists of processes related to planning and estimating tasks, which include \n\
 Create User Stories, Approve, Estimate, and Commit User Stories, Create Tasks, Estimate Tasks, and Create Sprint Backlog.',
       introbis: [
@@ -33,9 +35,10 @@ Create User Stories, Approve, Estimate, and Commit User Stories, Create Tasks, E
       ]
 };
 
-var step3 = { 
+var step3 = {
+      id: 'step3',
       step: 'Implement',
-      url: 'implement',
+      url: 'Implement',
       introduction: 'The Implement phase is related to the execution of the tasks and activities to create a project’s product. \n\
 These activities include creating various deliverables, conducting Daily Standup Meetings, and grooming (\n\
 i.e., reviewing, fine-tuning, and regularly updating) the Product Backlog at regular intervals.',
@@ -53,9 +56,10 @@ i.e., reviewing, fine-tuning, and regularly updating) the Product Backlog at reg
       ]
 };
 
-var step4 = { 
+var step4 = {
+      id: 'step4',
       step: 'Review and Retrospect',
-      url: 'review',
+      url: 'Review',
       introduction: 'The Review and Retrospect phase is concerned with reviewing the deliverables and the work that has been done \n\
 and determining ways to improve the practices and methods used to do project work. \n\
 In large organizations the Review and Retrospect processes may also include convening Scrum of Scrums Meetings.',
@@ -73,8 +77,9 @@ In large organizations the Review and Retrospect processes may also include conv
 };
 
 var step5 = { 
+      id: 'step5',
       step: 'Release',
-      url: 'release',
+      url: 'Release',
       introduction: 'The Release phase emphasizes delivering the Accepted Deliverables \n\
 to the customer and identifying, documenting, and internalizing the lessons learned during the project. ',
       introbis: ['Release, as defined in A Guide to the Scrum Body of Knowledge (SBOK™ Guide), is applicable to the following:',

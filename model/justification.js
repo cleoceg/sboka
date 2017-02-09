@@ -47,7 +47,7 @@ var bj_responwer = {
     title: 'Responsibilities of the Product Owner',
 	stitle: 'rpo',
     comment: [
-        'The responsibility of prioritizing and delivering business value in an organization for projects lies primarily with the Product Owner. For programs and portfolios, the responsibility lies with the Program Product Owner and Portfolio Product Owner, respectively. Their role is to act as effective representatives of the customer and/or sponsor. The guidelines for evaluating and measuring business value may typically be set forth by a Scrum Guidance Body.',
+        'The responsibility of prioritizing and delivering business value in an organization for projects lies primarily with the Product Owner. For programs and portfolios, the responsibility lies with the Program Product Owner and Portfolio Product Owner, respectively. Their role is to act as effective representatives of the customer and/or sponsor. The guidelines for evaluating and measuring business value may typically be set forth by a Scrum Guidance Body.'
     ],
     image: '../images/bj_hierarchy.png'
 };
@@ -103,15 +103,17 @@ var bj_lifecycle = {
     image: '../images/bj_lifecycle.png'
 };
 
-var txtImportance = {
-    id: 'bj_09',
-    overview: {
-        title: 'Importance of Business Justification',
-        comment: [
+var bj_31 = {
+	id: 'bj_31',
+    title: 'Importance of Business Justification',
+    comment: [
             'Business justification demonstrates the reasons for undertaking a project. It answers the question “Why is this project needed?” Business justification drives all decision making related to a project. So, it is important to assess the viability and achievability of a project not only before committing to significant expenditures or investment at initial stages of the project but also to verify the business justification for continuance throughout the project’s lifecycle. A project should be terminated if it is found to be unviable; the decision should be escalated to the relevant stakeholders and to senior management. The business justification for a project must be assessed at the beginning of the project, at pre-defined intervals throughout the project, and at any time when major issues or risks that threaten the project viability arise.'
         ] 
-    }
-    ,
+}
+
+var txtImportance = {
+    id: 'bj_09',
+    overview: bj_31,
     factors: bj_factors,
     lifecycle: bj_lifecycle
 };
@@ -225,17 +227,17 @@ var bj_story = {
     ]
 };
 
-var txtTechnique = {
-    id: 'bj_20',
-    title: 'Business Justification Techniques',
-    overview: {
-        title: 'Overview',
-        comment: [
-            'The following sections deal with some of the tools used to assess and evaluate business justification, as well as some other aspects associated with project justification and project selection. It is not necessary, or even recommended to use every available technique for every project. Some techniques are not appropriate depending on the specific project, and techniques may be used to assess projects individually or to compare the expected value of multiple projects.',
-            'The Scrum Guidance Body (SGB), which can be a panel of experts or a set of documents on organizational standards and procedures, defines the guidelines and metrics that will be used to assess business value. Each respective Product Owner, however, is responsible for performing the activities that verify and track business value for his or her respective projects, programs, or portfolios.'
-        ]
-    },
-    estimation: {
+var bj_32 = {
+	id: 'bj_32',
+	title: 'Overview',
+    comment: [
+        'The following sections deal with some of the tools used to assess and evaluate business justification, as well as some other aspects associated with project justification and project selection. It is not necessary, or even recommended to use every available technique for every project. Some techniques are not appropriate depending on the specific project, and techniques may be used to assess projects individually or to compare the expected value of multiple projects.',
+        'The Scrum Guidance Body (SGB), which can be a panel of experts or a set of documents on organizational standards and procedures, defines the guidelines and metrics that will be used to assess business value. Each respective Product Owner, however, is responsible for performing the activities that verify and track business value for his or her respective projects, programs, or portfolios.'
+    ]
+};
+
+var bj_33 = {
+		id: 'bj_33',
         title: 'Estimation of Project Value',
         stitle: 'estimation',
         overview: {
@@ -256,8 +258,10 @@ var txtTechnique = {
             irr: bj_irr,
             example: bj_irrExample
         }
-    },
-    planning: {
+};
+
+var bj_34 = {
+		id: 'bj_34',
         title: 'Planning for Value',
         stitle: 'planning',
         overview: {
@@ -268,13 +272,21 @@ var txtTechnique = {
         },
         value: bj_VSM,
         customer: bj_customer
-    },
+};
+
+var txtTechnique = {
+    id: 'bj_20',
+    title: 'Business Justification Techniques',
+    overview: bj_32,
+    estimation: bj_33,
+    planning: bj_34,
     ranking: bj_ranking,
     story: bj_story
 };
 
 var bj_EVA = {
     id: 'bj_21',
+	stitle: 'eva',
     title: 'Earned Value Analysis',
     comment: [
             'Although commonly used, tools such as bar charts and Gantt Charts have limitations in tracking and reporting progress when it comes to project performance. Earned Value Analysis (EVA) is used for this purpose. ',
@@ -345,23 +357,29 @@ var bj_evaExample = {
     image: '../images/s_curve.png'
 };
 
+var bj_35 = {
+	id: 'bj_35',
+    title: 'Continuous Value Justification',
+    comment: [
+        'Business value should be assessed regularly to determine whether the justification or viability of executing the project continues to exist. Frequent assessment of investment in the project relative to business value being created qualifies the continued viability of a project. The expected requirements from the project may change frequently, which can impact both project investment and value creation. A key aspect of Scrum is its ability to quickly adjust to chaos created by a rapidly changing business model. In projects with ambiguous user requirements and significant potential for frequent changes, Scrum provides considerable advantages over other development models.',
+        'Monitoring the rate of delivering value is an important requirement for Scrum projects. Periodically tracking and reporting the creation of value assists in assessing project status and provides important information to the customer and other stakeholders.'
+    ]
+};
+
+var bj_36 = {
+	id: 'bj_36',
+    title: 'Earned Value Analysis',
+	stitle: 'eva',
+	eva: bj_EVA,
+	table: bj_evaTable,
+	example: bj_evaExample
+}
+
 var txtContinuous = {
     id: 'bj_25',
     title: 'Continuous Value Justification',
-    overview: {
-        title: 'Continuous Value Justification',
-        comment: [
-            'Business value should be assessed regularly to determine whether the justification or viability of executing the project continues to exist. Frequent assessment of investment in the project relative to business value being created qualifies the continued viability of a project. The expected requirements from the project may change frequently, which can impact both project investment and value creation. A key aspect of Scrum is its ability to quickly adjust to chaos created by a rapidly changing business model. In projects with ambiguous user requirements and significant potential for frequent changes, Scrum provides considerable advantages over other development models.',
-            'Monitoring the rate of delivering value is an important requirement for Scrum projects. Periodically tracking and reporting the creation of value assists in assessing project status and provides important information to the customer and other stakeholders.'
-        ]
-    },
-    eva: {
-        title: 'Earned Value Analysis',
-        stitle: 'eva',
-        eva: bj_EVA,
-        table: bj_evaTable,
-        example: bj_evaExample
-    },
+    overview: bj_35,
+    eva: bj_36,
     cfd: bj_cfd
 };
 
@@ -375,15 +393,18 @@ var bj_prototype = {
     ]
 };
 
-var txtBenefits = {
-    id: 'bj_27',
-    title: 'Confirm Benefits Realization',
-    overview: {
+var bj_37 = {
+	id: 'bj_37',
         title: 'Confirm Benefits Realization',
         comment: [
             'Throughout a project, it is important to verify whether benefits are being realized. Whether the products of a Scrum project are tangible or intangible, appropriate verification techniques are required to confirm that the team is creating the deliverables that will achieve the benefits and value defined at the beginning of the project.'
         ]
-    },
+    }
+
+var txtBenefits = {
+    id: 'bj_27',
+    title: 'Confirm Benefits Realization',
+    overview: bj_37,
     prototype: bj_prototype
 };
 
@@ -451,3 +472,4 @@ exports.bj_cfd = bj_cfd // bj_23
 exports.bj_evaExample = bj_evaExample // bj_24
 exports.bj_prototype = bj_prototype // bj_26
 exports.bj_summary = bj_summary // bj_28
+// 37

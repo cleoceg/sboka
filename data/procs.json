@@ -1,0 +1,59 @@
+{"_id":{"$oid":"58977488101352000f00002d"},"id":"p08_1","phase":"Initiate","title":"Create Project Vision","introduction":"In this process, the Project Business Case is reviewed to create \na Project Vision Statement that will serve as the inspiration and provide focus for \nthe entire project. The Product Owner is identified in this process.","input":["it_8111","it_8112","it_8113","it_8114","it_8115","it_8116","it_8117","it_8118","it_8119","it_81110","it_81111","it_81112"],"tools":["it_8121","it_8122","it_8123","it_8124"],"output":["it_8131","it_8132","it_8133","it_8134"]}
+{"_id":{"$oid":"5897924e101352342200002c"},"id":"p08_2","phase":"Initiate","title":"Identify Scrum Master and Stakeholder(s)","introduction":"In this process, the Scrum Master and Stakeholders are identified \nusing specific Selection Criteria.","input":["it_8131","it_8132","it_8112","it_8113","it_8115","it_8216","it_8114","it_8218","it_8219","it_82110","it_82111","it_81112"],"tools":["it_8221","it_8222","it_8223","it_8224"],"output":["it_8231","it_8232"]}
+{"_id":{"$oid":"58984ace911373cac0bedf63"},"id":"p08_3","phase":"Initiate","title":"Form Scrum Team","introduction":"In this process, Scrum Team members are identified. Normally the Product Owner has the primary responsibility of selecting team members, but often does so in collaboration with the Scrum Master.","input":["it_8131","it_8231","it_8132","it_8115","it_8218","it_8219","it_82110","it_82111","it_8319","it_81112"],"tools":["it_8321","it_8322","it_8323","it_8324","it_8325"],"output":["it_8331","it_8332","it_8333","it_8334"]}
+{"_id":{"$oid":"58984b5d911373cac0bedf64"},"id":"p08_4","phase":"Initiate","title":"Develop Epic(s)","introduction":"In this process, the Project Vision Statement serves as the basis for developing Epics. User Group Meetings may be held to discuss appropriate Epics.","input":["it_8411","it_8132","it_8232","it_8116","it_8415","it_8416","it_8417","it_8418","it_8419","it_84110","it_84111"],"tools":["it_8421","it_8422","it_8423","it_8424","it_8425","it_8426","it_8427"],"output":["it_8431","it_8432","it_8433","it_8434"]}
+{"_id":{"$oid":"58984bda911373cac0bedf65"},"id":"p08_5","phase":"Initiate","title":"Create Prioritized Product Backlog","introduction":"In this process, Epic(s) are refined, elaborated, and then prioritized to create a Prioritized Product Backlog for the project. The Done Criteria is also established at this point.","input":["it_8411","it_8431","it_8432","it_8232","it_8132","it_8116","it_8517","it_8433","it_8434","it_8419","it_85111"],"tools":["it_8521","it_8422","it_8523","it_8524","it_8525","it_8526","it_8527"],"output":["it_8531","it_8532"]}
+{"_id":{"$oid":"58984c1f911373cac0bedf66"},"id":"p08_6","phase":"Initiate","title":"Conduct Release Planning","introduction":"In this process, the Scrum Core Team reviews the User Stories in the Prioritized Product Backlog to develop a Release Planning Schedule, which is essentially a phased deployment schedule that can be shared with the project stakeholders. The Length of Sprints is also determined in this process.","input":["it_8411","it_8232","it_8132","it_8531","it_8532","it_8112","it_8113","it_8115","it_8116","it_8117","it_86111","it_86112"],"tools":["it_8621","it_8622"],"output":["it_8631","it_8632","it_8633","it_8634"]}
+{id: 'p09_1', phase: 'Plan',title: 'Create User Stories',introduction: 'In this process, User Stories and their related User Story Acceptance Criteria are created. User Stories are usually written by the Product Owner and are designed to ensure that the customer’s requirements are clearly depicted and can be fully understood by all stakeholders. User Story Writing Workshops may be held which involves Scrum Team members creating the User Stories. User Stories are incorporated into the Prioritized Product Backlog.',input: ['it_8411', 'it_8531', 'it_8532', 'it_8432', 'it_8232', 'it_8431', 'it_8517', 'it_8418', 'it_8419', 'it_91110'],tools: ['it_9121', 'it_8422', 'it_8421', 'it_9124', 'it_8424', 'it_8425', 'it_9127', 'it_9128'],output: ['it_9131', 'it_9132', 'it_9133', 'it_9134']}
+{id: 'p09_2',phase: 'Plan',title: 'Approve, Estimate, and Commit User Stories',introduction: 'In this process, the Product Owner approves User Stories for a Sprint. Then, the Scrum Master and Scrum Team estimate the effort required to develop the functionality described in each User Story. Finally, the Scrum Team commits to deliver the customer requirements in the form of Approved, Estimated, and Committed User Stories.',input: ['it_8411', 'it_9212', 'it_9132', 'it_9214'],tools: ['it_8421', 'it_9222', 'it_9223', 'it_9224', 'it_9225', 'it_9226'],output: ['it_9231']}
+{id: 'p09_3',phase: 'Plan',title: 'Create Tasks',introduction: 'In this process, the Approved, Estimated, and Committed User Stories are broken down into specific tasks and compiled into a Task List. Often, a Task Planning Meeting is held for this purpose.',input: ['it_8411', 'it_9231'],tools: ['it_9321', 'it_9322', 'it_9323', 'it_9324'],output: ['it_9331', 'it_9332', 'it_9333']}
+{id: 'p09_4',phase: 'Plan',title: 'Estimate Tasks',introduction: 'In this process, the Scrum Core Team, in Task Estimation Meetings, estimate the effort required to accomplish each task in the Task List. The result of this process is an Effort Estimated Task List.',input: ['it_8411', 'it_9331', 'it_9413', 'it_9333', 'it_8434', 'it_9416'],tools: ['it_9421', 'it_9422', 'it_9222', 'it_9223', 'it_9225'],output: ['it_9431', 'it_9432']}
+{id: 'p09_5',phase: 'Plan',title: 'Create Sprint Backlog',introduction: 'In this process, the Scrum Core Team holds Sprint Planning Meetings where the group creates a Sprint Backlog containing all tasks to be completed in the Sprint.',input: ['it_8411', 'it_9431', 'it_8632', 'it_9514', 'it_9333', 'it_9516'],tools: ['it_9521', 'it_9522', 'it_9523'],output: ['it_9531', 'it_9532']}
+{id: 'p10_1',phase: 'Implement',title: 'Create Deliverables',introduction: 'In this process, the Scrum Team works on the tasks in the Sprint Backlog to create Sprint Deliverables. A Scrumboard is often used to track the work and activities being carried out. Issues or problems being faced by the Scrum Team could be updated in an Impediment Log.',input: ['it_8411', 'it_9531', 'it_10113', 'it_10114', 'it_8631', 'it_9333', 'it_10117'],tools: ['it_10121','it_10122', 'it_10123', 'it_10124'],output: ['it_10131','it_10132', 'it_10114', 'it_8416', 'it_8434', 'it_10136', 'it_9333']}
+{id: 'p10_2',phase: 'Implement',title: 'Conduct Daily Standup',introduction: 'In this process, everyday a highly focused, Time-boxed meeting is conducted referred to as the Daily Standup Meeting. This is the forum for the Scrum Team to update each other on their progress and any impediments they may be facing.',input: ['it_8331', 'it_8231', 'it_9532', 'it_10114', 'it_8131', 'it_10216', 'it_10113', 'it_9333'],tools: ['it_10221', 'it_10222', 'it_10223', 'it_10224'],output: ['it_9532', 'it_10114', 'it_10233', 'it_10113', 'it_8416', 'it_8434', 'it_10136', 'it_9333']}
+{id: 'p10_3',phase: 'Implement',title: 'Groom Prioritized Product Backlog',introduction: 'In this process, the Prioritized Product Backlog is continuously updated and maintained. A Prioritized Product Backlog Review Meeting may be held, in which any changes or updates to the backlog are discussed and incorporated into the Prioritized Product Backlog as appropriate.',input: ['it_10311', 'it_8531', 'it_10313', 'it_8415', 'it_8416', 'it_8434', 'it_10317', 'it_11334', 'it_9333', 'it_8631', 'it_103111'],tools: ['it_10321', 'it_10322', 'it_10323'],output: ['it_10331', 'it_10332']}
+{
+    id: 'p11_1',
+    phase: 'Review',
+    title: 'Convene Scrum of Scrums',
+    introduction: 'In this process, Scrum Team representatives convene Scrum of Scrums (SoS) Meetings in predetermined intervals or whenever required to collaborate and track their respective progress, impediments, and dependencies across teams. This is relevant only for large projects where multiple Scrum Teams are involved.',
+    input: ['it_11111', 'it_8216', 'it_8115', 'it_11114', 'it_10114', 'it_9333', 'it_11117'],
+    tools: ['it_11121', 'it_11122', 'it_11123', 'it_11124', 'it_11125'],
+    output: ['it_11131', 'it_11132', 'it_10114', 'it_9333']
+ }
+ {
+    id: 'p11_2',
+    phase: 'Review',
+    title: 'Demonstrate and Validate Sprint',
+    introduction: 'In this process, the Scrum Team demonstrates the Sprint Deliverables to the Product Owner and relevant stakeholders in a Sprint Review Meeting. The purpose of this meeting is to secure approval and acceptance of the product or service by the Product Owner.',
+    input: ['it_8411', 'it_10131', 'it_9531', 'it_8532', 'it_9413', 'it_8232', 'it_8631', 'it_8434', 'it_9333', 'it_112110'],
+    tools: ['it_11221', 'it_11222', 'it_11223'],
+    output: ['it_11231', 'it_11232', 'it_8434', 'it_11234', 'it_10332', 'it_9333']
+ }
+ {
+    id: 'p11_3',
+    phase: 'Review',
+    title: 'Retrospect Sprint',
+    introduction: 'In this process, the Scrum Master and Scrum Team meet to discuss the lessons learned throughout the Sprint. This information is documented as lessons learned which can be applied to future Sprints. Often, as a result of this discussion, there may be Agreed Actionable Improvements or Updated Scrum Guidance Body Recommendations.',
+    input: ['it_8231', 'it_8331', 'it_11313', 'it_8131', 'it_11315'],
+    tools: ['it_11321', 'it_11322', 'it_11323', 'it_11324', 'it_11325'],
+    output: ['it_11331', 'it_11332', 'it_11333', 'it_11334', 'it_11335', 'it_11336']
+ }
+ {
+    id: 'p12_1',
+    phase: 'Release',
+    title: 'Ship Deliverables',
+    introduction: 'In this process, Accepted Deliverables are delivered or transitioned to the relevant stakeholders. A formal Working Deliverables Agreement documents the successful completion of the Sprint.',
+    input: ['it_8131', 'it_8232','it_11231','it_8631', 'it_8231','it_8331','it_9132', 'it_12118', 'it_12119'],
+    tools: ['it_12121','it_12122'],
+    output: ['it_12131','it_12132','it_12133']
+ }
+ {
+    id: 'p12_2',
+    phase: 'Release',
+    title: 'Retrospect Project',
+    introduction: 'In this process, which completes the project, organizational stakeholders and Scrum Core Team members assemble to retrospect the project and identify, document, and internalize the lessons learned. Often, these lessons lead to the documentation of Agreed Actionable Improvements, to be implemented in future projects.',
+    input: ['it_8411', 'it_8216', 'it_8115', 'it_8232', 'it_12215'],
+    tools: ['it_12221', 'it_12222', 'it_12223'],
+    output: ['it_11331', 'it_11332', 'it_12233', 'it_12234']
+ }

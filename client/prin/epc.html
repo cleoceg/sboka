@@ -1,9 +1,9 @@
 
-	<h1 class="display-4">{{data.title}}</h1>
+<h1 class="display-4">{{data.epc.title}}</h1>
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" role="tab" href="#{{data.stitle}}" target="_self">{{data.stitle}}</a>
+    <a class="nav-link active" data-toggle="tab" role="tab" href="#{{data.epc.stitle}}" target="_self">{{data.epc.stitle}}</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" role="tab" href="#{{data.Transparency.title}}" target="_self">{{data.Transparency.title}}</a>
@@ -18,13 +18,13 @@
 
 <!-- Tab panes -->
 <div class="tab-content">
-    <div class="tab-pane active" id="{{data.stitle}}" target="_self" role="tabpanel">
+    <div class="tab-pane active" id="{{data.epc.stitle}}" target="_self" role="tabpanel">
         <!-- Start Overview -->
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="card card-block">
-					<h4 class="card-title">{{data.overview.title}}</h4>					
-					<div ng-repeat="item in data.overview.comment">
+					<h4 class="card-title">{{data.epc.title}}</h4>					
+					<div ng-repeat="item in data.epc.comment">
 						<p><span class="card-text" ng-bind-html="item"></span><p>
 					</div>
 				</div>        

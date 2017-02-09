@@ -107,19 +107,23 @@ var org_noncore = {
             org_SGB
         ]
     }
-
-var txtProject = {
-	id: 'org_11',
-    title: 'Scrum Project Roles',
-    overview: {
-        title: 'Overview',
-        comment: [
+	
+var org_project = {
+	id: 'org_48',
+	title: 'Overview',
+	stitle: 'Overview',
+    comment: [
         'Understanding defined roles and responsibilities is very important for ensuring the successful implementation of Scrum projects.',
         'Scrum roles fall into two broad categories:',
         '<b>1.	Core Roles</b>—Core roles are those roles which are mandatorily required for producing the product of the project, are committed to the project, and ultimately are responsible for the success of each Sprint of the project and of the project as a whole.',
         '<b>2.	Non-core Roles</b>—Non-core roles are those roles which are not mandatorily required for the Scrum project, and may include team members who are interested in the project, have no formal role on the project team, may interface with the team, but may not be responsible for the success of the project. The non-core roles should also be taken into account in any Scrum project.'
-        ]
-    },
+    ]
+}
+
+var txtProject = {
+	id: 'org_11',
+    title: 'Scrum Project Roles',
+    overview: org_project,
     core: org_core,
     noncore: org_noncore
 };
@@ -169,12 +173,11 @@ var org_resPO = {
 	bodyb: ''
 };
 
-var txtOwner = {
-	id: 'org_15',
-	title: 'Product Owner',
-	overview: {
-		title: 'Overview',
-		comment: [
+var org_49 = {
+	id: 'org_49',
+	title: 'Overview',
+	stitle: 'Overview',
+	comment: [
 		'The Product Owner represents the interests of the stakeholder community to the Scrum Team. The Product Owner is responsible for ensuring clear communication of product or service functionality requirements to the Scrum Team, defining Acceptance Criteria, and ensuring those criteria are met. In other words, the Product Owner is responsible for ensuring that the Scrum Team delivers value. The Product Owner must always maintain a dual view. He or she must understand and support the needs and interests of all stakeholders, while also understanding the needs and workings of the Scrum Team. Because the Product Owner must understand the needs and priorities of the stakeholders, including customers and users, this role is commonly referred to as the Voice of the Customer.',
 		'The other responsibilities of a Product Owner are:',
 		"* Determining the project's initial overall requirements and kicking off project activities; this may involve interaction with the Program Product Owner and the Portfolio Product Owner to ensure that the project aligns with direction provided by senior management.",
@@ -182,8 +185,13 @@ var txtOwner = {
 		'* Securing the initial and ongoing financial resources for the project.',
 		'* Focusing on value creation and overall Return on Investment (ROI).',
 		'* Assessing the viability and ensuring the delivery of the product or service.'
-		],
-	},
+	]
+}
+
+var txtOwner = {
+	id: 'org_15',
+	title: 'Product Owner',
+	overview: org_49,
 	table: org_resPO,
 	VOC: org_voc,
 	chief: org_chiefPO
@@ -662,3 +670,5 @@ exports.org_servant = org_servant // org_43
 exports.org_ldrshp = org_ldrshp // org_44
 exports.org_maslow = org_maslow // org_45
 exports.org_xy = org_xy // org_46
+exports.org_project = org_project // org_48
+exports.org_49 = org_49 // org_49

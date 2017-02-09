@@ -29,50 +29,23 @@ var txtRoles = {
 };
 
 var txtSummary = {
-     title: "Summary of Responsibilities",
-     intro: 'In Scrum, the risk management activities are divided among various roles \n\
+    title: "Summary of Responsibilities",
+    intro: 'In Scrum, the risk management activities are divided among various roles \n\
 with some responsibility resting with everyone in the Scrum Team and the Scrum Master facilitating the process.',
-     table: [
-         {
-             owner: 'Scrum Guidance Body',
-             comments: [
-                 'Provides overall guidance for the risk management procedure to be followed throughout the project'
-             ]
-         },
-         {
-             owner: 'Portfolio Product Owner',
-             comments: [
-                 'Captures and assesses risks for portfolios',
-                 'Prioritizes and communicates risks to relevant stakeholders, program, and project teams '
-             ]
-         },
-         {
-             owner: 'Portfolio Scrum Master',
-             comments: [
-                 'Facilitates identification, assessment and communication of risks portfolios Program Product'
-             ]
-         },
-         {
-             owner: 'Owner',
-             comments: [
-                 'Captures and assesses risks for programs',
-                 'Prioritizes and communicates risks to relevant stakeholders and project teams'
-             ]
-         },
-         {
-             owner: 'Program Scrum Master',
-             comments: [
-                 'Facilitates identification, assessment and escalation of risks for programs Stakeholder(s)',
-                 'Interfaces with the Scrum Core Team to provide them inputs on management of risks that affect the achievement of expected outcomes and benefits from the project'
-             ]
-         },
-         {
-             owner: 'Product Owner',
-             comments: [
-                 'Captures and assesses risks for project'
-             ]
-         }
-     ]
+    table: {
+        title: 'Summary of Responsibilities',
+	stitle: 'summary',
+	nbcol: 2,
+	head: ['Roles','Responsibilities'],
+	body: [
+            [['Scrum Guidance Body'],['Provides overall guidance for the risk management procedure to be followed throughout the project']],
+            [['Portfolio Product Owner'],['Captures and assesses risks for portfolios','Prioritizes and communicates risks to relevant stakeholders, program, and project teams ']],
+            [['Portfolio Scrum Master'],['Facilitates identification, assessment and communication of risks portfolios Program Product']],
+            [['Owner'],['Captures and assesses risks for programs','Prioritizes and communicates risks to relevant stakeholders and project teams']],
+            [['Program Scrum Master'],['Facilitates identification, assessment and escalation of risks for programs Stakeholder(s)','Interfaces with the Scrum Core Team to provide them inputs on management of risks that affect the achievement of expected outcomes and benefits from the project']],
+            [['Product Owner'],['Captures and assesses risks for project']]
+        ]
+    }
  };
  
 var txtWhat = {
@@ -113,16 +86,21 @@ var txtWhat = {
  
 var txtManagement = {
      title: 'Risk Management',
-     gen: [
-         'Risk Management consists of five steps:',
-         '<b>1.	Risk identification</b>: Using various techniques to identify all potential risks.',
-         '<b>2.	Risk assessment</b>: Evaluating and estimating the identified risks.',
-         '<b>3.	Risk prioritization</b>: Prioritizing risk to be included in the Prioritized Product Backlog.',
-         '<b>4.	Risk mitigation</b>: Developing an appropriate strategy to deal with the risk.',
-         '<b>5.	Risk communication</b>: Communicating the findings from the first four steps to the appropriate stakeholders and determining their perception regarding the uncertain events.'
-     ],
+	 overview: {
+		 title: 'Overview',
+		 comment: [
+			'Risk Management consists of five steps:',
+			'<b>1.	Risk identification</b>: Using various techniques to identify all potential risks.',
+			'<b>2.	Risk assessment</b>: Evaluating and estimating the identified risks.',
+			'<b>3.	Risk prioritization</b>: Prioritizing risk to be included in the Prioritized Product Backlog.',
+			'<b>4.	Risk mitigation</b>: Developing an appropriate strategy to deal with the risk.',
+			'<b>5.	Risk communication</b>: Communicating the findings from the first four steps to the appropriate stakeholders and determining their perception regarding the uncertain events.'
+		]
+	 },
      identification: {
-        introduction: [
+		 title: "Risk identification",
+		 stitle: 'Identification',
+        comment: [
         'The Scrum Team members should attempt to identify all risks that could potentially impact the project. Only by looking at the project from different perspectives, using a variety of techniques, can they do this job thoroughly. Risk Identification is done throughout the project and Identified Risks become inputs to several Scrum processes including Create Prioritized Product Backlog, Groom Prioritized Product Backlog, and Demonstrate and Validate Sprint.',
         'The following techniques are commonly used to identify risks.'
         ],
@@ -148,35 +126,45 @@ var txtManagement = {
                 comment: 'One of the key tools used in identifying risks is a risk breakdown structure. In this structure, risks are grouped based on their categories or commonalities. For example, risks may be categorized as financial, technical, or safety related. This allows the team to better plan for and address each risk.'
             }
         ],
-        spike: '<p><b>Risk-Based Spike</b><p>A concept that can be useful in identifying risks is that of a risk-based spike. A spike is an experiment that involves research or prototyping to better understand potential risks. In a spike, an intense two to three day exercise is conducted (preferably at the beginning of a project before the Develop Epic(s) or Create Prioritized Product Backlog processes) to help the team determine the uncertainties that could affect the project. Risk-based spikes are useful when the Scrum Team is working with and getting accustomed to new technologies or tools, or when User Stories are lengthy. They also help in estimating time and effort more accurately.'
+        spike: {
+			title: 'Risk-Based Spike',
+			comment:
+				['A concept that can be useful in identifying risks is that of a risk-based spike. A spike is an experiment that involves research or prototyping to better understand potential risks. In a spike, an intense two to three day exercise is conducted (preferably at the beginning of a project before the Develop Epic(s) or Create Prioritized Product Backlog processes) to help the team determine the uncertainties that could affect the project. Risk-based spikes are useful when the Scrum Team is working with and getting accustomed to new technologies or tools, or when User Stories are lengthy. They also help in estimating time and effort more accurately.'
+				]
+		}
     },
      assessment: {
-         gen: [
-             'The assessment of risk helps in understanding the potential impact of a risk, how likely it is to occur, and when the risk could materialize. The overall effect on business value should be estimated; if that impact is significant enough to outweigh the business justification, a decision must be made whether to continue the project.',
-             'The assessment of risks is done with regard to probability, proximity, and impact. Probability of risks refers to the likelihood of the risks occurring, whereas proximity refers to when the risk might occur. Impact refers to the probable effect of the risks on the project or the organization.',
-             'To estimate the probability of a risks, various techniques may be used, including Probability Trees, Pareto Analysis, and a Probability and Impact Matrix. In addition to probability, risk assessment also evaluates the potential net effect of risks on the project or organization. These effects can be estimated using techniques such as Risk Models and Expected Monetary Value.'
-         ],
+		 title: 'Assessment Risks',
+		 stitle: 'Assessment',
+		 overview: {
+			 title: 'Risk Assessment',
+			 comment: [
+				'The assessment of risk helps in understanding the potential impact of a risk, how likely it is to occur, and when the risk could materialize. The overall effect on business value should be estimated; if that impact is significant enough to outweigh the business justification, a decision must be made whether to continue the project.',
+				'The assessment of risks is done with regard to probability, proximity, and impact. Probability of risks refers to the likelihood of the risks occurring, whereas proximity refers to when the risk might occur. Impact refers to the probable effect of the risks on the project or the organization.',
+				'To estimate the probability of a risks, various techniques may be used, including Probability Trees, Pareto Analysis, and a Probability and Impact Matrix. In addition to probability, risk assessment also evaluates the potential net effect of risks on the project or organization. These effects can be estimated using techniques such as Risk Models and Expected Monetary Value.'
+			]
+		 },
          techniques: [
              {
-                title: '<b>1.	Risk Meeting</b>',
+                title: '1.	Risk Meeting',
                 comment: [
                     'Risks could be easily prioritized by the Product Owner by calling a meeting of the Scrum Core Team and optionally inviting relevant Stakeholders to the meeting. The team could meet and prioritize different risks based on their subjective assessment of the impact of the risks on project objectives.'
                 ]
              },
              {
-                title: '<b>2.	Probability Trees</b>',
+                title: '2.	Probability Trees',
                 comment: [
                     'Potential events are represented in a tree with a branch extended for each possible outcome of a risk event. The probability of each possible outcome is indicated on the appropriate branch and then multiplied by its assessed impact to get an expected value for each outcome possibility. The outcome values are then summed together to calculate the overall expected impact of a risk to a project (see Figure 7-1).'
                 ]
              },
              {
-                title: '<b>3.	Pareto Analysis</b>',
+                title: '3.	Pareto Analysis',
                 comment: [
                     'This technique of assessing risk involves ranking risks by magnitude which helps the Scrum Team address the risks in the order of their potential impact on the project. For example, in Figure 7-2, Risk 1 has the highest impact and should preferably be addressed first.'
                 ]
              },
              {
-                title: '<b>4.	Probability Impact Grid</b>',
+                title: '4.	Probability Impact Grid',
                 comment: [
                     'Each risk is assessed for its probability of occurrence and for its potential impact on project objectives. Generally, a numerical rating is assigned for both probability and impact independently.',
                     'The two values are then multiplied to derive a risk severity score (or PI value), which can be used to prioritize risks.',
@@ -187,7 +175,7 @@ var txtManagement = {
                 ]
              },
              {
-                title: '<b>5.	Expected Monetary Value (EMV)</b>',
+                title: '5.	Expected Monetary Value (EMV)',
                 comment: [
                     'The monetary value of the risk is based on its Expected Monetary Value (EMV). EMV is calculated by multiplying the monetary impact by the risk’s probability, as approximated by the customer. Expected Monetary Value = Risk impact (in dollars) x Risk probability (as percentage) For example, a risk with an estimated negative impact of $1,000 and a 50% probability of occurring would result in an EMV as follows:',
                     '<center>EMV = $1,000 x 0.50 = $500</center>',
@@ -197,7 +185,9 @@ var txtManagement = {
          ]
      },
      prioritization: {
-         gen: [
+		 title: 'Risk Prioritization',
+		 stitle: 'Prioritization',
+         comment: [
              'Scrum allows for quick identification and assessment of risks. Identified Risks are taken into account when creating a Prioritized Product Backlog during the Create Prioritized Product Backlog process, or when we update the Prioritized Product Backlog during the Groom Prioritized Product Backlog process—so a Prioritized Product Backlog could also be referred to as a Risk Adjusted Prioritized Product Backlog.',
              'The risks could be identified and assessed based on any of the Risk Identification and Risk Assessment techniques mentioned earlier. ',
              'In the Create Prioritized Product Backlog or Groom Prioritized Product Backlog processes, the prioritized User Stories from the existing Prioritized Product Backlog and the prioritized list of risks are then combined to create an updated Prioritized Product Backlog which includes the Identified Risks:',
@@ -210,7 +200,9 @@ var txtManagement = {
          image: '../images/risk_prior.png'
      },
      mitigation: {
-         gen: [
+		 title: 'Risk Mitigation',
+		 stitle: 'Mitigation',
+         comment: [
              'The response to each risk will depend on the probability and impact of the risk. However, the iterative nature of Scrum with its rapid turnaround time and feedback cycles allows for early detection of failures; therefore, practically speaking, it has a natural mitigation feature built in.',
              'Risk can be mitigated by implementing a number of responses. In most situations, responses are proactive or reactive. In the case of a risk, a plan B may be formulated, which can be used as a fall-back in case the risk materializes—such a plan B is a reactive response. Sometimes risks are accepted and are an example of a risk response which is neither proactive nor reactive. Risks are accepted because of various reasons, as in a situation where the probability or impact of the risk is too low for a response. ',
              'Acceptance can also be the case in a situation where the apprehension of secondary risks may deter the product owner from taking any action. The effort made by the Product Owner to reduce the probability or impact—or both—of the risk is an example of a proactive response to mitigating risks.',
@@ -219,16 +211,21 @@ var txtManagement = {
          ]
      },
      communication: {
-         gen: [
+		 title: 'Risk Communication',
+		 stitle: 'Communication',
+         comment: [
              'Because stakeholders have an interest in the project, it is important to communicate with them regarding risks. Information provided to stakeholders related to risk should include potential impact and the plans for responding to each risk. This communication is on-going and should occur in parallel with the four sequential steps discussed thus far—risk identification, assessment, prioritization and mitigation. The Scrum Team may also discuss specific risks related to their Tasks with the Scrum Master during Daily Standup Meetings. The Product Owner is responsible for the prioritization of risks and for communicating the prioritized list to the Scrum Team.',
              'An important tool which can be used for communicating information related to risks is the Risk Burndown Chart.'
          ],
-         burndown: [
-             '<b>Risk Burndown Chart</b>',
-             'Risk management is integral to ensuring value creation; therefore, risk management activities are performed throughout the project lifecycle and not just during project initiation.',
-             'Each risk could be assessed using different Risk Assessment tools. However, the preferred tool for assessing risks to create a Risk Burndown Chart is Expected Monetary Value (EMV) as described in section 7.4.2.1.',
-             'The information gathered during risk assessment may be used to create a Risk Burndown Chart. This depicts cumulative project risk severity over time. The likelihoods of the various Risks are plotted on top of each other to show cumulative risk on the y-axis. The initial identification and evaluation of risks on the project and the creation of the Risk Burndown Chart are done initially. Then, at predetermined time intervals, new risks may be identified and assessed and remaining risks should be re-evaluated and updated accordingly on the chart. An appropriate time to do this is during the Sprint Planning Meeting. Tracking risks in this manner allows the team to recognize trends in risk exposure and take appropriate action, as necessary.'
-         ],
+         burndown: {
+			title: 'Risk Burndown Chart',
+			comment: [
+             
+				'Risk management is integral to ensuring value creation; therefore, risk management activities are performed throughout the project lifecycle and not just during project initiation.',
+				'Each risk could be assessed using different Risk Assessment tools. However, the preferred tool for assessing risks to create a Risk Burndown Chart is Expected Monetary Value (EMV) as described in section 7.4.2.1.',
+				'The information gathered during risk assessment may be used to create a Risk Burndown Chart. This depicts cumulative project risk severity over time. The likelihoods of the various Risks are plotted on top of each other to show cumulative risk on the y-axis. The initial identification and evaluation of risks on the project and the creation of the Risk Burndown Chart are done initially. Then, at predetermined time intervals, new risks may be identified and assessed and remaining risks should be re-evaluated and updated accordingly on the chart. An appropriate time to do this is during the Sprint Planning Meeting. Tracking risks in this manner allows the team to recognize trends in risk exposure and take appropriate action, as necessary.'
+			]
+		 },
          image: '../images/rbc.png'
      }
  };
@@ -238,23 +235,23 @@ var txtMinimizing = {
      intro: 'Being an Agile, iterative process, the Scrum framework inherently minimizes risk. The following Scrum practices facilitate the effective management of risk:',
      items: [
          {
-             title: '<b>1.	Flexibility reduces business-environment-related risk</b>',
+             title: '1.	Flexibility reduces business-environment-related risk',
              comment: 'Risk is largely minimized in Scrum due to the flexibility in adding or modifying requirements at any time in the project lifecycle. This enables the organization to respond to threats or opportunities from the business environment and unforeseen requirements whenever they arise, with usually low cost of managing such risks.'
          },
          {
-             title: '<b>2.	Regular feedback reduces expectations-related risk</b>',
+             title: '2.	Regular feedback reduces expectations-related risk',
              comment: 'Being iterative, the Scrum framework gives ample opportunities to obtain feedback and set expectations throughout the project lifecycle. This ensures that the project stakeholders, as well as the team, are not caught off guard by miscommunicated requirements.'
          },
          {
-             title: '<b>3.	Team ownership reduces estimation risk</b>',
+             title: '3.	Team ownership reduces estimation risk',
              comment: 'The Scrum Team estimates and takes ownership of the Sprint Backlog Items, which leads to more accurate estimation and timely delivery of product increments'
          },
          {
-             title: '<b>4.	Transparency reduces non-detection risk</b>',
+             title: '4.	Transparency reduces non-detection risk',
              comment: 'The Scrum principle of transparency around which the framework is built ensures that risks are detected and communicated early, leading to better risk handling and mitigation. Moreover, when conducting Scrum of Scrums Meetings, Impediments that one team is currently facing may be deemed a risk for other Scrum Teams in the future. This should be recognized in the Updated Impediments Log.'
          },
          {
-             title: '<b>5.	Iterative delivery reduces investment risk</b>',
+             title: '5.	Iterative delivery reduces investment risk',
              comment: 'Continuous delivery of value throughout the Scrum project lifecycle, as potentially shippable Deliverables are created after every Sprint, reduces investment risk for the customer.'
          }
      ]
@@ -262,20 +259,27 @@ var txtMinimizing = {
  
 var txtPortfolio = {
     title: 'Risks in Portfolios and Programs',
-    intro: [
-        'While some risks are specifically related to individual projects, others may originate in programs or portfolios and will generally be managed there itself. However, risks related to a portfolio or program will also impact projects that are part of the respective portfolio or program. During risk assessment in portfolios and programs, if it is determined that a risk may affect an individual project, relevant information about the risk must be communicated to the Product Owner and Scrum Team.',
-        'Depending on the severity or priority, when the program or portfolio team communicates a risk that will impact an individual project, the Scrum Team may have to stop and re-plan the current Sprint to address the risk. For less urgent risks, the team can continue the current Sprint and address the risk in a subsequent Sprint.'
-    ],
-    inportfolio: [
-        '<b>In Portfolio</b>',
-        '1.	When risks in Portfolio are identified, the Portfolio Product Owner will need to capture them and assess the proximity, probability, and impact of each identified risk in order to prioritize it and determine the appropriate response for the portfolio.',
-        '2.	The Portfolio Product Owner will also need to communicate the risks to the relevant stakeholders, the program teams, and the project teams. In some cases, the portfolio team may have to assume the ownership of specific risks.'
-    ],
-    inprogram: [
-        '<b>In Program</b>',
-        '1.	When program risks are identified, the Program Product Owner should enter them in the program Risk Adjusted Prioritized Product Backlog, assess the proximity, probability, and impact of each identified risk in order to prioritize it and determine the appropriate responses for programs.',
-        '2.	The Program Product Owner will also need to communicate the risks to relevant stakeholders and the project teams. In some cases, the program team would have to assume ownership of specific risks.'
-    ],
+    intro: {
+        title: "Introduction",
+        comment: [
+            'While some risks are specifically related to individual projects, others may originate in programs or portfolios and will generally be managed there itself. However, risks related to a portfolio or program will also impact projects that are part of the respective portfolio or program. During risk assessment in portfolios and programs, if it is determined that a risk may affect an individual project, relevant information about the risk must be communicated to the Product Owner and Scrum Team.',
+            'Depending on the severity or priority, when the program or portfolio team communicates a risk that will impact an individual project, the Scrum Team may have to stop and re-plan the current Sprint to address the risk. For less urgent risks, the team can continue the current Sprint and address the risk in a subsequent Sprint.'
+        ]
+    },
+    inportfolio: {
+        title: 'In Portfolio',
+        comment: [
+            '1.	When risks in Portfolio are identified, the Portfolio Product Owner will need to capture them and assess the proximity, probability, and impact of each identified risk in order to prioritize it and determine the appropriate response for the portfolio.',
+            '2.	The Portfolio Product Owner will also need to communicate the risks to the relevant stakeholders, the program teams, and the project teams. In some cases, the portfolio team may have to assume the ownership of specific risks.'
+        ]
+    },
+    inprogram: {
+        title: 'In Program',
+        comment: [
+            '1.	When program risks are identified, the Program Product Owner should enter them in the program Risk Adjusted Prioritized Product Backlog, assess the proximity, probability, and impact of each identified risk in order to prioritize it and determine the appropriate responses for programs.',
+            '2.	The Program Product Owner will also need to communicate the risks to relevant stakeholders and the project teams. In some cases, the program team would have to assume ownership of specific risks.'
+        ]
+    },
     image: '../images/risk_portfolio.png'
 };
  
@@ -293,5 +297,5 @@ exports.txtSummary = txtSummary
 exports.txtwhat = txtWhat;
 exports.txtmanagement = txtManagement;
 exports.txtminimizing = txtMinimizing;
-exports.txtportfolio = txtPortfolio;
+exports.txtPortfolio = txtPortfolio;
 exports.txtvs = txtVs;

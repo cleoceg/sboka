@@ -22,30 +22,37 @@ var txtRoles = {
 
 var txtOverview = {
 	title: 'Change Overview',
-	comment: [
-		'Change is inevitable in all projects. In today’s hypercompetitive world where technology, market conditions, and business patterns are continuously shifting, change is the only constant.',
-		'A primary principle of Scrum is its acknowledgement that a) stakeholders (e.g., customers, users, and sponsors) do change their minds about what they want and need throughout a project (sometimes referred to as ‘requirements churn’) and b) that it is very difficult, if not impossible, for stakeholders to define all requirements during project initiation.',
-		'Scrum development projects welcome change by using small development cycles that incorporate customer feedback on the project’s deliverables after each Sprint. This enables the customer to regularly interact with the Scrum Team members, view product increments as they are ready, and change requirements earlier on in the development cycle. Also, the portfolio or program management teams can respond to Change Requests pertaining to Scrum projects applicable at their level.',
-		'Scrum embodies a key principle from the Agile Manifesto (Fowler and Highsmith, 2001): “Responding to change over following a plan.” Scrum is practiced on the basis of embracing change and turning it into a competitive advantage. Therefore, it is more important to be flexible than to follow a strict, predefined plan. This means it is essential to approach project management in an adaptive manner that enables change throughout rapid product development or service development cycles.',
-		'Being adaptive to change is a key advantage of the Scrum framework. Although Scrum works well for all projects in all industries, it can be very effective when the product or other project requirements are not fully understood or cannot be well defined up front, when the product’s market is volatile, and/or when the focus is on making the team flexible enough to incorporate changing requirements. Scrum is especially useful for complex projects with a lot of uncertainty. Long-term planning and forecasting is typically ineffective for such projects and they involve high quantities of risk. Scrum guides the team through transparency, inspection, and adaptation to the most valuable business outcomes.'
-	],
+	overview: {
+		title: 'Change Overview',
+		stitle: 'Overview',
+		comment: [
+			'Change is inevitable in all projects. In today’s hypercompetitive world where technology, market conditions, and business patterns are continuously shifting, change is the only constant.',
+			'A primary principle of Scrum is its acknowledgement that a) stakeholders (e.g., customers, users, and sponsors) do change their minds about what they want and need throughout a project (sometimes referred to as ‘requirements churn’) and b) that it is very difficult, if not impossible, for stakeholders to define all requirements during project initiation.',
+			'Scrum development projects welcome change by using small development cycles that incorporate customer feedback on the project’s deliverables after each Sprint. This enables the customer to regularly interact with the Scrum Team members, view product increments as they are ready, and change requirements earlier on in the development cycle. Also, the portfolio or program management teams can respond to Change Requests pertaining to Scrum projects applicable at their level.',
+			'Scrum embodies a key principle from the Agile Manifesto (Fowler and Highsmith, 2001): “Responding to change over following a plan.” Scrum is practiced on the basis of embracing change and turning it into a competitive advantage. Therefore, it is more important to be flexible than to follow a strict, predefined plan. This means it is essential to approach project management in an adaptive manner that enables change throughout rapid product development or service development cycles.',
+			'Being adaptive to change is a key advantage of the Scrum framework. Although Scrum works well for all projects in all industries, it can be very effective when the product or other project requirements are not fully understood or cannot be well defined up front, when the product’s market is volatile, and/or when the focus is on making the team flexible enough to incorporate changing requirements. Scrum is especially useful for complex projects with a lot of uncertainty. Long-term planning and forecasting is typically ineffective for such projects and they involve high quantities of risk. Scrum guides the team through transparency, inspection, and adaptation to the most valuable business outcomes.'
+		]
+		
+	},
 	unapproved: {
 		title: 'Unapproved and Approved Change Requests',
+		stitle: 'unapproved',
 		comment: [
 			'Request for changes are usually submitted as Change Requests. Change Requests remain unapproved until they get formally approved. The Scrum Guidance Body usually defines a process for approving and managing changes throughout the organization. In the absence of a formal process, it is recommended that small changes that do not have significant impact on the project be directly approved by the Product Owner. The tolerance for such small changes could be defined at an organizational level or by the sponsor for a particular project. In most projects, 90% of Change Requests could be classified as small changes that should be approved by the Product Owner. So, the Product Owner plays a very important role in managing changes in a Scrum Project.',
 			'Changes that are beyond the tolerance level of the Product Owner may need approval from relevant stakeholders working with the Product Owner.',
 			'At times, if a requested change could have a substantial impact on the project or organization, approval from senior management (e.g., Executive Sponsor, Portfolio Product Owner, Program Product Owner, or Chief Product Owner) may be required.',
 			'Change Requests for the project are discussed and approved during the Develop Epic(s), Create Prioritized Product Backlog, and Groom Prioritized Product Backlog processes. Approved Change Requests are then prioritized along with other product requirements and their respective User Stories and then incorporated into the Prioritized Product Backlog.'
 		],
+		image1: '../images/change_approval.png',
+		image2: '../images/approved_change.png'
 	},
-	image1: '../images/change_approval.png',
-	image2: '../images/approved_change.png'
 };
 
 var txtChange = {
 	title: 'Change',
 	balancing: {
 		title: 'Balancing Flexibility and Stability',
+		stitle: 'balancing',
 		comment: [
 			'Scrum helps organizations become more flexible and open to change. However, it is important to understand that although the Scrum framework emphasizes flexibility, it is also important to maintain stability throughout the change process. In the same way that extreme rigidity is ineffective, extreme flexibility is also unproductive. The key is to find the right balance between flexibility and stability because stability is needed in order to get work done. Therefore, Scrum uses iterative delivery and its other characteristics and principles to achieve this balance. Scrum maintains flexibility in that Change Requests can be created and approved at any time during the project; however, they get prioritized when the Prioritized Product Backlog is created or updated. At the same time, Scrum ensures that stability is maintained by keeping the Sprint Backlog fixed and by not allowing interference with the Scrum Team during a Sprint.',
 			'In Scrum, all requirements related to an ongoing Sprint are frozen during the Sprint. No change is introduced until the Sprint ends, unless a change is deemed to be significant enough to stop the Sprint. In the case of an urgent change, the Sprint is terminated and the team meets to plan a new Sprint. This is how Scrum accepts changes without creating the problem of changing release dates.'
@@ -53,10 +60,16 @@ var txtChange = {
 	},
 	achieving: {
 		title: 'Achieving Flexibility',
-		comment: [
-			'Scrum facilitates flexibility through transparency, inspection, and adaptation to ultimately achieve the most valuable business outcomes. Scrum provides an adaptive mechanism for project management in which a change in requirements can be accommodated without significantly impacting overall project progress. It is necessary to adapt to emerging business realities as part of the development cycle. Flexibility in Scrum is achieved through five key characteristics (see Figure 6-3): iterative product development, Time-boxing, cross-functional teams, customer value-based prioritization, and continuous integration.'
-		],
-		image: '../images/flexibility.png',
+		stitle: 'achieving',
+		overview: {
+			title: 'Overview',
+			stitle: 'overview',
+			comment: [
+				'Scrum facilitates flexibility through transparency, inspection, and adaptation to ultimately achieve the most valuable business outcomes. Scrum provides an adaptive mechanism for project management in which a change in requirements can be accommodated without significantly impacting overall project progress. It is necessary to adapt to emerging business realities as part of the development cycle. Flexibility in Scrum is achieved through five key characteristics (see Figure 6-3): iterative product development, Time-boxing, cross-functional teams, customer value-based prioritization, and continuous integration.'
+			],
+			image: '../images/flexibility.png'
+			
+		},
 		flex_iterative: {
 			title: 'Flexibility through Iterative Product Development',
 			comment: [
@@ -130,10 +143,13 @@ var txtChange = {
 
 var txtIntegration = {
     title: 'Integrating Change',
-    comment: [
-        'Depending on the industry and type of project, the priority of features and requirements for a project may remain fixed for significant durations of time, or they may change frequently. If project requirements are generally stable, there are typically only minor changes made to the Prioritized Product Backlog throughout development, and Scrum Teams can work sequentially completing requirements that will provide maximum customer value as prioritized in the Prioritized Product Backlog. The length of the Sprint is usually longer, 4 to 6 weeks, in such stable environments.',
-        'If project requirements change throughout the project, for example due to changed business requirements, the same method continues to be effective. Before beginning a Sprint—during the Create Prioritized Product Backlog or Groom Prioritized Product Backlog processes—the highest priority requirements in the Prioritized Product Backlog are typically selected to be completed in that Sprint. Because changes have been accounted for in the Prioritized Product Backlog, the team only needs to determine how many tasks they can accomplish in the Sprint based on time and resources provided. Change management is executed in the ongoing processes of prioritizing and adding tasks to the Prioritized Product Backlog.'
-    ],
+	overview: {
+		title: 'overview',
+		comment: [
+			'Depending on the industry and type of project, the priority of features and requirements for a project may remain fixed for significant durations of time, or they may change frequently. If project requirements are generally stable, there are typically only minor changes made to the Prioritized Product Backlog throughout development, and Scrum Teams can work sequentially completing requirements that will provide maximum customer value as prioritized in the Prioritized Product Backlog. The length of the Sprint is usually longer, 4 to 6 weeks, in such stable environments.',
+			'If project requirements change throughout the project, for example due to changed business requirements, the same method continues to be effective. Before beginning a Sprint—during the Create Prioritized Product Backlog or Groom Prioritized Product Backlog processes—the highest priority requirements in the Prioritized Product Backlog are typically selected to be completed in that Sprint. Because changes have been accounted for in the Prioritized Product Backlog, the team only needs to determine how many tasks they can accomplish in the Sprint based on time and resources provided. Change management is executed in the ongoing processes of prioritizing and adding tasks to the Prioritized Product Backlog.'
+		]
+	},
     sprint: {
         title: 'Changes to a Sprint',
 		stitle: 'Sprint',
@@ -199,6 +215,7 @@ var txtPortfolio = {
 	],
 	inportfolio: {
 		title: 'In Portfolio',
+		stitle: 'inportfolio',
 		comment: [
 			'It is not recommended to make changes in between two Portfolio Backlog Meetings',
 			'If the change is minor, the Portfolio Product Owner should secure approval from the relevant stakeholders (e.g., sponsor, customer, and end user) and then add the requirements to the Portfolio Backlog. Product Owners of the program and project will consider those requirements for inclusion in future Sprints.',
@@ -208,6 +225,7 @@ var txtPortfolio = {
 	},
 	inprogram: {
 		title: 'In Program',
+		stitle: 'inprogram',
 		comment: [
 			'It is not recommended to make changes in between two Program Backlog Meetings.',
 			'If the change is minor, the Program Product Owner should secure approval from the relevant stakeholders (e.g., sponsor, customer, and end user) and the Portfolio Product Owner and then add the requirements to the Program Backlog. Product Owners for the project will consider those requirements for inclusion in future Sprints.',
@@ -220,68 +238,18 @@ var txtPortfolio = {
 
 var txtSummary = {
 	title: 'Change: Summary of Responsibilities',
-	table: [
-         {
-             owner: 'Scrum Guidance Body',
-             comments: [
-                 'Provides overall guidance for the change management procedures to be followed throughout the project'
-             ]
-         },
-		 {
-			 owner: 'Portfolio Product Owner',
-			 comments: [
-				'Provides Change Requests for portfolios',
-				'Approves products that are amended, removed, or added according to portfolio requirements'
-			 ]
-		 },
-		 {
-			 owner: 'Portfolio Scrum Master',
-			 comments: [
-				'Facilitates identification, assessment, and management of Change Requests for portfolios'
-			 ]
-		 },
-		 {
-			 owner: 'Program Product Owner',
-			 comments: [
-				'Provides request for change for programs',
-				'Approves products that are amended, removed, or added according to program requirements'
-			 ]
-		 },
-		 {
-			 owner: 'Program Scrum Master',
-			 comments: [
-				'Facilitates identification, assessment, and management of Change Requests for programs'
-			 ]
-		 },
-		 {
-			 owner: 'Stakeholder(s)',
-			 comments: [
-				'Provides request for changes',
-				'Involved with approving and prioritizing Change Requests'
-			 ]
-		 },
-		 {
-			 owner: 'Product Owner',
-			 comments: [
-				'Provides requests for changes in a project',
-				'Assesses the impact of requests for change raised for the portfolio, program, or project',
-				'Prioritizes User Stories in the project’s Prioritized Product Backlog',
-				'Assesses the impact of problems on project objectives identified by the Scrum Team',
-				'Provides clear communication to stakeholders on reprioritized Product Backlog Items'
-			 ]
-		 },
-		 {
-			 owner: 'Scrum Master',
-			 comments: [
-				'Facilitates identification, assessment, and escalation of problems and Change Requests by the Scrum Team'
-			 ]
-		 },
-		 {
-			 owner: 'Scrum Team',
-			 comments: [
-				'Suggests improvements or changes during the Create Deliverables and Conduct Daily Standup processes'
-			 ]
-		 }
+	nbcol: 2,
+	head: ['Roles','Responsibilities'],
+	body: [
+		[['Scrum Guidance Body'],['Provides overall guidance for the change management procedures to be followed throughout the project']],
+		[['Portfolio Product Owner'],['Provides Change Requests for portfolios','Approves products that are amended, removed, or added according to portfolio requirements']],
+		[['Portfolio Scrum Master'],['Facilitates identification, assessment, and management of Change Requests for portfolios']],
+		[['Program Product Owner'],['Provides request for change for programs','Approves products that are amended, removed, or added according to program requirements']],
+		[['Program Scrum Master'],['Facilitates identification, assessment, and management of Change Requests for programs']],
+		[['Stakeholder(s)'],['Provides request for changes','Involved with approving and prioritizing Change Requests']],
+		[['Product Owner'],['Provides requests for changes in a project','Assesses the impact of requests for change raised for the portfolio, program, or project','Prioritizes User Stories in the project’s Prioritized Product Backlog','Assesses the impact of problems on project objectives identified by the Scrum Team','Provides clear communication to stakeholders on reprioritized Product Backlog Items']],
+		[['Scrum Master'],['Facilitates identification, assessment, and escalation of problems and Change Requests by the Scrum Team']],
+		[['Scrum Team'],['Suggests improvements or changes during the Create Deliverables and Conduct Daily Standup processes']]
 	]
 };
 

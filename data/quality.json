@@ -1,0 +1,147 @@
+{
+	id: 'qual_01',
+    title: 'Quality Introduction',
+    comment: [
+        'The purpose of this chapter is to define quality as it relates to projects and to present the Scrum approach to achieve the required levels of quality.',
+		'Quality, as defined in A Guide to the Scrum Body of Knowledge (SBOK™ Guide), is applicable to the following:',
+		'* Portfolios, programs, and/or projects in any industry',
+		'* Products, services, or any other results to be delivered to stakeholders',
+		'* Projects of any size or complexity',
+		'The term “product” in the SBOK™ Guide may refer to a product, service, or other deliverable. Scrum can be applied effectively to any project in any industry—from small projects or teams with as few as six team members to large, complex projects with up to several hundred team members.'
+    ]
+}
+{
+	id: 'qual_02',
+    title: 'Roles Guide',
+	comment: [
+		'Product Owner—It is important for anyone assuming the role of Product Owner in Scrum projects to read this complete chapter.',
+		'Scrum Master—The Scrum Master should also be familiar with this entire chapter with primary focus on sections 5.3, 5.4, 5.5.3, and 5.6.',
+		'Scrum Team—The Scrum Team should mainly focus on sections 5.3, 5.4, and 5.6.'
+	]
+}
+{
+	id: 'qual_20',
+    title: 'Scrum vs. Traditional Project Management',
+	comment: [
+		'Although there are similarities in Scrum and traditional project management methods with regard to definition of ‘quality’ (i.e., the ability of the product to meet the agreed Acceptance Criteria and achieve the business value expected by the customer), differences exist in terms of how the approaches address the implementation and achievement of the required quality levels.',
+		'In traditional project management methods, the users clarify their expectations; the project manager defines those expectations in measurable terms and gains agreement from the users. After detailed planning, the project team develops the product over an agreed period of time. If any of the agreed criteria are to be changed, changes can happen only through a formal change management system where impact of changes is estimated and the Project Manager gets approval from all relevant stakeholders.',
+		'In Scrum, however, the Product Owner collaborates with the Scrum Team and defines the Acceptance Criteria for the User Stories related to the product to be delivered. The Scrum Team then develops the product in a series of short iterations called Sprints. The Product Owner can make changes to the requirements to keep pace with the user needs and these changes can be addressed by the Scrum Team either by terminating the current Sprint or including the adjusted requirements in the next Sprint as each Sprint is of very short duration (i.e., one to six weeks).',
+		'One of the major advantages of Scrum is the emphasis on creating potentially shippable deliverables at the end of each Sprint cycle, instead of at the end of the entire project. So, the Product Owner and customers constantly inspect, approve, and accept Deliverables after each Sprint. Also, even if a Scrum project is terminated early, there is some value created prior to termination through the Deliverables created in individual Sprints.'
+	]
+}
+{
+	id: 'qual_19',
+    title: 'Quality: Summary of Responsibilities',
+	table: 'qual_sumTable'
+}
+{
+	id: 'qual_03',
+	stitle: 'scope',
+	title: 'Quality and Scope',
+	comment: [
+		'Scope and quality requirements for a project are determined by taking into consideration various factors such as the following:',
+		'<li>The business need the project will fulfill',
+		'<li>The capability and willingness of the organization to meet the identified business need',
+		'<li>The current and future needs of the target audience',
+		'The scope of a project is the total sum of all the product increments and the work required for developing the final product. Quality is the ability of the deliverables to meet the quality requirements for the product and satisfy customer needs. In Scrum, the scope and quality of the project are captured in the Prioritized Product Backlog, and the scope for each Sprint is determined by refining the large Prioritized Product Backlog Items (PBIs) into a set of small but detailed User Stories that can be planned, developed, and verified within a Sprint.',
+		'The Prioritized Product Backlog is continuously groomed by the Product Owner. The Product Owner ensures that any User Stories that the Scrum Team is expected to do in a Sprint are refined prior to the start of the Sprint. In general, the most valuable requirements in solving the customers’ problems or meeting their needs are prioritized as high and the remaining are given a lower priority. Less important User Stories are developed in subsequent Sprints or can be left out altogether according to the customer’s requirements. During Sprint execution, the Product Owner, customer, and the Scrum Team can discuss the list of features of the product to comply with the changing needs of the customers.'
+	]
+}
+{
+	id: 'qual_04',
+	stitle: 'value',
+	title: 'Quality and Business Value',
+	comment: [
+		'Quality and business value are closely linked. Therefore, it is critical to understand the quality and scope of a project in order to correctly map the outcomes and benefits the project and its product must achieve in order to deliver business value. To determine the business value of a product, it is important to understand the business need that drives the requirements of the product. Thus, business need determines the product required, and the product, in turn provides the expected business value.',
+		'Quality is a complex variable. An increase in scope without increasing time or resources tends to reduce quality. Similarly, a reduction in time or resources without decreasing scope also generally results in a decrease in quality. Scrum believes in maintaining a ʺsustainable paceʺ of work, which helps improve quality over a period of time.',
+			'The Scrum Guidance Body may define minimum quality requirements and standards required for all projects in the organization. The standards must be adhered to by all Scrum Teams in the company.'
+	]
+}
+{
+		id: 'qual_21',
+		title: 'Overview',
+		comment: [
+		'There are numerous ways to define quality.',
+		'In Scrum, quality is defined as the ability of the completed product or deliverables to meet the Acceptance Criteria and achieve the business value expected by the customer.',
+		'To ensure that a project meets quality requirements, Scrum adopts an approach of continuous improvement whereby the team learns from experience and stakeholder engagement to constantly keep the Prioritized Product Backlog updated with any changes in requirements. The Prioritized Product Backlog is simply never complete until the closure or termination of the project. Any changes to the requirements reflect changes in the internal and external business environment and allow the team to continually work and adapt to achieve those requirements. Since Scrum requires work to be completed in increments during Sprints, this means that errors or defects get noticed earlier through repetitive quality testing, rather than when the final product or service is near completion. Moreover, important quality-related tasks (e.g., development, testing, and documentation) are completed as part of the same Sprint by the same team—this ensures that quality is inherent in any Done deliverable created as part of a Sprint. Thus, continuous improvement with repetitive testing optimizes the probability of achieving the expected quality levels in a Scrum project. Constant discussions between the Scrum Core Team and stakeholders (including customers and users) with actual increments of the product being delivered at the end of every Sprint, ensures that the gap between customer expectations from the project and actual deliverables produced is constantly reduced.'
+	]
+}
+{
+	id: 'qual_05',
+    title: 'Quality Defined',
+	overview : 'qual_21',
+	scope: 'qual_scope',
+	value: 'qual_value'
+}
+{
+	id: 'qual_07',
+	title: 'Writing Acceptance Criteria',
+	stitle: 'writing',
+	comment: [
+		'Acceptance Criteria are unique to each User Story and are not a substitute for a requirements list.',
+		'It is important for a Product Owner to note that User Stories that fulfill most, but not all, Acceptance Criteria cannot be accepted as Done. Scrum projects operate in Time-boxed Sprints, with a dedicated Sprint Backlog for each Sprint. Often, the last bit of work might be the most complicated part of a User Story and might take longer than expected. If incomplete User Stories were given partial credit for being Done and carried over to the next Sprint, then the progress of the subsequent Sprint could be disrupted. Therefore, the Done status is black and white. A User Story can only be either Done or not Done.'
+	],
+	example: 'qual_writingExample'
+}
+{
+	id: 'qual_06',
+	title: 'Example',
+	comment: [
+		'Persona: Janine is a married 36 year old working professional with a family of three children. She is a busy, successful woman who balances her professional and personal life. She is comfortable with technology and is an early adopter of innovative services and products. She is always connected to the internet through multiple devices and regularly shops on e-commerce portals.',
+		'User Story: “As an online grocery shopper Janine, I should be able to save and view my draft order from any of my devices so that I can complete the order process at my convenience.”',
+		'<b>Acceptance Criteria</b>:',
+		'<li>Every in-progress order must be saved every 5 seconds to the logged in user account as a draft order',
+		'<li>New draft orders must show up as notifications on any devices the user logs in'
+	]
+}
+{
+	id: 'qual_09',
+	title: 'Minimum Acceptance Criteria',
+	stitle: 'minimum',
+	comment: [
+		'A higher level business unit may announce mandatory minimum Acceptance Criteria, which then become part of the Acceptance Criteria for any User Story for that business unit. Any functionality defined by the business unit must satisfy these minimum Acceptance Criteria, if it is to be accepted by the respective Product Owner. The introduction of this Acceptance Criteria may lead to a cascading set of Acceptance Criteria for the portfolio, program, and project (see Figure 5-2). The overall quality standards, guidelines, and templates for an entire portfolio are set by the Portfolio Product Owner while the minimum Acceptance Criteria for programs are set by the Program Product Owner. Thus the Acceptance Criteria for a User Story in a project will implicitly include all the minimum Acceptance Criteria from the higher levels, as applicable.',
+		'Once the minimum Acceptance Criteria are defined, such criteria may then be documented in the Scrum Guidance Body documents and referred to by Scrum Teams as required.'
+	],
+	cascading: 'qual_minTable'
+}
+{
+	id: 'qual_10',
+	stitle: 'done',
+	title: 'Definition of Done',
+	comment: [
+		'There is one key difference between “Done Criteria” and “Acceptance Criteria”. While Acceptance Criteria are unique for individual User Stories, Done Criteria are a set of rules that are applicable to all User Stories in a given Sprint. General Done Criteria could include any of the following:',
+		'<li>Reviewed by other team members<li>Completed unit testing of the User Story<li>Completion of quality assurance tests<li>Completion of all documentation related to the User Story<li>All issues are fixed<li>Successful demonstration to stakeholders and/or business representatives',
+		'As with the Acceptance Criteria, all conditions of the Done Criteria must be satisfied for the User Story to be considered Done.',
+		'The Scrum Team should use a checklist of the general Done Criteria to ensure a task is finished and the result meets the Definition of Done (DoD). A clear Definition of Done is critical because it helps remove ambiguity and allows the team to adhere to required quality norms. The definition of Done is typically determined and documented by the Scrum Guidance Body.',
+		'The required records and data to comply with the project’s documentation requirements can be generated as the team proceeds through Sprints and Releases.',
+		'The inclusion of activities such as holding review meetings and writing design documents can help ensure compliance with internal and external quality standards. The basic principles of Scrum such as short iterations, incremental building, customer involvement, adaptation to changing requirements, and constantly adjusting scope, time, and cost within the project will still apply.'
+	]
+}
+{
+	id: 'qual_11',
+	stitle: 'acceptance',
+	title: 'Acceptance or Rejection of backlog',
+	comment: [
+		'<b>Acceptance or Rejection of Prioritized Product Backlog Items</b>',
+		'Toward the end of any iteration, the respective business unit and stakeholders participate in a Sprint Review Meeting in which the product increment is demonstrated to the Product Owner, sponsor, customer, and users. While feedback from all the stakeholders is gathered, only the Product Owner has the power to accept or reject a particular User Story as Done, according to the agreed upon Acceptance Criteria. Thus, the role of Acceptance Criteria in maintaining quality is critical and needs to be clearly understood by the team. It is the responsibility of the Scrum Master to ensure that the Acceptance Criteria for a User Story are not changed by the Product Owner in the middle of a Sprint. Partially completed User Stories are rejected as not Done and moved back into the Prioritized Product Backlog.'
+	]
+}
+{
+	id: 'qual_22',
+		title: 'Overview',
+		comment: [
+			'The Prioritized Product Backlog is a single requirements document that defines the project scope by providing a prioritized list of features of the product or service to be delivered by the project. The required features are described in the form of User Stories. User Stories are specific requirements outlined by various stakeholders as they pertain to the proposed product or service. Each User Story will have associated User Story Acceptance Criteria (also referred to as “Acceptance Criteria”), which are the objective components by which a User Story’s functionality is judged. Acceptance Criteria are developed by the Product Owner according to his or her expert understanding of the customer’s requirements. The Product Owner then communicates the User Stories in the Prioritized Product Backlog to the Scrum Team members and their agreement is sought. Acceptance Criteria should explicitly outline the conditions that User Stories must satisfy. Clearly defined Acceptance Criteria are crucial for timely and effective delivery of the functionality defined in the User Stories, which ultimately determines the success of the project.',
+			'At the end of each Sprint, the Product Owner uses these criteria to verify the completed deliverables; and can either accept or reject individual deliverables and their associated User Stories. If deliverables are accepted by the Product Owner, then the User Story is considered Done. A clear definition of Done is critical because it helps clarify requirements and allows the team to adhere to quality norms. It also helps the team think from the user’s perspective when working with User Stories.',
+			'User Stories corresponding to rejected deliverables are added back to the Updated Prioritized Product Backlog during the Groom Prioritized Product Backlog process, to be completed in future Sprints. The rejection of a few individual deliverables and their corresponding User Stories is not a rejection of the final product or product increment. The product or product increment could be potentially shippable even if a few User Stories are rejected.'
+		],
+		image: '../images/quality1.png'
+}
+{
+	id: 'qual_12',
+    title: 'Acceptance Criteria and the Prioritized Product Backlog',
+	overview: 'qual_22',
+	writing: 'qual_writing',
+	minimum: 'qual_minimum',
+	done: 'qual_done',
+	acceptance: 'qual_acceptance'
+}

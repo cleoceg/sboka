@@ -3,11 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/dropbox/Dropbox/SBOK/controllers/ctrorganization.js</file>
-            <file>file:/D:/dropbox/Dropbox/SBOK/routes/index.js</file>
-            <file>file:/D:/dropbox/Dropbox/SBOK/views/org/project.ejs</file>
-            <file>file:/D:/dropbox/Dropbox/SBOK/model/organization.js</file>
-            <file>file:/D:/dropbox/Dropbox/SBOK/views/index.ejs</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/model/processes.js</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/api/controllers/ctrphasesM.js</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/api/controllers/ctrprinciplesM.js</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/model/db.js</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/api/routes/index.js</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/model/principles.js</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/client/controller/sbokPhs.js</file>
+            <file>file:/D:/dropbox/Dropbox/SBOKA/app.js</file>
         </group>
     </open-files>
 </project-private>

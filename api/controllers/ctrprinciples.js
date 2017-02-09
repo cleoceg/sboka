@@ -10,7 +10,7 @@ module.exports.intro = function (req, res) {
 
 // EPC
 module.exports.epc = function (req, res) {
-    sendJSONresponse(res, '200', txtPrinciples.txtEpc);
+    sendJSONresponse(res, '200', txtPrinciples.txtEpc); 
 };
 
 // Self-Organization
