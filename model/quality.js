@@ -205,10 +205,8 @@ var qual_pdca = {
 	image: '../images/pdca.png'
 };
 
-var txtManagement = {
-	id: 'qual_17',
-    title: 'Quality Management in Scrum',
-	overview: {
+var qual_23 = {
+	id: 'qual_23',
 		title: 'Overview',
 		comment: [
 			'The customer is the most important stakeholder for any project. Therefore, it is important to understand the customer’s needs and requirements. The Voice of the Customer (VOC) can be referred to as the explicit and implicit requirements of the customer, which must be understood prior to the designing of a product or service. Generally, in a Scrum environment, the Product Owner’s focus is on business requirements and objectives, which together represent the Voice of the Customer. The Product Owner can benefit greatly from the guidance available from the Scrum Guidance Body (either through quality documents or standards, or from quality experts). These specialists should work with the Product Owner and the customer to ensure the appropriate level of detail and information in the User Stories, since User Stories are the basis for the success of any Scrum project.',
@@ -220,13 +218,21 @@ var txtManagement = {
 			'2. Quality control',
 			'3. Quality assurance'
 		]
-	},
-	planning: {
+}
+
+var qual_24 = {
+		id: 'qual_24',
 		title: 'Quality Planning',
 		stitle: 'planning',
 		planning: qual_planning,
 		integration: qual_integration
-	},
+	}
+
+var txtManagement = {
+	id: 'qual_17',
+    title: 'Quality Management in Scrum',
+	overview: qual_23,
+	planning: qual_24,
 	control: qual_control,
 	pdca: qual_pdca
 };
@@ -287,4 +293,4 @@ exports.qual_integration = qual_integration // qual_14
 exports.qual_control = qual_control // qual_15
 exports.qual_pdca = qual_pdca // qual_16
 exports.qual_sumTable = qual_sumTable // qual_18
-// 22
+// 24

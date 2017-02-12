@@ -7,8 +7,8 @@ var ctrPhases = require('../controllers/ctrphasesM'); // with MongoDB
 var ctrOrganization = require('../controllers/ctrorganizationM'); // with MongoDB
 var ctrJustification = require('../controllers/ctrjustificationM'); // with MongoDB
 var ctrQuality = require('../controllers/ctrqualityM'); // with MongoDB
-var ctrChange = require('../controllers/ctrchange');
-var ctrRisks = require('../controllers/ctrRisks');
+var ctrChange = require('../controllers/ctrchangeM'); // with MongoDB
+var ctrRisks = require('../controllers/ctrRisksM'); // with MongoDB
 
 // Principles
 router.get('/prin_intro', ctrPrinciples.intro);

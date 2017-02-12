@@ -37,7 +37,7 @@ module.exports.qualDefined = function (req, res) {
 			response.data=item[2];
 			response.overview = item[3];
 			sendJSONresponse(res, '200', response);
-		})
+	})
 };
 
 // Quality Acceptance
@@ -70,7 +70,7 @@ module.exports.qualAcceptance = function (req, res) {
 			Table
 				.findOne({'id':'qual_08'})
 				.exec(function(err, item) {
-					response.table=item;
+					response.cascading=item;
 					sendJSONresponse(res, '200', response);
 			})
 		})
@@ -78,7 +78,31 @@ module.exports.qualAcceptance = function (req, res) {
 
 // Quality Management
 module.exports.qualManagement = function (req, res) {
-    //sendJSONresponse(res, '200', txtQual.txtManagement);
+	// qual_13: planning.planning
+	// qual_14: integration
+	// qual_15: control
+	// qual_16: pdca
+	// qual_17: data
+	// qual_23: overview
+	// qual_24: planning
+	var response = {};
+	Item
+		.find({
+			'id': {$in: [
+				'qual_13', 'qual_14', 'qual_15', 'qual_16', 'qual_17', 'qual_23', 'qual_24'
+			]}
+		})
+		.sort({id:1})
+		.exec(function (err, item) {
+			response.plan = item[0];
+			response.integration =item[1];
+			response.control=item[2];
+			response.pdca = item[3];
+			response.data = item[4];
+			response.overview = item[5];
+			response.planning = item[6];
+			sendJSONresponse(res, '200', response);
+	})
 };
 
 // Quality Summary

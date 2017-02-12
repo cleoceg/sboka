@@ -1,18 +1,17 @@
-var txtIntroduction = {
+{
 	id: 'chg_01',
     title: 'Change: Introduction',
     comment: [
         'Every project, regardless of its method or framework is exposed to change. It is imperative that project team members understand that the Scrum development processes are designed to embrace change.',
         'Organizations should try to maximize the benefits that arise from change and minimize any negative impacts through diligent change management processes in accordance with the principles of Scrum.',
         'Change, as defined in A Guide to the Scrum Body of Knowledge (SBOK™ Guide), is applicable to the following:',
-        '•	Portfolios, programs, and/or projects in any industry',
-        '•	Products, services, or any other results to be delivered to stakeholders',
-        '•	Projects of any size or complexity',
+        '• Portfolios, programs, and/or projects in any industry',
+        '• Products, services, or any other results to be delivered to stakeholders',
+        '• Projects of any size or complexity',
         'The term “product” in the SBOK™ Guide may refer to a product, service, or other deliverable. Scrum can be applied effectively to any project in any industry—from small projects or teams with as few as six team members to large, complex projects with up to several hundred team members.'
     ]
-};
-
-var txtRoles = {
+}
+{
 	id: 'chg_02',
 	title: 'Roles Guide',
 	comment: [
@@ -20,9 +19,8 @@ var txtRoles = {
 		'Scrum Master—The Scrum Master should also be familiar with this entire chapter with primary focus on sections 6.3, 6.4, 6.5, and 6.7.',
 		'Scrum Team—The Scrum Team should mainly focus on sections 6.3, 6.4.2, 6.5 and 6.7.'
 	]
-};
-
-var chg_03 = {
+}
+{
 	id: 'chg_03',
 		title: 'Change Overview',
 		stitle: 'Overview',
@@ -34,9 +32,8 @@ var chg_03 = {
 			'Being adaptive to change is a key advantage of the Scrum framework. Although Scrum works well for all projects in all industries, it can be very effective when the product or other project requirements are not fully understood or cannot be well defined up front, when the product’s market is volatile, and/or when the focus is on making the team flexible enough to incorporate changing requirements. Scrum is especially useful for complex projects with a lot of uncertainty. Long-term planning and forecasting is typically ineffective for such projects and they involve high quantities of risk. Scrum guides the team through transparency, inspection, and adaptation to the most valuable business outcomes.'
 		]
 		
-};
-
-var chg_04 = {
+}
+{
 	id: 'chg_04',
 	title: 'Unapproved and Approved Change Requests',
 	stitle: 'unapproved',
@@ -47,17 +44,15 @@ var chg_04 = {
 		'Change Requests for the project are discussed and approved during the Develop Epic(s), Create Prioritized Product Backlog, and Groom Prioritized Product Backlog processes. Approved Change Requests are then prioritized along with other product requirements and their respective User Stories and then incorporated into the Prioritized Product Backlog.'
 	],
 	image: '../images/change_approval.png'
-};
-
-var txtOverview = {
+}
+{
 	id: 'chg_05',
 	title: 'Change Overview',
-	overview: chg_03,
-	unapproved: chg_04,
+	overview: 'chg_03',
+	unapproved: 'chg_04',
 	image: '../images/approved_change.png'
-};
-
-var chg_06 = {
+}
+{
 	id: 'chg_06',
 		title: 'Balancing Flexibility and Stability',
 		stitle: 'balancing',
@@ -65,9 +60,8 @@ var chg_06 = {
 			'Scrum helps organizations become more flexible and open to change. However, it is important to understand that although the Scrum framework emphasizes flexibility, it is also important to maintain stability throughout the change process. In the same way that extreme rigidity is ineffective, extreme flexibility is also unproductive. The key is to find the right balance between flexibility and stability because stability is needed in order to get work done. Therefore, Scrum uses iterative delivery and its other characteristics and principles to achieve this balance. Scrum maintains flexibility in that Change Requests can be created and approved at any time during the project; however, they get prioritized when the Prioritized Product Backlog is created or updated. At the same time, Scrum ensures that stability is maintained by keeping the Sprint Backlog fixed and by not allowing interference with the Scrum Team during a Sprint.',
 			'In Scrum, all requirements related to an ongoing Sprint are frozen during the Sprint. No change is introduced until the Sprint ends, unless a change is deemed to be significant enough to stop the Sprint. In the case of an urgent change, the Sprint is terminated and the team meets to plan a new Sprint. This is how Scrum accepts changes without creating the problem of changing release dates.'
 		]
-};
-
-var chg_07 = {
+}
+{
 	id : 'chg_07',
 			title: 'Overview',
 			stitle: 'overview',
@@ -76,18 +70,16 @@ var chg_07 = {
 			],
 			image: '../images/flexibility.png'
 			
-};
-
-var chg_08 = {
+}
+{
 	id: 'chg_08',
 				title: 'Stakeholders',
 				comment: [
 					'Project stakeholders—particularly sponsors, customers, and users—may submit Change Requests at any time throughout the project. Change Requests could be due to change in market conditions, organizational direction, legal or regulatory issues, or various other reasons. Moreover, stakeholders may submit Change Requests as they are reviewing the deliverables during the Demonstrate and Validate Sprint, Retrospect Sprint, or Retrospect Project processes. All Change Requests get added to the Project Prioritized Product Backlog (also referred to as Prioritized Product Backlog or Product Backlog) once approved. Figure 6-4 demonstrates some of the reasons that stakeholders initiate the Change Request process.'
 				],
 				image: '../images/chg_stakeholders.png'
-};
-
-var chg_09 = {
+}
+{
 	id: 'chg_09',
 				title: 'Scrum Core Team',
 				comment: [
@@ -95,17 +87,15 @@ var chg_09 = {
 					'There may at times be challenges with creating certain Deliverables, which may result in Change Requests. For example, the team may decide on a new feature to be added or modified to improve product performance. In most Scrum projects, recommendations for changes from the Scrum Core Team happen as Scrum Teams work to Create Deliverables, or when they participate in Conduct Daily Standup Meeting or Retrospect Sprint Meetings. Figure 6-5 demonstrates some of the reasons that the Scrum Core Team may initiate Change Requests.'
 				],
 				image: '../images/chg_sct.png'
-};
-
-var chg_10 = {
+}
+{
 	id: 'chg_10',
 				title: 'Senior Management',
 				comment: [
 					'Senior management—including portfolio and program management—can recommend changes that affect the project. This can be because of changes in the strategic direction of the company, competitive landscape, funding-related issues, and so forth. Note that such changes get added to the Prioritized Product Backlog and need to go through the usual change management process. If any of these changes are urgent, any impacted Sprint may need to be terminated (see section 6.6 for details).'
 				]
-};
-
-var chg_11 = {
+}
+{
 	id: 'chg_11',
 				title: 'Scrum Guidance Body',
 				comment: [
@@ -116,9 +106,8 @@ var chg_11 = {
 					'Lessons learned from previous projects, which could be implemented by other Scrum Teams',
 					'The hallmark of Scrum is that it is change tolerant and adaptive. Scrum does not promote determining and firmly setting plans way in advance because it operates on the premise that project development is extremely prone to change and risk. The result is a high degree of flexibility and tolerance for change. The project is planned, executed, and managed incrementally, so it is typically easy to incorporate changes throughout.'
 				]
-};
-
-var chg_12 = {
+}
+{
 	id: 'chg_12',
 			title: 'Flexibility through Time-boxing',
 			comment: [
@@ -126,9 +115,8 @@ var chg_12 = {
 				'Time-boxed Sprints contribute greatly toward meeting deadlines and achieving high levels of productivity. Sprints promote order and consistency in a volatile work environment. They provide a platform to gauge results and obtain feedback in a short span of time. Sprints also allow for frequent assessment of progress and the methods used to manage the project, including effective change management. Errors or problems can be identified early and can be rectified quickly.',
 				'By using Time-boxing in Sprints, the team frequently revisits the process of estimating the work to be done, so the projection of time and effort required becomes more accurate with each subsequent Sprint as the project progresses. These iterative cycles also motivate team members to achieve projected targets and incremental goals toward reaching the larger objective.'
 			]
-};
-
-var chg_13 = {
+}
+{
 	id: 'chg_13',
 			title: 'Flexibility through Cross-functional and Self-organized Teams',
 			comment: [
@@ -137,66 +125,59 @@ var chg_13 = {
 				'Self-organization ensures that Scrum Team members determine on their own, how to do the work of the project without a senior manager micromanaging their tasks.',
 				'Having cross-functional and self-organized teams allows the group to adapt and effectively manage the ongoing work and any minor issues or changes without having to obtain support or expertise from members outside the team, and in the process, create deliverables that are ready to be shipped if necessary.'
 			]
-};
-
-var chg_14 = {
+}
+{
 	id: 'chg_14',
 			title: 'Flexibility through Customer Value-based Prioritization',
 			comment: [
 				'The prioritization of requirements and work in a Scrum project is always determined based on the value provided to the customer. First, at the start of a project, the initial requirements are prioritized based on the value each requirement will provide—this is documented in the Prioritized Product Backlog. Then, when a request is made for a new requirement or a change to an existing one, it is evaluated during the Groom Prioritized Product Backlog process. If the change is deemed to provide more value than other existing requirements, it will be added and prioritized accordingly in the updated Prioritized Product Backlog. So, the Prioritized Product Backlog provides scope for incorporating changes and adding new requirements when necessary.',
 				'It is important to note that new requirements and changes added to the Prioritized Product Backlog may lower the priority of other existing User Stories in the Backlog: so, such lower prioritized User Stories may be implemented later depending on their new prioritization. Because customers are very closely involved with the prioritization of requirements and their corresponding User Stories in the Prioritized Product Backlog, this practice ensures that the requirements that customers deem as “high value” get completed sooner and that the project starts delivering significant value much earlier on.'
 			]
-};
-
-var chg_15 = {
+}
+{
 	id: 'chg_15',
 			title: 'Flexibility through Continuous Integration',
 			comment: [
 				'Using continuous integration techniques, Scrum Team members can incorporate new and modified features into the deliverables whenever possible. This mitigates the risk of multiple team members making changes to redundant components (e.g., obsolete code in software products, old designs for manufacturing parts). This ensures that only the latest feature or version is being worked on and avoids compatibility issues.'
 			]
-};
-
-var chg_16 = {
+}
+{
 	id: 'chg_16',
 	title: 'Flexibility through Iterative Product Development',
 	comment: [
 		'Scrum follows an iterative and incremental approach to product and service development, making it possible to incorporate change at any step in the development process. As the product is developed, a Change Request for the project can come from multiple sources as follows:'
 	],
-	stakeholder: chg_08,
-	core_team: chg_09,
-	senior: chg_10,
-	body: chg_11
-};
-
-var chg_17 = {
+	stakeholder: 'chg_08',
+	core_team: 'chg_09',
+	senior: 'chg_10',
+	body: 'chg_11'
+}
+{
 	id: 'chg_17',
 		title: 'Achieving Flexibility',
 		stitle: 'achieving',
-		overview: chg_07,
-		flex_iterative: chg_16,
-		flex_time: chg_12,
-		flex_cross: chg_13,
-		flex_customer: chg_14,
-		flex_integration: chg_15
+		overview: 'chg_07',
+		flex_iterative: 'chg_16',
+		flex_time: 'chg_12',
+		flex_cross: 'chg_13',
+		flex_customer: 'chg_14',
+		flex_integration: 'chg_15'
 }
-
-var txtChange = {
+{
 	id: 'chg_18',
 	title: 'Change',
-	balancing: chg_06,
-	achieving: chg_17
-};
-
-var chg_19 = {
+	balancing: 'chg_06',
+	achieving: 'chg_17'
+}
+{
 	id: 'chg_19',
 		title: 'overview',
 		comment: [
 			'Depending on the industry and type of project, the priority of features and requirements for a project may remain fixed for significant durations of time, or they may change frequently. If project requirements are generally stable, there are typically only minor changes made to the Prioritized Product Backlog throughout development, and Scrum Teams can work sequentially completing requirements that will provide maximum customer value as prioritized in the Prioritized Product Backlog. The length of the Sprint is usually longer, 4 to 6 weeks, in such stable environments.',
 			'If project requirements change throughout the project, for example due to changed business requirements, the same method continues to be effective. Before beginning a Sprint—during the Create Prioritized Product Backlog or Groom Prioritized Product Backlog processes—the highest priority requirements in the Prioritized Product Backlog are typically selected to be completed in that Sprint. Because changes have been accounted for in the Prioritized Product Backlog, the team only needs to determine how many tasks they can accomplish in the Sprint based on time and resources provided. Change management is executed in the ongoing processes of prioritizing and adding tasks to the Prioritized Product Backlog.'
 		]
-};
-
-var chg_20 = {
+}
+{
 	id: 'chg_20',
         title: 'Changes to a Sprint',
 		stitle: 'Sprint',
@@ -209,9 +190,8 @@ var chg_20 = {
         'Moreover, since the Product Owner and Stakeholders are aware that changes are not allowed once a Sprint begins and a Sprint lasts between 1 and 6 weeks, they define and prioritize requirements during the appropriate processes of Create Epic(s), Create Prioritized Product Backlog, and Groom Prioritized Product Backlog.'
         ],
         image: '../images/chg_integrating.png'
-};
-
-var chg_21 = {
+}
+{
 	id: 'chg_21',
 		title: 'Impact of Expected Change on the Length of Sprint',
 		stitle: 'Length',
@@ -227,9 +207,8 @@ var chg_21 = {
 			'It is important to note that changing the Length of Sprint should not be decided lightly or periodically (e.g. it is not advisable to have the sprint length as 3 weeks this sprint, 2 weeks the next, 4 weeks for the third sprint etc.) Length of Sprint should preferably be consistent. One of the greatest impacts of changing the Length of Sprint is that it causes a reset on all tracking at the project level. Previous velocities may become useless for forecasting and planning of future Sprints. Without an accurate velocity (which is a primary metric in any scrum project), the Scrum Team cannot be measured for effectiveness or adequately choose the number of User Stories to take on when planning for the next sprint. So, once the Length of Sprint is decided, it should preferably be kept constant over the duration of the project or through multiple Sprint cycles.'
 		],
 		image: '../images/chg_length.png'   
-};
-
-var chg_22 = {
+}
+{
 	id: 'chg_22',
 	title: 'Managing Changes through Prioritized Product Backlog Grooming',
 		stitle: 'PPBG',
@@ -240,9 +219,8 @@ var chg_22 = {
 			'A Product Backlog Review Meeting (also referred to as a Prioritized Product Backlog Grooming Session) is a formal meeting during the Groom Prioritized Product Backlog process, which helps the Scrum Team review and gain consensus about the Prioritized Product Backlog. However, other than the Prioritized Product Backlog Review Meeting, Prioritized Product Backlog grooming should happen throughout the project and can include situations in which the Product Owner writes new User Stories or reprioritizes User Stories in the existing Prioritized Product Backlog, Scrum Team members or Stakeholders give their suggestions about new User Stories to the Product Owner, and so forth.',
 			'It is important to note that any item in the Prioritized Product Backlog is always open for re-estimation until the Sprint Backlog is finalized in the Create Sprint Backlog process. After that, changes can continue to be made until immediately prior to the Sprint Planning Meeting, if required.'
 		]
-};
-
-var chg_23 = {
+}
+{
 	id: 'chg_23',
 		title: 'Effective Product Backlog Review Meeting (or Prioritized Product Backlog Grooming Session)',
 		stitle: 'PBRM',
@@ -251,29 +229,26 @@ var chg_23 = {
 			'An effective grooming session should result in clearly defined Prioritized Product Backlog Items (PBIs) so that the Scrum Team clearly understands what the customer’s requirements are. This also helps the team become familiar with all User Stories in case one or more of them needs to be included in a Sprint on short notice. Acceptance and Done Criteria may also be discussed during grooming sessions.',
 			'Scrum does not Time-box grooming exercises. Prioritized Product Backlog grooming is a continuous activity for the Product Owner.'
 		]
-};
-
-var chg_24 = {
+}
+{
 	id: 'chg_24',
 		title: 'Managing Changes During Demonstrate and Validate Sprint',
 		stitle: 'Managing',
         comment: [
 			'Although the Product Owner has the final say on Prioritized Product Backlog Items and whether to accept or reject any User Stories (corresponding to Approved Change Requests) presented during the Demonstrate and Validate Sprint process, it is the Scrum Master’s responsibility to ensure that the requirements and Acceptance Criteria are not altered during the Sprint Review Meeting for the User Stories completed in the current Sprint. This prevents the rejection of completed User Stories based on the fact that they do not meet newly changed requirements. If any requirements need to be changed, any corresponding PBI needs to be revised to accommodate the modified requirements in a future Sprint.'
 		]
-};
-
-var txtIntegration = {
+}
+{
 	id: 'chg_25',
     title: 'Integrating Change',
-	overview: chg_19,
-    sprint: chg_20,
-    impact: chg_21,
-    ppbg: chg_22,
-    pbrm: chg_23,
-    managing: chg_24
-};
-
-var chg_26 = {
+	overview: 'chg_19',
+    sprint: 'chg_20',
+    impact: 'chg_21',
+    ppbg: 'chg_22',
+    pbrm: 'chg_23',
+    managing: 'chg_24'
+}
+{
 	id: 'chg_26',
 		title: 'In Portfolio',
 		stitle: 'inportfolio',
@@ -283,9 +258,8 @@ var chg_26 = {
 			'If the change is major, the portfolio efforts along with associated programs, projects, and Sprints need to stop, and a Portfolio Backlog Meeting should be conducted to determine next steps.',
 			'Portfolio Prioritized Product Backlog Meetings (also referred to as Portfolio Backlog Meetings), should be conducted at 4 - 12-month intervals. The frequency and impact of changes to a portfolio largely determine the time duration between two Portfolio Backlog Meetings. If there are several expected changes in portfolio, it is preferable to conduct Portfolio Backlog Meetings at more regular intervals (e.g., 4 - 6 months); but if there are fewer expected changes and if requirements are stable, the duration between two Portfolio Backlog Meetings could be increased (e.g., 9 to 12 months).'
 		]
-};
-
-var chg_27 = {
+}
+{
 	id: 'chg_27',
 		title: 'In Program',
 		stitle: 'inprogram',
@@ -296,37 +270,17 @@ var chg_27 = {
 			'Program Prioritized Product Backlog Meetings (also referred to as Program Backlog Meetings), should preferably be conducted at 2- to 6-month intervals. The frequency and impact of changes to a program largely determine the time duration between two Program Backlog Meetings. If there are several expected changes in program, it is preferable to conduct Program Backlog Meetings at more regular intervals (e.g., 2 to 3 months); but if there are fewer expected changes and if requirements are stable, the duration between two Program Backlog Meetings could be increased (e.g., 5 to 6 months).'
 		],
 		image: '../images/chg_portfolio.png'
-};
-
-var txtPortfolio = {
+}
+{
 	id: 'chg_28',
 	title: 'Change in Portfolios and Programs',
 	comment: [
 		'Any change that arises in either the programs or portfolios may have a cascading effect on all dependent projects and Sprints. Therefore, it is advisable to minimize changes at these higher levels. If a change is required and all stakeholders are in agreement to make the change at these levels, the following should be kept in mind.'
 	],
-	inportfolio: chg_26,
-	inprogram: chg_27
-};
-
-var txtSummary = {
-	id: 'chg_29',
-	title: 'Change: Summary of Responsibilities',
-	nbcol: 2,
-	head: ['Roles','Responsibilities'],
-	body: [
-		[['Scrum Guidance Body'],['Provides overall guidance for the change management procedures to be followed throughout the project']],
-		[['Portfolio Product Owner'],['Provides Change Requests for portfolios','Approves products that are amended, removed, or added according to portfolio requirements']],
-		[['Portfolio Scrum Master'],['Facilitates identification, assessment, and management of Change Requests for portfolios']],
-		[['Program Product Owner'],['Provides request for change for programs','Approves products that are amended, removed, or added according to program requirements']],
-		[['Program Scrum Master'],['Facilitates identification, assessment, and management of Change Requests for programs']],
-		[['Stakeholder(s)'],['Provides request for changes','Involved with approving and prioritizing Change Requests']],
-		[['Product Owner'],['Provides requests for changes in a project','Assesses the impact of requests for change raised for the portfolio, program, or project','Prioritizes User Stories in the project’s Prioritized Product Backlog','Assesses the impact of problems on project objectives identified by the Scrum Team','Provides clear communication to stakeholders on reprioritized Product Backlog Items']],
-		[['Scrum Master'],['Facilitates identification, assessment, and escalation of problems and Change Requests by the Scrum Team']],
-		[['Scrum Team'],['Suggests improvements or changes during the Create Deliverables and Conduct Daily Standup processes']]
-	]
-};
-
-var txtVersus = {
+	inportfolio: 'chg_26',
+	inprogram: 'chg_27'
+}
+{
 	id: 'chg_30',
 	title: 'Change: Scrum vs. Traditional Project Management',
 	comment: [
@@ -334,14 +288,4 @@ var txtVersus = {
 		'Change in Scrum works very differently as compared with Traditional Project Management. The Scrum framework is highly tuned toward managing changes effectively and efficiently. Whenever the Product Owner or the Scrum Team recognizes a problem or defect or identifies a Prioritized Product Backlog Item that needs to be amended, replaced, or added, the change is made to the Prioritized Product Backlog. Similarly, senior management, the Product Owner, or Stakeholder(s) can add Change Requests to the Prioritized Product Backlog. The Product Owner and Stakeholder(s) approve Change Requests and reprioritize the Backlog accordingly. Whenever there is a problem or new requirement that needs to be addressed immediately and mandates a change affecting the current Sprint, the Product Owner terminates the Sprint, with approval from relevant stakeholders. Once terminated, the Sprint will be re-planned and restarted to incorporate the new requirements.',
 		'However, if the problem or change is not major and does not warrant a change within the current Sprint, the change will be added to the Prioritized Product Backlog and incorporated into the planning for a subsequent Sprint. This gives stakeholders the ability to respond to changes in the external environment, while still maintaining a certain degree of control over the ongoing activities within the project. Also, at the end of each Sprint, Done deliverables are demonstrated by the Scrum Team. These deliverables are potentially shippable and can be reviewed by the Product Owner and other stakeholders.'
 	]
-};
-
-exports.txtIntroduction = txtIntroduction;
-exports.txtRoles = txtRoles;
-exports.txtOverview = txtOverview;
-exports.txtChange = txtChange;
-exports.txtIntegration = txtIntegration;
-exports.txtPortfolio = txtPortfolio;
-exports.txtSummary = txtSummary;
-exports.txtVersus = txtVersus;
-// 18
+}

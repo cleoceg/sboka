@@ -1,4 +1,4 @@
-<h1 class="display-4">{{data.title}}</h1>
+<h1 class="display-4">{{data.data.title}}</h1>
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -33,34 +33,34 @@
 					
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" role="tab" href="#{{data.achieving.overview.stitle}}" target="_self">{{data.achieving.overview.title}}</a>
+							<a class="nav-link active" data-toggle="tab" role="tab" href="#{{data.overview.stitle}}" target="_self">{{data.overview.title}}</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_iterative" target="_self">{{data.achieving.flex_iterative.title}}</a>
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_iterative" target="_self">{{data.flex_iterative.title}}</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_time" target="_self">{{data.achieving.flex_time.title}}</a>
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_time" target="_self">{{data.flex_time.title}}</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_cross" target="_self">{{data.achieving.flex_cross.title}}</a>
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_cross" target="_self">{{data.flex_cross.title}}</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_customer" target="_self">{{data.achieving.flex_customer.title}}</a>
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_customer" target="_self">{{data.flex_customer.title}}</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_integration" target="_self">{{data.achieving.flex_integration.title}}</a>
+							<a class="nav-link" data-toggle="tab" role="tab" href="#flex_integration" target="_self">{{data.flex_integration.title}}</a>
 						</li>
 					</ul>
 					
 					<div class="tab-content">
 					
-						<div class="tab-pane active" id="{{data.achieving.overview.stitle}}" role="tabpanel" target="_self">
+						<div class="tab-pane active" id="{{data.overview.stitle}}" role="tabpanel" target="_self">
 							<!-- Start overview -->
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="card card-block">
-										<h4 class="card-title">{{data.achieving.overview.title}}</h4>					
-										<div ng-repeat="item in data.achieving.overview.comment">
+										<h4 class="card-title">{{data.overview.title}}</h4>					
+										<div ng-repeat="item in data.overview.comment">
 											<p><span class="card-text" ng-bind-html="item"></span><p>
 										</div>
 									</div>        
@@ -72,7 +72,7 @@
 								<div class="col-sm-12">
 									<div class="col-sm-2"></div>
 									<div class="col-sm-8">
-										<img class="w-100" src="/{{data.achieving.overview.image}}" alt="data.achieving.overview.title">
+										<img class="w-100" src="/{{data.overview.image}}" alt="data.overview.title">
 									</div>
 									<div class="col-sm-2"></div>
 								</div>
@@ -86,8 +86,8 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="card card-block">
-										<h4 class="card-title">{{data.achieving.flex_iterative.title}}</h4>					
-										<div ng-repeat="item in data.achieving.flex_iterative.comment">
+										<h4 class="card-title">{{data.flex_iterative.title}}</h4>					
+										<div ng-repeat="item in data.flex_iterative.comment">
 											<p><span class="card-text" ng-bind-html="item"></span><p>
 										</div>
 									</div>        
@@ -97,16 +97,16 @@
                                                     
                             <ul class="nav nav-tabs">
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" role="tab" href="#stakeholder" target="_self">{{data.achieving.flex_iterative.stakeholder.title}}</a>
+                                    <a class="nav-link active" data-toggle="tab" role="tab" href="#stakeholder" target="_self">{{data.stakeholder.title}}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" role="tab" href="#core_team" target="_self">{{data.achieving.flex_iterative.core_team.title}}</a>
+                                    <a class="nav-link" data-toggle="tab" role="tab" href="#core_team" target="_self">{{data.core_team.title}}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" role="tab" href="#senior" target="_self">{{data.achieving.flex_iterative.senior.title}}</a>
+                                    <a class="nav-link" data-toggle="tab" role="tab" href="#senior" target="_self">{{data.senior.title}}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" role="tab" href="#body" target="_self">{{data.achieving.flex_iterative.body.title}}</a>
+                                    <a class="nav-link" data-toggle="tab" role="tab" href="#body" target="_self">{{data.body.title}}</a>
                                 </li>
                             </ul>
                                                     
@@ -116,8 +116,8 @@
 									<div class="row">
 										<div class="col-sm-12">
 											<div class="card card-block">
-												<h4 class="card-title">{{data.achieving.flex_iterative.stakeholder.title}}</h4>					
-												<div ng-repeat="item in data.achieving.flex_iterative.stakeholder.comment">
+												<h4 class="card-title">{{data.stakeholder.title}}</h4>					
+												<div ng-repeat="item in data.stakeholder.comment">
 													<p><span class="card-text" ng-bind-html="item"></span><p>
 												</div>
 											</div>        
@@ -129,7 +129,7 @@
 										<div class="col-sm-12">
 											<div class="col-sm-2"></div>
 											<div class="col-sm-8">
-												<img class="w-100" src="/{{data.achieving.flex_iterative.stakeholder.image}}" alt="{{data.achieving.flex_iterative.stakeholder.title}}">
+												<img class="w-100" src="/{{data.stakeholder.image}}" alt="{{data.stakeholder.title}}">
 											</div>
 											<div class="col-sm-2"></div>
 										</div>
@@ -142,8 +142,8 @@
 									<div class="row">
 										<div class="col-sm-12">
 											<div class="card card-block">
-												<h4 class="card-title">{{data.achieving.flex_iterative.core_team.title}}</h4>					
-												<div ng-repeat="item in data.achieving.flex_iterative.core_team.comment">
+												<h4 class="card-title">{{data.core_team.title}}</h4>					
+												<div ng-repeat="item in data.core_team.comment">
 													<p><span class="card-text" ng-bind-html="item"></span><p>
 												</div>
 											</div>        
@@ -155,7 +155,7 @@
 										<div class="col-sm-12">
 											<div class="col-sm-2"></div>
 											<div class="col-sm-8">
-												<img class="w-100" src="/{{data.achieving.flex_iterative.core_team.image}}" alt="{{data.achieving.flex_iterative.core_team.title}}">
+												<img class="w-100" src="/{{data.core_team.image}}" alt="{{data.core_team.title}}">
 											</div>
 											<div class="col-sm-2"></div>
 										</div>
@@ -168,8 +168,8 @@
 									<div class="row">
 										<div class="col-sm-12">
 											<div class="card card-block">
-												<h4 class="card-title">{{data.achieving.flex_iterative.senior.title}}</h4>					
-												<div ng-repeat="item in data.achieving.flex_iterative.senior.comment">
+												<h4 class="card-title">{{data.senior.title}}</h4>					
+												<div ng-repeat="item in data.senior.comment">
 													<p><span class="card-text" ng-bind-html="item"></span><p>
 												</div>
 											</div>        
@@ -183,8 +183,8 @@
 									<div class="row">
 										<div class="col-sm-12">
 											<div class="card card-block">
-												<h4 class="card-title">{{data.achieving.flex_iterative.body.title}}</h4>					
-												<div ng-repeat="item in data.achieving.flex_iterative.body.comment">
+												<h4 class="card-title">{{data.body.title}}</h4>					
+												<div ng-repeat="item in data.body.comment">
 													<p><span class="card-text" ng-bind-html="item"></span><p>
 												</div>
 											</div>        
@@ -201,8 +201,8 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="card card-block">
-										<h4 class="card-title">{{data.achieving.flex_time.title}}</h4>					
-										<div ng-repeat="item in data.achieving.flex_time.comment">
+										<h4 class="card-title">{{data.flex_time.title}}</h4>					
+										<div ng-repeat="item in data.flex_time.comment">
 											<p><span class="card-text" ng-bind-html="item"></span><p>
 										</div>
 									</div>        
@@ -216,8 +216,8 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="card card-block">
-										<h4 class="card-title">{{data.achieving.flex_cross.title}}</h4>					
-										<div ng-repeat="item in data.achieving.flex_cross.comment">
+										<h4 class="card-title">{{data.flex_cross.title}}</h4>					
+										<div ng-repeat="item in data.flex_cross.comment">
 											<p><span class="card-text" ng-bind-html="item"></span><p>
 										</div>
 									</div>        
@@ -231,8 +231,8 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="card card-block">
-										<h4 class="card-title">{{data.achieving.flex_customer.title}}</h4>					
-										<div ng-repeat="item in data.achieving.flex_customer.comment">
+										<h4 class="card-title">{{data.flex_customer.title}}</h4>					
+										<div ng-repeat="item in data.flex_customer.comment">
 											<p><span class="card-text" ng-bind-html="item"></span><p>
 										</div>
 									</div>        
@@ -246,8 +246,8 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="card card-block">
-										<h4 class="card-title">{{data.achieving.flex_integration.title}}</h4>					
-										<div ng-repeat="item in data.achieving.flex_integration.comment">
+										<h4 class="card-title">{{data.flex_integration.title}}</h4>					
+										<div ng-repeat="item in data.flex_integration.comment">
 											<p><span class="card-text" ng-bind-html="item"></span><p>
 										</div>
 									</div>        

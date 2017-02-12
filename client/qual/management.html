@@ -1,4 +1,4 @@
-<h1 class="display-4">{{data.title}}</h1>
+<h1 class="display-4">{{data.data.title}}</h1>
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -40,8 +40,8 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="card card-block">
-								<h4 class="card-title">{{data.planning.planning.title}}</h4>					
-								<div ng-repeat="item in data.planning.planning.comment">
+								<h4 class="card-title">{{data.plan.title}}</h4>					
+								<div ng-repeat="item in data.plan.comment">
 									<p><span class="card-text" ng-bind-html="item"></span><p>
 								</div>
 							</div>        
@@ -52,8 +52,8 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="card card-block">
-								<h4 class="card-title">{{data.planning.integration.title}}</h4>					
-								<div ng-repeat="item in data.planning.integration.comment">
+								<h4 class="card-title">{{data.integration.title}}</h4>					
+								<div ng-repeat="item in data.integration.comment">
 									<p><span class="card-text" ng-bind-html="item"></span><p>
 								</div>
 							</div>        

@@ -145,3 +145,78 @@
 	done: 'qual_done',
 	acceptance: 'qual_acceptance'
 }
+{
+	id: 'qual_13',
+	title: 'Quality Planning',
+	comment: [
+		'One of the guiding principles of Scrum is to develop the functionality of the highest priority to the customer first. Less important features are developed in subsequent Sprints or can be left out altogether according to the customer’s requirements. This approach gives the Scrum Team the required time to focus on the quality of essential functionality. A key benefit of quality planning is the reduction of technical debt. Technical debt— also referred to as design debt or code debt—refers to the work that teams prioritize lower, omit, or do not complete as they work toward creating the primary deliverables associated with the project’s product. Technical debt accrues and must be paid in the future.',
+		'Some causes of technical debt can include the following:',
+		'<li>Quick-fix and building deliverables that do not comply with standards for quality, security, long-term architecture goals, etc.',
+		'<li>Inadequate or incomplete testing',
+		'<li>Improper or incomplete documentation',
+		'<li>Lack of coordination among different team members, or if different Scrum Teams start working in isolation, with less focus on final integration of components required to make a project or program successful',
+		'<li>Poor sharing of business knowledge and process knowledge among the stakeholders and project teams',
+		'<li>Too much focus on short-term project goals instead of the long-term objectives of the company. This oversight can result in poor-quality Working Deliverables that incur significant maintenance and upgrade costs.',
+		'In Scrum projects, any technical debt is not carried over beyond a Sprint, because there should be clearly defined Acceptance and Done Criteria. The functionality must satisfy these criteria to be considered Done. As the Prioritized Product Backlog is groomed and User Stories are prioritized, the team creates Working Deliverables regularly, preventing the accumulation of significant technical debt. The Scrum Guidance Body may also include documentation and definition of processes which help in decreasing technical debt.',
+		'To maintain a minimal amount of technical debt, it is important to define the product required from a Sprint and the project along with the Acceptance Criteria, any development methods to be followed, and the key responsibilities of Scrum Team members in regards to quality. Defining Acceptance Criteria is an important part of quality planning and it allows for effective quality control to be carried out during the project.',
+		'Technical debt is a very big challenge with some traditional project management techniques where development, testing, documentation, etc. are done sequentially and often-times by different persons, with no one person being responsible for any particular Working Deliverable. As a result, technical debt accrues, leading to significantly higher maintenance, integration, and product release costs in the final stages of a project’s release. Also, the cost of changes is very high in such circumstances as problems surface in later stages of the project. Scrum framework prevents the issues related to technical debt by ensuring that Done deliverables with Acceptance Criteria are defined as part of the Sprint Backlog and key tasks including development, testing, and documentation are done as part of the same Sprint and by the same Scrum Team.'
+	]
+}
+{
+	id: 'qual_14',
+	title: 'Continuous Integration and Sustainable Pace',
+	comment: [
+		'Maintaining a sustainable pace is one of the most important tenets of Scrum. Sustainable pace translates to increased employee satisfaction, stability, and increased estimation accuracy, all of which ultimately leads to increased customer satisfaction. To develop a truly high quality product and maintain a healthy work environment, it is important to carry out integration-type activities regularly, rather than delaying the integration work until the end in such circumstances. To provide value at frequent intervals, the team should continuously develop, test, and integrate the functionalities of each Prioritized Product Backlog Item (PBI) in every Sprint with the use of techniques, such as continuous integration and automated product testing. It is also important, from the team’s point of view, to ensure that the effort expended in the current Sprint is similar to the effort spent in the preceding Sprint in order to sustain an even pace throughout the project Sprints. This helps the team avoid phases of intense periods of work, ensuring they are always able to put forth the level of effort required to accomplish the work that needs to be done.'
+	]
+}
+{
+	id: 'qual_15',
+	title: 'Quality Control and Quality Assurance',
+	stitle: 'control',
+	comment: [
+        'Quality control refers to the execution of the planned quality activities by the Scrum Team in the process of creating deliverables that are potentially shippable. It also includes learning from each set of completed activities in order to achieve continuous improvement. Within the cross-functional team, it is important to have the skills necessary to perform quality control activities. During the Sprint Retrospect Meeting, team members discuss lessons learned. These lessons act as inputs into continuous improvement and contribute to the improvement of ongoing quality control.',
+        "Quality is required not only in products, but also in processes. Quality assurance refers to the evaluation of processes and standards that govern quality management in a project to ensure that they continue to be relevant. Quality assurance activities are carried out as part of the work. In fact, quality assurance is a significant factor of the definition of Done. The deliverable isn't complete if appropriate quality assurance has not been conducted. Often, quality assurance is demonstrated during the Sprint Review Meeting. Product Owners for respective projects, programs, and portfolios can monitor and evaluate quality assurance activities to ensure each team continues to agree and comply with the quality standards that have been set. End-to-end quality assurance may be addressed during final testing of the product, a Release, or a Sprint. A comparison of the number of issues encountered versus the number of User Stories completed can be done. The product components that have defects can be incorporated as Prioritized Product Backlog Items (PBIs), which can be worked upon by either the team or by one person at certain times during the Sprint, depending on the number of defects.",
+        'At times, the Scrum Guidance Body can define the processes and documents that can be referred to by Scrum Teams when doing their projects to ensure that uniform quality norms are followed by all projects within the company.'
+	]
+}
+{
+	id: 'qual_16',
+	stitle: 'pdca',
+	title: 'Plan-Do-Check-Act (PDCA) Cycle',
+	comment: [
+		'The Plan-Do-Check-Act Cycle—also known as the Deming or Shewhart Cycle—was developed by Dr. W. Edwards Deming, considered the father of modern quality control and Dr. Walter A. Shewhart. The following are some important points of Deming’s philosophy:',
+		'<li>Management guidelines define quality. When management is able to provide a conducive environment and is able to motivate its employees to improve quality on a continuous basis, each employee will be able to make a contribution toward a superior quality product. Deming’s “Theory of Profound Knowledge” advocates what management should do in order to create an environment in which each employee can make significant contributions to quality improvement.',
+		'Deming modified Plan-Do-Check-Act to Plan-Do-Study-Act (PDSA) because he felt the term ‘Study’ emphasized analysis rather than simply inspection, as implied by the term ‘Check.’',
+		'Both Scrum and the Deming/Shewhart/PDCA Cycle are iterative methods that focus on continuous improvement. Figure below illustrates the stages of the PDCA Cycle and their correlation with various Scrum processes.'
+	],
+	image: '../images/pdca.png'
+}
+{
+	id: 'qual_23',
+	title: 'Overview',
+	comment: [
+		'The customer is the most important stakeholder for any project. Therefore, it is important to understand the customer’s needs and requirements. The Voice of the Customer (VOC) can be referred to as the explicit and implicit requirements of the customer, which must be understood prior to the designing of a product or service. Generally, in a Scrum environment, the Product Owner’s focus is on business requirements and objectives, which together represent the Voice of the Customer. The Product Owner can benefit greatly from the guidance available from the Scrum Guidance Body (either through quality documents or standards, or from quality experts). These specialists should work with the Product Owner and the customer to ensure the appropriate level of detail and information in the User Stories, since User Stories are the basis for the success of any Scrum project.',
+		'It should be noted that external stakeholders are not directly involved at the Scrum Team level and, instead, interact primarily with the Product Owner. For any Scrum project, the customer may be either of the following:',
+		'<li>Internal (that is, within the same organization)<li>External (that is, outside the organization)',
+		'Quality management in Scrum enables customers to become aware of any problems in the project early and helps them recognize if a project is going to work for them or not. In Scrum, quality is about customer satisfaction and a working product, not necessarily meeting arbitrary metrics. This distinction becomes very important from the customer’s point of view because they are the ones investing time and money in the project.',
+		'Quality management in Scrum is facilitated through three interrelated activities:',
+		'1. Quality planning',
+		'2. Quality control',
+		'3. Quality assurance'
+		]
+}
+{
+	id: 'qual_24',
+	title: 'Quality Planning',
+	stitle: 'planning',
+	planning: 'qual_planning',
+	integration: 'qual_integration'
+}
+{
+	id: 'qual_17',
+    title: 'Quality Management in Scrum',
+	overview: 'qual_23',
+	planning: 'qual_24',
+	control: 'qual_control',
+	pdca: 'qual_pdca'
+}

@@ -158,3 +158,35 @@
 		[['Product Owner'],['Sets the minimum Acceptance Criteria for the project, which includes the Acceptance Criteria from the program','Reviews project deliverablese']]
 	]
 }
+{
+	id: 'chg_29',
+	title: 'Change: Summary of Responsibilities',
+	nbcol: 2,
+	head: ['Roles','Responsibilities'],
+	body: [
+		[['Scrum Guidance Body'],['Provides overall guidance for the change management procedures to be followed throughout the project']],
+		[['Portfolio Product Owner'],['Provides Change Requests for portfolios','Approves products that are amended, removed, or added according to portfolio requirements']],
+		[['Portfolio Scrum Master'],['Facilitates identification, assessment, and management of Change Requests for portfolios']],
+		[['Program Product Owner'],['Provides request for change for programs','Approves products that are amended, removed, or added according to program requirements']],
+		[['Program Scrum Master'],['Facilitates identification, assessment, and management of Change Requests for programs']],
+		[['Stakeholder(s)'],['Provides request for changes','Involved with approving and prioritizing Change Requests']],
+		[['Product Owner'],['Provides requests for changes in a project','Assesses the impact of requests for change raised for the portfolio, program, or project','Prioritizes User Stories in the project’s Prioritized Product Backlog','Assesses the impact of problems on project objectives identified by the Scrum Team','Provides clear communication to stakeholders on reprioritized Product Backlog Items']],
+		[['Scrum Master'],['Facilitates identification, assessment, and escalation of problems and Change Requests by the Scrum Team']],
+		[['Scrum Team'],['Suggests improvements or changes during the Create Deliverables and Conduct Daily Standup processes']]
+	]
+}
+{
+    id: 'rsk_43',
+        title: 'Summary of Responsibilities',
+	stitle: 'summary',
+	nbcol: 2,
+	head: ['Roles','Responsibilities'],
+	body: [
+            [['Scrum Guidance Body'],['Provides overall guidance for the risk management procedure to be followed throughout the project']],
+            [['Portfolio Product Owner'],['Captures and assesses risks for portfolios','Prioritizes and communicates risks to relevant stakeholders, program, and project teams ']],
+            [['Portfolio Scrum Master'],['Facilitates identification, assessment and communication of risks portfolios Program Product']],
+            [['Owner'],['Captures and assesses risks for programs','Prioritizes and communicates risks to relevant stakeholders and project teams']],
+            [['Program Scrum Master'],['Facilitates identification, assessment and escalation of risks for programs Stakeholder(s)','Interfaces with the Scrum Core Team to provide them inputs on management of risks that affect the achievement of expected outcomes and benefits from the project']],
+            [['Product Owner'],['Captures and assesses risks for project']]
+        ]
+}

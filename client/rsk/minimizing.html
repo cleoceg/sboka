@@ -1,13 +1,15 @@
-<h1 class="display-4">{{data.title}}</h1>
+<h1 class="display-4">{{data.data.title}}</h1>
 
 
 <!-- Start  Overview -->
 <div class="row">
 	<div class="col-sm-12">
 		<div class="card card-block">
-			<h4 class="card-title">{{data.title}}</h4>					
+			<h4 class="card-title">{{data.data.title}}</h4>					
 			
-				<p><span class="card-text" ng-bind-html="data.intro"></span><p>
+		<div ng-repeat="item in data.data.comment">
+                    <p><span class="card-text" ng-bind-html="item"></span><p>
+                </div>
 			
 		</div>        
 	</div>
@@ -15,14 +17,30 @@
 <!-- Start  Overview -->
 <!-- Start items -->
 <div class="row">
-	<div class="col-sm-12">
-		<div ng-repeat="item in data.items">
-			<div class="card card-block">			
-				<h4 class="card-title">{{item.title}}</h4>					
-				<p><span class="card-text" ng-bind-html="item.comment"></span><p>
-			</div>        
-		</div>
-	</div>
+    <div class="col-sm-12">
+	<div class="card card-block">			
+            <h4 class="card-title">{{data.mini1.title}}</h4>
+            <div ng-repeat="item in data.mini1.comment">
+		<p><span class="card-text" ng-bind-html="item"></span><p>
+            </div>
+            <h4 class="card-title">{{data.mini2.title}}</h4>
+            <div ng-repeat="item in data.mini2.comment">
+		<p><span class="card-text" ng-bind-html="item"></span><p>
+            </div>
+            <h4 class="card-title">{{data.mini3.title}}</h4>
+            <div ng-repeat="item in data.mini3.comment">
+		<p><span class="card-text" ng-bind-html="item"></span><p>
+            </div>
+            <h4 class="card-title">{{data.mini4.title}}</h4>
+            <div ng-repeat="item in data.mini4.comment">
+		<p><span class="card-text" ng-bind-html="item"></span><p>
+            </div>
+            <h4 class="card-title">{{data.mini5.title}}</h4>
+            <div ng-repeat="item in data.mini5.comment">
+		<p><span class="card-text" ng-bind-html="item"></span><p>
+            </div>
+	</div>        
+    </div>
 </div>
 <!-- End items -->     
         

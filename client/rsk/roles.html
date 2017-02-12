@@ -1,15 +1,44 @@
-<h1 class="display-4">{{data.title}}</h1>
+<h1 class="display-4">{{data.data.title}}</h1>
 
 <div class="row">
-	<div ng-repeat="role in data.roles">
+	<!--div ng-repeat="role in data.roles">
 		<div class="col-sm-4">
 			<div class="card card-block">
-				<h4 class="card-title">{{role.title}}</h4>
-				<p class="card-text">{{role.role}}</p>
+				<h4 class="card-title">{{data.role1.title}}</h4>
+				<p class="card-text">{{data.role1.comment}}</p>
 				<div ng-repeat="item in role.links">
-					<a href="{{item[0]}}" class="card-link">{{item[1]}}</a>
+					<!--a href="{{item[0]}}" class="card-link">{{item[1]}}</a>
 				</div>
 			</div>
 		</div>
+	</div-->
+	
+	
+	<div class="col-sm-4">
+		<div class="card card-block">
+			<h4 class="card-title">{{data.role1.title}}</h4>
+			<div ng-repeat="item in data.role1.comment">
+				<p><span class="card-text" ng-bind-html="item"></span><p>
+			</div>
+		</div>
 	</div>
+	
+	<div class="col-sm-4">
+		<div class="card card-block">
+			<h4 class="card-title">{{data.role2.title}}</h4>
+			<div ng-repeat="item in data.role2.comment">
+				<p><span class="card-text" ng-bind-html="item"></span><p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-sm-4">
+		<div class="card card-block">
+			<h4 class="card-title">{{data.role3.title}}</h4>
+			<div ng-repeat="item in data.role3.comment">
+				<p><span class="card-text" ng-bind-html="item"></span><p>
+			</div>
+		</div>
+	</div>
+	
 </div>
