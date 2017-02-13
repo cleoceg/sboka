@@ -8,7 +8,7 @@ var ctrOrganization = require('../controllers/ctrorganizationM'); // with MongoD
 var ctrJustification = require('../controllers/ctrjustificationM'); // with MongoDB
 var ctrQuality = require('../controllers/ctrqualityM'); // with MongoDB
 var ctrChange = require('../controllers/ctrchangeM'); // with MongoDB
-var ctrRisks = require('../controllers/ctrRisksM'); // with MongoDB
+var ctrRisks = require('../controllers/ctrrisksM'); // with MongoDB
 
 // Principles
 router.get('/prin_intro', ctrPrinciples.intro);
