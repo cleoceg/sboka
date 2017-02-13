@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 require('./model/db');
 var routes = require('./routes/index');
 //var angviews = require('./routes/angviews');
-var routeApi = null;
+
 //if (mongoose.connection.readyState == 1) {
     var routesApi = require('./api/routes/indexM');
 //}
@@ -76,13 +76,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-
-module.exports = app;
-
-
-/*app.listen(3000, function() {
-	console.log('SBOK app listening on port 3000!');
-});*/
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
