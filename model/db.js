@@ -1,6 +1,7 @@
 var mongoose = require( 'mongoose' );
 //var gracefulShutdown;
-var dbURI = 'mongodb://localhost/SBOKA';
+//var dbURI = 'mongodb://localhost/SBOKA';
+var dbURI = 'mongodb://admin:admin@ds151289.mlab.com:51289/sboka';
 
 mongoose.connect(dbURI);
 

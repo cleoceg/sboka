@@ -4,12 +4,20 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 require('./model/db');
 var routes = require('./routes/index');
 //var angviews = require('./routes/angviews');
-var routesApi = require('./api/routes/index');
-var principles = require('./routes/principles');
+var routeApi = null;
+//if (mongoose.connection.readyState == 1) {
+    var routesApi = require('./api/routes/indexM');
+//}
+//else {
+//var routesApi = require('./api/routes/index');
+//var principles = require('./routes/principles');
+//console.log('Without Mongodb');
+//}
 
 var app = express();
 

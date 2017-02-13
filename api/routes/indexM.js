@@ -2,13 +2,13 @@
 var express = require('express');
 var router = express.Router();
 
-var ctrPrinciples = require('../controllers/ctrprinciples'); 
-var ctrPhases = require('../controllers/ctrphases'); 
-var ctrOrganization = require('../controllers/ctrorganization'); 
-var ctrJustification = require('../controllers/ctrjustification'); 
-var ctrQuality = require('../controllers/ctrquality'); 
-var ctrChange = require('../controllers/ctrchange'); 
-var ctrRisks = require('../controllers/ctrRisks'); 
+var ctrPrinciples = require('../controllers/ctrprinciplesM'); // with MongoDB
+var ctrPhases = require('../controllers/ctrphasesM'); // with MongoDB
+var ctrOrganization = require('../controllers/ctrorganizationM'); // with MongoDB
+var ctrJustification = require('../controllers/ctrjustificationM'); // with MongoDB
+var ctrQuality = require('../controllers/ctrqualityM'); // with MongoDB
+var ctrChange = require('../controllers/ctrchangeM'); // with MongoDB
+var ctrRisks = require('../controllers/ctrRisksM'); // with MongoDB
 
 // Principles
 router.get('/prin_intro', ctrPrinciples.intro);
